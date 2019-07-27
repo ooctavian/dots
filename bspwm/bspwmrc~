@@ -1,0 +1,44 @@
+#! /bin/sh
+
+sxhkd &
+compton &
+mpd-notifcation &
+xrdb ~/.Xresources
+timedatectl set-ntp true 
+# Set the border colors.
+# source the colors.
+. "${HOME}/.cache/wal/colors.sh"
+# Set the border colors.
+bspc config normal_border_color "$color1"
+bspc config active_border_color "$color2"
+bspc config focused_border_color "$color15"
+# Use the line below if you are on bspwm >= 0.9.4
+bspc config presel_feedback_color "$color1"
+# Use the line below if you are on bspwm < 0.9.4
+#bspc config presel_border_color "$color1"
+
+bspc monitor -d α β γ δ ε
+
+bspc config border_width         2
+bspc config window_gap           5
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      false 
+bspc config external_rules_command ~/.config/bspwm/external_rules.sh
+WM_CLASS: "emacs " "Emacs"
+bspc rule -a Emacs desktop='^1' 
+bspc rule -a Emacs state=tiled 
+bspc rule -a Firefox state=tiled
+bspc rule -a Firefox desktop='^2'
+bspc rule -a Screenkey manage=off 
+bspc rule -a Discord desktop='^5'
+bspc rule -a discord desktop='^5'
+bspc config focus_follows_pointer true 
+bspc config click_to_focus button1
+bspc config pointer_mod         mod4
+bspc config pointer_action1     move
+urxvt  -c scratchterm &
+bspc rule -a scratchterm sticky=on state=floating hidden=on
+wal -R 
+$HOME/autostart.sh
