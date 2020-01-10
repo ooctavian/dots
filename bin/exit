@@ -1,0 +1,20 @@
+#!/bin/sh
+
+#var=$(echo -e " Apagar\n Bloquear\n Suspender\n Reiniciar\n Cerrar sesión\n Cancelar" | rofi -dmenu -theme drofi -i -p "¿Desea salir?") 
+var=$(echo " PowerOff\n Suspendare\n  Restartare\n  Iesire din wm\n Anuleaza" | dmenu -i -p "Vreai sa iesi ?") 
+
+case $var in
+    ' PowerOff') 
+	systemctl poweroff;;
+
+    ' Reiniciar')
+	systemctl reboot;;
+
+    ' Cerrar sesión')
+		killall xorg;;
+    ' Suspendare')
+	systemctl suspend;;
+    
+	' Anuleaza')
+	    exit 0;;
+esac
