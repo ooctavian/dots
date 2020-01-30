@@ -3,6 +3,7 @@
 
 * Table of Contents :TOC_3:noexport:
 - [[#description][Description]]
+- [[#screen][Screen]]
 
 * Description
 This is probably worst dotfiles you have ever seen.
@@ -11,3 +12,10 @@ What will you to make them work:
 + =bspwm= && =sxhkd=  --- window manager && hotkey daemon
 + =dmenu= && =st= -- program launcher &&  terminal
 + =polybar= -- bar
+* Screen
+[[./images/screen.png]]
+
+[[./images/screen1.png]]
+[[./images/screen2.png]]
+[[./images/screen3.png]]
+[[./images/screen4.png]]
