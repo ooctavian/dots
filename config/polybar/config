@@ -1,0 +1,199 @@
+[colors]
+background = ${xrdb:color0:#222}
+background-alt = ${xrdb:color1:#222}
+foreground = ${xrdb:color7:#222}
+color8 = ${xrdb:color8:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+[bar/main]
+monitor = ${env:MONITOR:HDMI-2}
+monitor-fallback = ${env:MONITOR:LVDS1}
+width = 100%
+height = 20
+;offset-x = 1%
+;offset-y = 0.4%
+fixed-center = true
+;;Transparent 
+background = #931d1f21
+;;Opaque
+;;background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 3
+line-color = #f00
+override-redirect = true
+;border-size = 2
+;border-color = ${colors.primary}
+
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-1 = Hack Nerd Font:style=Regular:pixelsize=10;1
+font-0 = Hermit:style=Regular:pixelsize=10;1
+modules-left = bspwm 
+modules-center = mpd
+modules-right = volume wlan eth battery date 
+
+tray-position = right
+tray-padding = 1
+tray-transparent = true
+;tray-background = #0063ff
+
+wm-restack = bspwm
+
+;override-redirect = true
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+[module/bspwm]
+type = internal/bspwm
+label-focused = 
+;label-focused-background = ${colors.background-alt}
+;label-focused-underline= ${colors.primary}
+label-focused-padding = 1
+
+label-occupied = 
+label-occupied-foreground = ${colors.foreground}
+label-occupied-padding = 1
+
+label-urgent = 
+label-urgent-foreground = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = 
+label-empty-foreground = ${colors.color8}
+label-empty-padding = 1
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>
+;; <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = 玲
+icon-stop = 栗
+icon-play = 
+icon-pause = 
+icon-next = 怜
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+
+format-connected = 直 <label-connected>
+label-connected = %essid%
+
+format-disconnected =
+
+
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = "%Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M
+
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+;format-underline = #0a6cf5
+
+label = %date% %time%
+
+[module/volume]
+type = internal/volume
+
+format-volume = <ramp-volume> <label-volume>
+label-volume-foreground = ${root.foreground}
+label-volume = %percentage%%
+format-muted-foreground = ${colors.foreground-alt}
+label-muted =  婢
+
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 99
+
+format-charging = <animation-charging> <label-charging>
+
+format-discharging = <ramp-capacity> <label-discharging>
+;;format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = ""
+format-full-prefix-foreground = ${colors.foreground-alt}
+;;format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+animation-capacity-0 = 
+animation-capacity-1 = 
+animation-capacity-2 = 
+animation-capacity-3 = 
+animation-capacity-4 = 
+animation-capacity-5 = 
+animation-capacity-6 = 
+animation-capacity-7 = 
+animation-capacity-8 = 
+animation-capacity-9 = 
+
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

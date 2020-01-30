@@ -1,0 +1,13 @@
+#+TITLE: #+DATE:    January 30, 2020
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+
+* Description
+This is probably worst dotfiles you have ever seen.
+
+What will you to make them work:
++ =bspwm= && =sxhkd=  --- window manager && hotkey daemon
++ =dmenu= && =st= -- program launcher &&  terminal
++ =polybar= -- bar

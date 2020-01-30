@@ -1,0 +1,13 @@
+#! /bin/sh
+# By https://github.com/tatou-tatou
+id="$(bspc query -N -n "${1:-focused}" | head -n1)"
+[ -z "$id" ] && exit 1
+
+w=$(wattr w "$id")
+h=$($(wattr h "$id")
+
+if [ "$w" -gt "$h" ]; then
+    echo horizontal
+else
+    echo vertical
+fi
