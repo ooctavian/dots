@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+scrot  screenshot  && notify-send -i "screenshot" "Screenshot taken "

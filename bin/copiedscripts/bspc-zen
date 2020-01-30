@@ -1,0 +1,30 @@
+#!/bin/bash
+# Original script by https://github.com/tatou-tatou. Modified to match new bspwm syntax
+case $1 in
+desktop-add)
+	eval "`spacefm -g --label 'Type the name of the new workspace:' --input "" --button cancel --button ok`" 
+    [ -z "$dialog_input1" ] && exit
+	bspc monitor -a "$dialog_input1"
+	bspc desktop "$dialog_input1" -f
+;;
+desktop-remove)
+	eval "`spacefm -g --label 'Select the workspace you want to remove' --vsep --list $(bspc query -D --names) --hsep --button cancel --button ok --window-size 300x300`"
+	[ -z "$dialog_list1" ] && exit
+	bspc desktop "$dialog_list1" -r
+;;
+move-to-desktop)
+	eval "`spacefm -g --label 'Move to workspace:' --vsep --list $(bspc query -D --names) --hsep --button cancel --button ok --window-size 300x300`"
+	[ -z "$dialog_list1" ] && exit
+	bspc node -d "$dialog_list1"
+;;
+desktop-rename)
+	eval "`spacefm -g --label 'Rename the current workspace to:' --input "" --button cancel --button ok`"
+    [ -z "$dialog_input1" ] && exit
+	bspc desktop -n "$dialog_input1"
+;;
+desktop-swap)
+	eval "`spacefm -g --label 'Swap with:' --vsep --list $(bspc query -D --names) --hsep --button cancel --button ok --window-size 300x300`"
+	[ -z "$dialog_list1" ] && exit
+	bspc desktop -s "$dialog_list1"
+;;
+esac

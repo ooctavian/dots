@@ -1,0 +1,8 @@
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="firefox"
+export READER="zathura"
+export FILE="ranger"
+export musicplayer="st -e ncmpcpp"
+export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:$(du "$HOME/.local/bin/dmenuscripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"

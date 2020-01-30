@@ -1,0 +1,21 @@
+#! /bin/sh
+
+# Hace la búsqueda en el archivo links
+sel=$(cat ~/.local/bin/links | dmenu  -i -p "Web Search")
+#Se asegura que no sea un campo vacío
+if [ "$sel" != "" ]; then
+    if grep -Fxq "$sel" ~/.local/bin/links; then
+	page=$(echo $sel | cut -d: -f2-)
+	xdg-open $page
+    else
+	options=$(echo $sel | cut -d" " -f1)
+	page=$(echo $sel | cut -d" " -f2-)
+	case $options in
+	    arch) $BROWSER https://wiki.archlinux.org/index.php?search="$page";;
+	    yt) $BROWSER https://www.youtube.com/results?search_query="$page";;
+	    r) $BROWSER https://www.reddit.com/r/"$page";;
+	    *) $BROWSER https://duckduckgo.com/?q="$sel";;
+	esac
+    fi
+fi
+

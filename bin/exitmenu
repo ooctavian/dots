@@ -1,0 +1,26 @@
+#!/bin/sh
+
+var=$(echo  " Power Off\n Lock\n Suspend\n Restart\n Cancel session\n Cancel" | dmenu  -i -p "Exit Menu") 
+#var=$(echo " Power Off\n Lock\n Suspend\n  Restart\n Cancel session\n Cancel" | dmenu -i -p "¿Desea salir?") 
+
+case $var in
+    ' Power Off') 
+	 shutdown now;;
+	
+
+    ' Lock')
+    betterlockscreen -l blur;;
+
+    ' Restart')
+	rm /tmp/bspwm-startup.lock
+	 reboot;;
+
+    ' Cancel session')
+		rm /tmp/bspwm-startup.lock
+		bspc quit;;
+    ' Suspend')
+	systemctl suspend;;
+    
+	' Cancel')
+	    exit 0;;
+esac

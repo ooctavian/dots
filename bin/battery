@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# requires acpi package
+command -v acpi &> /dev/null || exit 1
+
+BATTERY=$(acpi)
+if [ $? -ne 0 ]; then
+	exit 1
+fi
+
+BATTERY=$(echo "$BATTERY" | head -n 1)
+CHARGE=$(echo $BATTERY| awk '{print $4}' | sed 's/[^0-9]//g')
+STATUS=$(echo $BATTERY| awk '{print $3}' | sed 's/[^A-Za-z]//g')
+
+function getCharge {
+	local charge=$1
+	if [ "${charge}" == 100 ]; then
+		echo " "
+		return
+	elif [ "${charge}" -lt 100 ] && [ "${charge}" -gt 50 ]; then
+		echo " "
+		return
+	elif [ "${charge}" == 50 ]; then
+		echo " "
+		return
+	elif [ "${charge}" -lt 50 ] && [ "${charge}" -gt 14 ]; then
+		echo " "
+		return
+	else
+		echo " "
+		return
+	fi
+}
+
+if [ ${STATUS} == "Discharging" ]; then
+	echo "$(getCharge ${CHARGE})"
+	if [ "${CHARGE}" -lt 15 ]; then
+		exit 33
+	fi
+else
+	echo " "
+fi
+
