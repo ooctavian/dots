@@ -37,7 +37,8 @@ super + shift + x
     betterlockscreen -l blur dim 
 # Raise and lower the volume 
 {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
-    amixer -q sset Master {3%+,3%-,toggle}
+     pulsemixer {--change-volume +3,--change-volume -3,--toggle-mute}
+
 #    volume {up,down,mute}
 {XF86AudioNext,XF86AudioPlay,XF86AudioPrev}
     mpc {next,toggle,prev}
