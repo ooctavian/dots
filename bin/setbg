@@ -6,5 +6,4 @@
 # if you don't want a blakc screen.
 
 [ ! -z "$1" ] && cp "$1" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed."
-xwallpaper --zoom ~/.config/wall.png
-betterlockscreen -u ~/.config/wall.png 
+feh --bg-scale  ~/.config/wall.png
