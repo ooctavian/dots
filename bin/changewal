@@ -1,7 +1,8 @@
 #! /bin/sh
-imagepath="$HOME/Pictures/wall/"
-wall=$(ls $imagepath | dmenu -i  -p "Select wall")
-[ ! -z "$imagepath$wall" ] && cp "$imagepath$wall" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed."
-   xwallpaper --zoom ~/.config/wall.png
-   betterlockscreen -u ~/.config/wall.png
+imagepath="$HOME/Pictures/wallpapers/"
+category=$(ls $imagepath | dmenu -i  -p "Select category")
+wall=$(ls $imagepath/$category | dmenu -i  -p "Select wall")
+[ ! -z "$imagepath$category/$wall" ] && cp "$imagepath$category/$wall" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed." 
+feh --bg-fill $HOME/.config/wall.png &&
+betterlockscreen -u $imagepath$category/$wall
 
