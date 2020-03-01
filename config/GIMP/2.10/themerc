@@ -1,0 +1,10 @@
+# GIMP themerc
+#
+# This file is written on GIMP startup and on every theme change.
+# It is NOT supposed to be edited manually. Edit your personal
+# gtkrc file instead (/home/pika/.config/GIMP/2.10/gtkrc).
+
+include "/usr/local/share/gimp/themes/Dark/gtkrc"
+include "/usr/local/etc/gimp/2.2/gtkrc"
+
+# end of themerc

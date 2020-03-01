@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ario-options>
+  <option key="active-cover-providers">local,lastfm</option>
+  <option key="active-lyrics-providers">letras</option>
+  <option key="album_column_order">5</option>
+  <option key="album_column_size">200</option>
+  <option key="artist_column_order">4</option>
+  <option key="artist_column_size">200</option>
+  <option key="cover-providers">local,lastfm</option>
+  <option key="date_column_order">9</option>
+  <option key="disc_column_order">10</option>
+  <option key="duration_column_order">6</option>
+  <option key="duration_column_size">662</option>
+  <option key="file_column_order">7</option>
+  <option key="filesystem_hpaned_position">250</option>
+  <option key="first_time_flag">1</option>
+  <option key="genre_column_order">8</option>
+  <option key="lyrics-providers">letras</option>
+  <option key="pixbuf_column_order">1</option>
+  <option key="playlists_hpaned_position">250</option>
+  <option key="source">0</option>
+  <option key="sources-order">library,search,radios,storedplaylists,filesystem</option>
+  <option key="title_column_order">3</option>
+  <option key="title_column_size">200</option>
+  <option key="track_column_order">2</option>
+  <option key="track_column_size">50</option>
+  <option key="vpaned_position">400</option>
+  <option key="window_height">682</option>
+  <option key="window_maximized">0</option>
+  <option key="window_width">1334</option>
+</ario-options>

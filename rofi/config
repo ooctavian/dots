@@ -1,0 +1,2 @@
+rofi.theme: ~/.config/rofi/sidebar.rasi
+rofi.modi:drun,run,window,ssh
