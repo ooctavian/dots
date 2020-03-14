@@ -1,6 +1,6 @@
-#!/usr/local/bin/bash
+#!//bin/bash
 
-MUSIC_DIR=$HOME/documents/music
+MUSIC_DIR=$HOME/Music
 
 COVER=/tmp/cover.jpg
 
