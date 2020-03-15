@@ -1,0 +1,2 @@
+./.xprofile &
+exec openbox
