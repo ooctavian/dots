@@ -8,10 +8,10 @@ local dpi = xresources.apply_dpi
 
 local helpers = require("helpers")
 local pad = helpers.pad
-
+require("widgets.lock_screen")
 -- Appearance
 -- icomoon symbols
-local icon_font = "icomoon bold 45"
+local icon_font = "Icomoon Bold 45"
 local poweroff_text_icon = ""
 local reboot_text_icon = ""
 local suspend_text_icon = ""
@@ -37,19 +37,20 @@ local button_size = dpi(120)
 
 -- Commands
 local poweroff_command = function()
-    awful.spawn.with_shell("doas poweroff")
+    awful.spawn.with_shell("sudo poweroff")
 end
 local reboot_command = function()
-    awful.spawn.with_shell("doas reboot")
+    awful.spawn.with_shell("sudo reboot")
 end
 local suspend_command = function()
+    lock_screen_show()
     awful.spawn.with_shell(" suspend")
 end
 local exit_command = function()
     awesome.quit()
 end
 local lock_command = function()
-    awful.spawn.with_shell("mantablockscreen -sc")
+    lock_screen_show()
 end
 
 -- Helper function that generates the clickable buttons

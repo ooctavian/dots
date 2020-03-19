@@ -1,9 +1,2 @@
-
-rofi.font:	Hack Nerd Font 14
-rofi.modi:	window,run,drun,ssh
-rofi.theme: ~/.config/rofi/themes/googledark.rasi
-rofi.width: 20
-#rofi.lines: 12 
-#rofi.show-icons: True
-#rofi.xoffset: 2
-#rofi.yoffset: 34 
+rofi.theme: ~/.config/rofi/sidebar.rasi
+rofi.modi:drun,run,window,ssh
