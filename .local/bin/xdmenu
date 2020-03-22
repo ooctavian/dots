@@ -1,0 +1,2 @@
+#!/bin/sh
+dmenu_run -nb "$(xrdb -query | grep 'background:'| awk '{print $NF}')" -nf "$(xrdb -query | grep 'foreground:'| awk '{print $NF}')" -sb "$(xrdb -query | grep 'color4:'| awk '{print $NF}')" -sf "$(xrdb -query | grep 'background:'| awk '{print $NF}')" -fn "Iosevka Nerd Font 10"

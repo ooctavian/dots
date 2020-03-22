@@ -4,12 +4,22 @@
 * Table of Contents :TOC_3:noexport:
 - [[#description][Description]]
 - [[#screen][Screen]]
+* Installation 
++ Install Awesome-wm 
 
+for arch user =yay -s awesome-git= (easy af) 
+
+copy my files 
+
+run fc-cache  ( to load fonts) 
+
+enter awesomewm sension (either from Display manager or .xinitrc) 
+
+Profit
 * Description
-This is probably worst dotfiles you have ever seen.
-
-What will you to make them work:
-+ =bspwm= && =sxhkd=  --- window manager && hotkey daemon
+This is probably the worst dotfiles you have ever seen.
++ Awesome-git - my current wm
++ =bspwm= && =sxhkd=  ---  old window manager && hotkey daemon
 + =dmenu= && =st= -- program launcher &&  terminal
 + =polybar= -- bar
 * Screen

@@ -1,0 +1,2861 @@
+Mar 21 10:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 10:35 : exception: Failed to open '/home/pika/.config/mpd/state': No such file or directory
+Mar 21 10:35 : avahi: Service 'Music Player @ poketstation' successfully established.
+Mar 21 10:35 : client: [0] opened from 127.0.0.1:59054
+Mar 21 10:35 : client: [0] closed
+Mar 21 10:38 : client: [1] opened from 127.0.0.1:59124
+Mar 21 10:38 : client: [1] closed
+Mar 21 10:38 : client: [2] opened from 127.0.0.1:59128
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/01.You Know You're Right.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/03.Been A Son.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/14.The Man Who Sold The World.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/11.Rape Me.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/05.Smells Like Teen Spirit.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/04.Sliver.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/08.In Bloom.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/02.About A Girl.mp3
+Mar 21 10:39 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/09.Heart Shaped Box.mp3
+Mar 21 10:40 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/07.Lithium.mp3
+Mar 21 10:40 : client: [3] opened from 127.0.0.1:59246
+Mar 21 10:40 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/06.Come As You Are.mp3
+Mar 21 10:40 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/13.All Apologies.mp3
+Mar 21 10:40 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/12.Dumb.mp3
+Mar 21 10:40 : update: added Nirvana - Greatest Hits (2002) vtwin88cube/10.Pennyroyal Tea.mp3
+Mar 21 10:40 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 10:40 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 10:40 : client: [4] opened from 127.0.0.1:59250
+Mar 21 10:40 : client: [4] closed
+Mar 21 10:40 : client: [5] opened from 127.0.0.1:59254
+Mar 21 10:40 : client: [5] closed
+Mar 21 10:40 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 10:40 : client: [6] opened from 127.0.0.1:59258
+Mar 21 10:40 : client: [6] closed
+Mar 21 10:40 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 10:40 : client: [7] opened from 127.0.0.1:59262
+Mar 21 10:40 : client: [7] closed
+Mar 21 10:40 : client: [8] opened from 127.0.0.1:59266
+Mar 21 10:40 : client: [8] closed
+Mar 21 10:40 : client: [9] opened from 127.0.0.1:59270
+Mar 21 10:40 : client: [9] closed
+Mar 21 10:40 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:40 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 10:41 : client: [3] closed
+Mar 21 10:43 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/04.Sliver.mp3"
+Mar 21 10:43 : client: [10] opened from 127.0.0.1:59320
+Mar 21 10:43 : client: [10] closed
+Mar 21 10:43 : client: [11] opened from 127.0.0.1:59324
+Mar 21 10:43 : client: [11] closed
+Mar 21 10:47 : client: [12] opened from 127.0.0.1:59336
+Mar 21 10:47 : client: [12] closed
+Mar 21 10:47 : client: [2] closed
+Mar 21 10:47 : client: [13] opened from 127.0.0.1:59340
+Mar 21 10:48 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/05.Smells Like Teen Spirit.mp3"
+Mar 21 10:48 : client: [14] opened from 127.0.0.1:59344
+Mar 21 10:48 : client: [14] closed
+Mar 21 10:49 : client: [15] opened from 127.0.0.1:59348
+Mar 21 10:49 : client: [15] closed
+Mar 21 10:49 : client: [16] opened from 127.0.0.1:59352
+Mar 21 10:49 : client: [16] closed
+Mar 21 10:50 : client: [17] opened from 127.0.0.1:59360
+Mar 21 10:50 : client: [17] closed
+Mar 21 10:50 : client: [13] closed
+Mar 21 10:50 : client: [18] opened from 127.0.0.1:59364
+Mar 21 10:51 : client: [19] opened from 127.0.0.1:59368
+Mar 21 10:51 : client: [19] closed
+Mar 21 10:51 : client: [20] opened from 127.0.0.1:59372
+Mar 21 10:51 : client: [20] closed
+Mar 21 10:51 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 10:53 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/06.Come As You Are.mp3"
+Mar 21 10:53 : client: [21] opened from 127.0.0.1:59378
+Mar 21 10:53 : client: [21] closed
+Mar 21 10:57 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/07.Lithium.mp3"
+Mar 21 10:57 : client: [22] opened from 127.0.0.1:59432
+Mar 21 10:57 : client: [22] closed
+Mar 21 11:01 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/08.In Bloom.mp3"
+Mar 21 11:01 : client: [23] opened from 127.0.0.1:59442
+Mar 21 11:01 : client: [23] closed
+Mar 21 11:05 : client: [24] opened from 127.0.0.1:59512
+Mar 21 11:05 : client: [24] closed
+Mar 21 11:05 : client: [18] closed
+Mar 21 11:05 : client: [25] opened from 127.0.0.1:59516
+Mar 21 11:06 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/09.Heart Shaped Box.mp3"
+Mar 21 11:06 : client: [26] opened from 127.0.0.1:59520
+Mar 21 11:06 : client: [26] closed
+Mar 21 11:07 : client: [27] opened from 127.0.0.1:59526
+Mar 21 11:07 : client: [27] closed
+Mar 21 11:07 : client: [25] closed
+Mar 21 11:07 : client: [28] opened from 127.0.0.1:59530
+Mar 21 11:10 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/10.Pennyroyal Tea.mp3"
+Mar 21 11:10 : client: [29] opened from 127.0.0.1:59534
+Mar 21 11:10 : client: [29] closed
+Mar 21 11:12 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/11.Rape Me.mp3"
+Mar 21 11:12 : client: [30] opened from 127.0.0.1:59540
+Mar 21 11:12 : client: [30] closed
+Mar 21 11:15 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/12.Dumb.mp3"
+Mar 21 11:15 : client: [31] opened from 127.0.0.1:59544
+Mar 21 11:15 : client: [31] closed
+Mar 21 11:15 : client: [32] opened from 127.0.0.1:59548
+Mar 21 11:15 : client: [32] closed
+Mar 21 11:19 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/13.All Apologies.mp3"
+Mar 21 11:19 : client: [33] opened from 127.0.0.1:59710
+Mar 21 11:19 : client: [33] closed
+Mar 21 11:23 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/14.The Man Who Sold The World.mp3"
+Mar 21 11:23 : client: [34] opened from 127.0.0.1:59790
+Mar 21 11:23 : client: [34] closed
+Mar 21 11:23 : client: [35] opened from 127.0.0.1:59798
+Mar 21 11:23 : client: [35] closed
+Mar 21 11:23 : client: [36] opened from 127.0.0.1:59802
+Mar 21 11:23 : client: [36] closed
+Mar 21 11:23 : client: [37] opened from 127.0.0.1:59806
+Mar 21 11:23 : client: [37] closed
+Mar 21 11:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:26 : client: [38] opened from 127.0.0.1:59810
+Mar 21 11:26 : client: [38] closed
+Mar 21 11:26 : client: [28] closed
+Mar 21 11:26 : client: [39] opened from 127.0.0.1:59814
+Mar 21 11:27 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/01.You Know You're Right.mp3"
+Mar 21 11:27 : client: [40] opened from 127.0.0.1:59820
+Mar 21 11:27 : client: [40] closed
+Mar 21 11:30 : client: [41] opened from 127.0.0.1:59892
+Mar 21 11:30 : client: [41] closed
+Mar 21 11:30 : client: [42] opened from 127.0.0.1:59896
+Mar 21 11:30 : client: [42] closed
+Mar 21 11:36 : client: [43] opened from 127.0.0.1:59978
+Mar 21 11:36 : client: [43] closed
+Mar 21 11:36 : client: [39] closed
+Mar 21 11:36 : client: [44] opened from 127.0.0.1:59982
+Mar 21 11:38 : client: [45] opened from 127.0.0.1:60072
+Mar 21 11:38 : client: [45] closed
+Mar 21 11:38 : client: [46] opened from 127.0.0.1:60076
+Mar 21 11:38 : client: [46] closed
+Mar 21 11:38 : client: [47] opened from 127.0.0.1:60080
+Mar 21 11:38 : client: [47] closed
+Mar 21 11:38 : client: [48] opened from 127.0.0.1:60084
+Mar 21 11:38 : client: [48] closed
+Mar 21 11:38 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:38 : client: [49] opened from 127.0.0.1:60088
+Mar 21 11:38 : client: [49] closed
+Mar 21 11:38 : client: [50] opened from 127.0.0.1:60092
+Mar 21 11:38 : client: [50] closed
+Mar 21 11:38 : client: [51] opened from 127.0.0.1:60098
+Mar 21 11:38 : client: [51] closed
+Mar 21 11:38 : client: [52] opened from 127.0.0.1:60102
+Mar 21 11:38 : client: [52] closed
+Mar 21 11:38 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/02.About A Girl.mp3"
+Mar 21 11:38 : client: [53] opened from 127.0.0.1:60108
+Mar 21 11:38 : client: [53] closed
+Mar 21 11:38 : client: [54] opened from 127.0.0.1:60112
+Mar 21 11:38 : client: [54] closed
+Mar 21 11:38 : client: [55] opened from 127.0.0.1:60116
+Mar 21 11:38 : client: [55] closed
+Mar 21 11:38 : client: [56] opened from 127.0.0.1:60120
+Mar 21 11:38 : client: [56] closed
+Mar 21 11:38 : client: [57] opened from 127.0.0.1:60124
+Mar 21 11:38 : client: [57] closed
+Mar 21 11:38 : client: [58] opened from 127.0.0.1:60128
+Mar 21 11:38 : client: [58] closed
+Mar 21 11:38 : client: [59] opened from 127.0.0.1:60132
+Mar 21 11:38 : client: [59] closed
+Mar 21 11:38 : client: [60] opened from 127.0.0.1:60136
+Mar 21 11:38 : client: [60] closed
+Mar 21 11:38 : client: [61] opened from 127.0.0.1:60140
+Mar 21 11:38 : client: [61] closed
+Mar 21 11:38 : client: [62] opened from 127.0.0.1:60144
+Mar 21 11:38 : client: [62] closed
+Mar 21 11:38 : client: [63] opened from 127.0.0.1:60148
+Mar 21 11:38 : client: [63] closed
+Mar 21 11:38 : client: [64] opened from 127.0.0.1:60152
+Mar 21 11:38 : client: [64] closed
+Mar 21 11:38 : client: [65] opened from 127.0.0.1:60156
+Mar 21 11:38 : client: [65] closed
+Mar 21 11:38 : client: [66] opened from 127.0.0.1:60160
+Mar 21 11:38 : client: [66] closed
+Mar 21 11:38 : client: [67] opened from 127.0.0.1:60164
+Mar 21 11:38 : client: [67] closed
+Mar 21 11:38 : client: [68] opened from 127.0.0.1:60168
+Mar 21 11:38 : client: [68] closed
+Mar 21 11:38 : client: [69] opened from 127.0.0.1:60172
+Mar 21 11:38 : client: [69] closed
+Mar 21 11:38 : client: [70] opened from 127.0.0.1:60176
+Mar 21 11:38 : client: [70] closed
+Mar 21 11:38 : client: [71] opened from 127.0.0.1:60180
+Mar 21 11:38 : client: [71] closed
+Mar 21 11:39 : client: [72] opened from 127.0.0.1:60192
+Mar 21 11:39 : client: [72] closed
+Mar 21 11:39 : client: [73] opened from 127.0.0.1:60196
+Mar 21 11:39 : client: [73] closed
+Mar 21 11:39 : client: [74] opened from 127.0.0.1:60200
+Mar 21 11:39 : client: [74] closed
+Mar 21 11:39 : client: [75] opened from 127.0.0.1:60204
+Mar 21 11:39 : client: [75] closed
+Mar 21 11:42 : client: [76] opened from 127.0.0.1:60366
+Mar 21 11:42 : client: [77] opened from 127.0.0.1:60370
+Mar 21 11:42 : client: [77] closed
+Mar 21 11:42 : client: [78] opened from 127.0.0.1:60374
+Mar 21 11:42 : client: [78] closed
+Mar 21 11:42 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:42 : client: [76] closed
+Mar 21 11:42 : client: [79] opened from 127.0.0.1:60378
+Mar 21 11:42 : client: [80] opened from 127.0.0.1:60382
+Mar 21 11:42 : client: [80] closed
+Mar 21 11:42 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:42 : client: [81] opened from 127.0.0.1:60386
+Mar 21 11:42 : client: [81] closed
+Mar 21 11:42 : client: [82] opened from 127.0.0.1:60390
+Mar 21 11:42 : client: [82] closed
+Mar 21 11:42 : client: [79] closed
+Mar 21 11:42 : client: [83] opened from 127.0.0.1:60394
+Mar 21 11:42 : client: [84] opened from 127.0.0.1:60398
+Mar 21 11:42 : client: [85] opened from 127.0.0.1:60402
+Mar 21 11:42 : client: [84] closed
+Mar 21 11:42 : client: [85] closed
+Mar 21 11:42 : client: [86] opened from 127.0.0.1:60406
+Mar 21 11:42 : client: [86] closed
+Mar 21 11:42 : client: [87] opened from 127.0.0.1:60410
+Mar 21 11:42 : client: [87] closed
+Mar 21 11:42 : client: [88] opened from 127.0.0.1:60414
+Mar 21 11:42 : client: [89] opened from 127.0.0.1:60418
+Mar 21 11:42 : client: [88] closed
+Mar 21 11:42 : client: [89] closed
+Mar 21 11:42 : client: [90] opened from 127.0.0.1:60422
+Mar 21 11:42 : client: [90] closed
+Mar 21 11:42 : client: [91] opened from 127.0.0.1:60426
+Mar 21 11:42 : client: [92] opened from 127.0.0.1:60430
+Mar 21 11:42 : client: [93] opened from 127.0.0.1:60434
+Mar 21 11:42 : client: [91] closed
+Mar 21 11:42 : client: [92] closed
+Mar 21 11:42 : client: [93] closed
+Mar 21 11:42 : client: [94] opened from 127.0.0.1:60438
+Mar 21 11:42 : client: [94] closed
+Mar 21 11:43 : client: [95] opened from 127.0.0.1:60442
+Mar 21 11:43 : client: [96] opened from 127.0.0.1:60446
+Mar 21 11:43 : client: [95] closed
+Mar 21 11:43 : client: [97] opened from 127.0.0.1:60450
+Mar 21 11:43 : client: [97] closed
+Mar 21 11:43 : client: [96] closed
+Mar 21 11:43 : client: [98] opened from 127.0.0.1:60454
+Mar 21 11:43 : client: [98] closed
+Mar 21 11:43 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:45 : client: [99] opened from 127.0.0.1:60458
+Mar 21 11:45 : client: [100] opened from 127.0.0.1:60462
+Mar 21 11:45 : client: [99] closed
+Mar 21 11:45 : client: [101] opened from 127.0.0.1:60466
+Mar 21 11:45 : client: [101] closed
+Mar 21 11:45 : client: [100] closed
+Mar 21 11:45 : client: [102] opened from 127.0.0.1:60470
+Mar 21 11:45 : client: [102] closed
+Mar 21 11:45 : client: [103] opened from 127.0.0.1:60474
+Mar 21 11:45 : client: [104] opened from 127.0.0.1:60478
+Mar 21 11:45 : client: [105] opened from 127.0.0.1:60482
+Mar 21 11:45 : client: [103] closed
+Mar 21 11:45 : client: [104] closed
+Mar 21 11:45 : client: [105] closed
+Mar 21 11:45 : client: [106] opened from 127.0.0.1:60486
+Mar 21 11:45 : client: [106] closed
+Mar 21 11:45 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:45 : client: [107] opened from 127.0.0.1:60490
+Mar 21 11:45 : client: [107] closed
+Mar 21 11:45 : client: [44] closed
+Mar 21 11:45 : client: [108] opened from 127.0.0.1:60494
+Mar 21 11:45 : client: [109] opened from 127.0.0.1:60498
+Mar 21 11:45 : client: [110] opened from 127.0.0.1:60502
+Mar 21 11:45 : client: [111] opened from 127.0.0.1:60506
+Mar 21 11:45 : client: [109] closed
+Mar 21 11:45 : client: [111] closed
+Mar 21 11:45 : client: [110] closed
+Mar 21 11:45 : client: [112] opened from 127.0.0.1:60510
+Mar 21 11:45 : client: [112] closed
+Mar 21 11:45 : client: [113] opened from 127.0.0.1:60514
+Mar 21 11:45 : client: [113] closed
+Mar 21 11:45 : client: [114] opened from 127.0.0.1:60518
+Mar 21 11:45 : client: [115] opened from 127.0.0.1:60522
+Mar 21 11:45 : client: [115] closed
+Mar 21 11:45 : client: [114] closed
+Mar 21 11:45 : client: [116] opened from 127.0.0.1:60526
+Mar 21 11:45 : client: [116] closed
+Mar 21 11:45 : client: [117] opened from 127.0.0.1:60530
+Mar 21 11:45 : client: [117] closed
+Mar 21 11:45 : client: [118] opened from 127.0.0.1:60538
+Mar 21 11:45 : client: [119] opened from 127.0.0.1:60534
+Mar 21 11:45 : client: [118] closed
+Mar 21 11:45 : client: [119] closed
+Mar 21 11:45 : client: [120] opened from 127.0.0.1:60542
+Mar 21 11:45 : client: [120] closed
+Mar 21 11:45 : client: [121] opened from 127.0.0.1:60546
+Mar 21 11:45 : client: [121] closed
+Mar 21 11:45 : client: [122] opened from 127.0.0.1:60550
+Mar 21 11:45 : client: [123] opened from 127.0.0.1:60554
+Mar 21 11:45 : client: [123] closed
+Mar 21 11:45 : client: [122] closed
+Mar 21 11:45 : client: [124] opened from 127.0.0.1:60558
+Mar 21 11:45 : client: [124] closed
+Mar 21 11:45 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:45 : client: [125] opened from 127.0.0.1:60562
+Mar 21 11:45 : client: [125] closed
+Mar 21 11:45 : client: [126] opened from 127.0.0.1:60566
+Mar 21 11:45 : client: [127] opened from 127.0.0.1:60570
+Mar 21 11:45 : client: [126] closed
+Mar 21 11:45 : client: [127] closed
+Mar 21 11:45 : client: [128] opened from 127.0.0.1:60574
+Mar 21 11:45 : client: [128] closed
+Mar 21 11:45 : client: [129] opened from 127.0.0.1:60578
+Mar 21 11:45 : client: [129] closed
+Mar 21 11:45 : client: [130] opened from 127.0.0.1:60582
+Mar 21 11:45 : client: [131] opened from 127.0.0.1:60586
+Mar 21 11:45 : client: [131] closed
+Mar 21 11:45 : client: [130] closed
+Mar 21 11:45 : client: [132] opened from 127.0.0.1:60590
+Mar 21 11:45 : client: [132] closed
+Mar 21 11:45 : client: [133] opened from 127.0.0.1:60594
+Mar 21 11:45 : client: [133] closed
+Mar 21 11:45 : client: [134] opened from 127.0.0.1:60598
+Mar 21 11:45 : client: [135] opened from 127.0.0.1:60602
+Mar 21 11:45 : client: [134] closed
+Mar 21 11:45 : client: [135] closed
+Mar 21 11:45 : client: [136] opened from 127.0.0.1:60606
+Mar 21 11:45 : client: [136] closed
+Mar 21 11:45 : client: [137] opened from 127.0.0.1:60610
+Mar 21 11:45 : client: [137] closed
+Mar 21 11:45 : client: [138] opened from 127.0.0.1:60614
+Mar 21 11:45 : client: [138] closed
+Mar 21 11:45 : client: [139] opened from 127.0.0.1:60618
+Mar 21 11:45 : client: [139] closed
+Mar 21 11:45 : client: [140] opened from 127.0.0.1:60622
+Mar 21 11:45 : client: [140] closed
+Mar 21 11:45 : client: [141] opened from 127.0.0.1:60626
+Mar 21 11:45 : client: [141] closed
+Mar 21 11:45 : client: [142] opened from 127.0.0.1:60630
+Mar 21 11:45 : client: [142] closed
+Mar 21 11:45 : client: [143] opened from 127.0.0.1:60634
+Mar 21 11:45 : client: [143] closed
+Mar 21 11:45 : client: [144] opened from 127.0.0.1:60638
+Mar 21 11:45 : client: [144] closed
+Mar 21 11:45 : client: [145] opened from 127.0.0.1:60642
+Mar 21 11:45 : client: [145] closed
+Mar 21 11:45 : client: [146] opened from 127.0.0.1:60646
+Mar 21 11:45 : client: [147] opened from 127.0.0.1:60650
+Mar 21 11:45 : client: [147] closed
+Mar 21 11:45 : client: [148] opened from 127.0.0.1:60654
+Mar 21 11:45 : client: [146] closed
+Mar 21 11:45 : client: [148] closed
+Mar 21 11:45 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:45 : client: [149] opened from 127.0.0.1:60658
+Mar 21 11:45 : client: [149] closed
+Mar 21 11:45 : client: [150] opened from 127.0.0.1:60662
+Mar 21 11:45 : client: [151] opened from 127.0.0.1:60666
+Mar 21 11:45 : client: [150] closed
+Mar 21 11:45 : client: [151] closed
+Mar 21 11:45 : client: [152] opened from 127.0.0.1:60670
+Mar 21 11:45 : client: [152] closed
+Mar 21 11:45 : client: [153] opened from 127.0.0.1:60674
+Mar 21 11:45 : client: [153] closed
+Mar 21 11:45 : client: [154] opened from 127.0.0.1:60678
+Mar 21 11:45 : client: [155] opened from 127.0.0.1:60682
+Mar 21 11:45 : client: [154] closed
+Mar 21 11:45 : client: [155] closed
+Mar 21 11:45 : client: [156] opened from 127.0.0.1:60686
+Mar 21 11:45 : client: [156] closed
+Mar 21 11:45 : client: [157] opened from 127.0.0.1:60690
+Mar 21 11:45 : client: [157] closed
+Mar 21 11:45 : client: [158] opened from 127.0.0.1:60694
+Mar 21 11:45 : client: [158] closed
+Mar 21 11:45 : client: [159] opened from 127.0.0.1:60700
+Mar 21 11:45 : client: [160] opened from 127.0.0.1:60702
+Mar 21 11:45 : client: [159] closed
+Mar 21 11:45 : client: [160] closed
+Mar 21 11:45 : client: [161] opened from 127.0.0.1:60706
+Mar 21 11:45 : client: [161] closed
+Mar 21 11:45 : client: [162] opened from 127.0.0.1:60710
+Mar 21 11:45 : client: [162] closed
+Mar 21 11:45 : client: [163] opened from 127.0.0.1:60714
+Mar 21 11:45 : client: [164] opened from 127.0.0.1:60718
+Mar 21 11:45 : client: [163] closed
+Mar 21 11:45 : client: [164] closed
+Mar 21 11:45 : client: [165] opened from 127.0.0.1:60722
+Mar 21 11:45 : client: [165] closed
+Mar 21 11:45 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:45 : client: [166] opened from 127.0.0.1:60726
+Mar 21 11:45 : client: [167] opened from 127.0.0.1:60730
+Mar 21 11:45 : client: [166] closed
+Mar 21 11:45 : client: [168] opened from 127.0.0.1:60734
+Mar 21 11:45 : client: [168] closed
+Mar 21 11:45 : client: [167] closed
+Mar 21 11:45 : client: [169] opened from 127.0.0.1:60738
+Mar 21 11:45 : client: [169] closed
+Mar 21 11:45 : client: [170] opened from 127.0.0.1:60742
+Mar 21 11:45 : client: [170] closed
+Mar 21 11:45 : client: [171] opened from 127.0.0.1:60746
+Mar 21 11:45 : client: [172] opened from 127.0.0.1:60750
+Mar 21 11:45 : client: [171] closed
+Mar 21 11:45 : client: [172] closed
+Mar 21 11:45 : client: [173] opened from 127.0.0.1:60754
+Mar 21 11:45 : client: [173] closed
+Mar 21 11:45 : client: [174] opened from 127.0.0.1:60758
+Mar 21 11:45 : client: [174] closed
+Mar 21 11:45 : client: [175] opened from 127.0.0.1:60762
+Mar 21 11:45 : client: [176] opened from 127.0.0.1:60766
+Mar 21 11:45 : client: [176] closed
+Mar 21 11:45 : client: [177] opened from 127.0.0.1:60770
+Mar 21 11:45 : client: [175] closed
+Mar 21 11:45 : client: [177] closed
+Mar 21 11:45 : client: [178] opened from 127.0.0.1:60774
+Mar 21 11:45 : client: [178] closed
+Mar 21 11:45 : client: [179] opened from 127.0.0.1:60778
+Mar 21 11:45 : client: [179] closed
+Mar 21 11:45 : client: [180] opened from 127.0.0.1:60782
+Mar 21 11:45 : client: [180] closed
+Mar 21 11:45 : client: [181] opened from 127.0.0.1:60786
+Mar 21 11:45 : client: [182] opened from 127.0.0.1:60790
+Mar 21 11:45 : client: [183] opened from 127.0.0.1:60794
+Mar 21 11:45 : client: [181] closed
+Mar 21 11:45 : client: [182] closed
+Mar 21 11:45 : client: [183] closed
+Mar 21 11:45 : client: [184] opened from 127.0.0.1:60798
+Mar 21 11:45 : client: [184] closed
+Mar 21 11:45 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:47 : client: [185] opened from 127.0.0.1:60804
+Mar 21 11:47 : client: [185] closed
+Mar 21 11:47 : client: [186] opened from 127.0.0.1:60808
+Mar 21 11:47 : client: [187] opened from 127.0.0.1:60812
+Mar 21 11:47 : client: [186] closed
+Mar 21 11:47 : client: [187] closed
+Mar 21 11:47 : client: [188] opened from 127.0.0.1:60816
+Mar 21 11:47 : client: [188] closed
+Mar 21 11:47 : client: [189] opened from 127.0.0.1:60820
+Mar 21 11:47 : client: [190] opened from 127.0.0.1:60824
+Mar 21 11:47 : client: [189] closed
+Mar 21 11:47 : client: [191] opened from 127.0.0.1:60828
+Mar 21 11:47 : client: [190] closed
+Mar 21 11:47 : client: [191] closed
+Mar 21 11:47 : client: [192] opened from 127.0.0.1:60832
+Mar 21 11:47 : client: [192] closed
+Mar 21 11:47 : client: [193] opened from 127.0.0.1:60836
+Mar 21 11:47 : client: [193] closed
+Mar 21 11:47 : client: [194] opened from 127.0.0.1:60840
+Mar 21 11:47 : client: [195] opened from 127.0.0.1:60844
+Mar 21 11:47 : client: [194] closed
+Mar 21 11:47 : client: [196] opened from 127.0.0.1:60848
+Mar 21 11:47 : client: [195] closed
+Mar 21 11:47 : client: [196] closed
+Mar 21 11:47 : client: [197] opened from 127.0.0.1:60852
+Mar 21 11:47 : client: [197] closed
+Mar 21 11:47 : client: [198] opened from 127.0.0.1:60856
+Mar 21 11:47 : client: [199] opened from 127.0.0.1:60860
+Mar 21 11:47 : client: [199] closed
+Mar 21 11:47 : client: [198] closed
+Mar 21 11:47 : client: [200] opened from 127.0.0.1:60864
+Mar 21 11:47 : client: [200] closed
+Mar 21 11:47 : client: [201] opened from 127.0.0.1:60868
+Mar 21 11:47 : client: [201] closed
+Mar 21 11:47 : client: [202] opened from 127.0.0.1:60872
+Mar 21 11:47 : client: [203] opened from 127.0.0.1:60876
+Mar 21 11:47 : client: [203] closed
+Mar 21 11:47 : client: [202] closed
+Mar 21 11:47 : client: [204] opened from 127.0.0.1:60880
+Mar 21 11:47 : client: [204] closed
+Mar 21 11:47 : client: [205] opened from 127.0.0.1:60884
+Mar 21 11:47 : client: [205] closed
+Mar 21 11:47 : client: [206] opened from 127.0.0.1:60888
+Mar 21 11:47 : client: [206] closed
+Mar 21 11:47 : client: [207] opened from 127.0.0.1:60892
+Mar 21 11:47 : client: [207] closed
+Mar 21 11:47 : client: [208] opened from 127.0.0.1:60896
+Mar 21 11:47 : client: [208] closed
+Mar 21 11:47 : client: [209] opened from 127.0.0.1:60900
+Mar 21 11:47 : client: [209] closed
+Mar 21 11:47 : client: [210] opened from 127.0.0.1:60904
+Mar 21 11:47 : client: [210] closed
+Mar 21 11:47 : client: [211] opened from 127.0.0.1:60908
+Mar 21 11:47 : client: [211] closed
+Mar 21 11:47 : client: [212] opened from 127.0.0.1:60912
+Mar 21 11:47 : client: [213] opened from 127.0.0.1:60916
+Mar 21 11:47 : client: [212] closed
+Mar 21 11:47 : client: [214] opened from 127.0.0.1:60920
+Mar 21 11:47 : client: [213] closed
+Mar 21 11:47 : client: [214] closed
+Mar 21 11:47 : client: [215] opened from 127.0.0.1:60924
+Mar 21 11:47 : client: [215] closed
+Mar 21 11:47 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:47 : client: [216] opened from 127.0.0.1:60928
+Mar 21 11:47 : client: [217] opened from 127.0.0.1:60936
+Mar 21 11:47 : client: [218] opened from 127.0.0.1:60934
+Mar 21 11:47 : client: [218] closed
+Mar 21 11:47 : client: [216] closed
+Mar 21 11:47 : client: [217] closed
+Mar 21 11:47 : client: [219] opened from 127.0.0.1:60942
+Mar 21 11:47 : client: [219] closed
+Mar 21 11:47 : client: [220] opened from 127.0.0.1:60946
+Mar 21 11:47 : client: [221] opened from 127.0.0.1:60950
+Mar 21 11:47 : client: [220] closed
+Mar 21 11:47 : client: [222] opened from 127.0.0.1:60954
+Mar 21 11:47 : client: [221] closed
+Mar 21 11:47 : client: [223] opened from 127.0.0.1:60958
+Mar 21 11:47 : client: [222] closed
+Mar 21 11:47 : client: [223] closed
+Mar 21 11:47 : client: [224] opened from 127.0.0.1:60962
+Mar 21 11:47 : client: [225] opened from 127.0.0.1:60966
+Mar 21 11:47 : client: [224] closed
+Mar 21 11:47 : client: [226] opened from 127.0.0.1:60970
+Mar 21 11:47 : client: [226] closed
+Mar 21 11:47 : client: [225] closed
+Mar 21 11:47 : client: [227] opened from 127.0.0.1:60974
+Mar 21 11:47 : client: [227] closed
+Mar 21 11:47 : client: [228] opened from 127.0.0.1:60978
+Mar 21 11:47 : client: [229] opened from 127.0.0.1:60982
+Mar 21 11:47 : client: [230] opened from 127.0.0.1:60986
+Mar 21 11:47 : client: [230] closed
+Mar 21 11:47 : client: [228] closed
+Mar 21 11:47 : client: [229] closed
+Mar 21 11:47 : client: [231] opened from 127.0.0.1:60990
+Mar 21 11:47 : client: [231] closed
+Mar 21 11:47 : client: [232] opened from 127.0.0.1:60994
+Mar 21 11:47 : client: [233] opened from 127.0.0.1:32770
+Mar 21 11:47 : client: [232] closed
+Mar 21 11:47 : client: [234] opened from 127.0.0.1:60998
+Mar 21 11:47 : client: [233] closed
+Mar 21 11:47 : client: [234] closed
+Mar 21 11:47 : client: [235] opened from 127.0.0.1:32774
+Mar 21 11:47 : client: [235] closed
+Mar 21 11:47 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:49 : client: [236] opened from 127.0.0.1:32826
+Mar 21 11:49 : client: [237] opened from 127.0.0.1:32830
+Mar 21 11:49 : client: [238] opened from 127.0.0.1:32834
+Mar 21 11:49 : client: [237] closed
+Mar 21 11:49 : client: [238] closed
+Mar 21 11:49 : client: [239] opened from 127.0.0.1:32838
+Mar 21 11:49 : client: [239] closed
+Mar 21 11:49 : client: [240] opened from 127.0.0.1:32842
+Mar 21 11:49 : client: [241] opened from 127.0.0.1:32846
+Mar 21 11:49 : client: [242] opened from 127.0.0.1:32850
+Mar 21 11:49 : client: [241] closed
+Mar 21 11:49 : client: [240] closed
+Mar 21 11:49 : client: [243] opened from 127.0.0.1:32854
+Mar 21 11:49 : client: [244] opened from 127.0.0.1:32858
+Mar 21 11:49 : client: [242] closed
+Mar 21 11:49 : client: [244] closed
+Mar 21 11:49 : client: [245] opened from 127.0.0.1:32862
+Mar 21 11:49 : client: [243] closed
+Mar 21 11:49 : client: [246] opened from 127.0.0.1:32866
+Mar 21 11:49 : client: [245] closed
+Mar 21 11:49 : client: [246] closed
+Mar 21 11:49 : client: [247] opened from 127.0.0.1:32870
+Mar 21 11:49 : client: [248] opened from 127.0.0.1:32874
+Mar 21 11:49 : client: [247] closed
+Mar 21 11:49 : client: [249] opened from 127.0.0.1:32878
+Mar 21 11:49 : client: [250] opened from 127.0.0.1:32882
+Mar 21 11:49 : client: [248] closed
+Mar 21 11:49 : client: [251] opened from 127.0.0.1:32886
+Mar 21 11:49 : client: [250] closed
+Mar 21 11:49 : client: [249] closed
+Mar 21 11:49 : client: [252] opened from 127.0.0.1:32890
+Mar 21 11:49 : client: [251] closed
+Mar 21 11:49 : client: [252] closed
+Mar 21 11:49 : client: [253] opened from 127.0.0.1:32894
+Mar 21 11:49 : client: [253] closed
+Mar 21 11:49 : client: [254] opened from 127.0.0.1:32898
+Mar 21 11:49 : client: [254] closed
+Mar 21 11:49 : client: [255] opened from 127.0.0.1:32902
+Mar 21 11:49 : client: [256] opened from 127.0.0.1:32906
+Mar 21 11:49 : client: [257] opened from 127.0.0.1:32910
+Mar 21 11:49 : client: [257] closed
+Mar 21 11:49 : client: [255] closed
+Mar 21 11:49 : client: [256] closed
+Mar 21 11:49 : client: [258] opened from 127.0.0.1:32914
+Mar 21 11:49 : client: [259] opened from 127.0.0.1:32918
+Mar 21 11:49 : client: [260] opened from 127.0.0.1:32922
+Mar 21 11:49 : client: [259] closed
+Mar 21 11:49 : client: [260] closed
+Mar 21 11:49 : client: [258] closed
+Mar 21 11:49 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:49 : client: [261] opened from 127.0.0.1:32926
+Mar 21 11:49 : client: [262] opened from 127.0.0.1:32930
+Mar 21 11:49 : client: [263] opened from 127.0.0.1:32934
+Mar 21 11:49 : client: [261] closed
+Mar 21 11:49 : client: [264] opened from 127.0.0.1:32938
+Mar 21 11:49 : client: [265] opened from 127.0.0.1:32942
+Mar 21 11:49 : client: [262] closed
+Mar 21 11:49 : client: [263] closed
+Mar 21 11:49 : client: [264] closed
+Mar 21 11:49 : client: [266] opened from 127.0.0.1:32946
+Mar 21 11:49 : client: [265] closed
+Mar 21 11:49 : client: [266] closed
+Mar 21 11:49 : client: [267] opened from 127.0.0.1:32950
+Mar 21 11:49 : client: [267] closed
+Mar 21 11:49 : client: [236] closed
+Mar 21 11:49 : client: [268] opened from 127.0.0.1:32958
+Mar 21 11:49 : client: [269] opened from 127.0.0.1:32962
+Mar 21 11:49 : client: [269] closed
+Mar 21 11:49 : client: [270] opened from 127.0.0.1:32966
+Mar 21 11:49 : client: [270] closed
+Mar 21 11:49 : client: [271] opened from 127.0.0.1:32970
+Mar 21 11:49 : client: [271] closed
+Mar 21 11:49 : client: [272] opened from 127.0.0.1:32974
+Mar 21 11:49 : client: [273] opened from 127.0.0.1:32978
+Mar 21 11:49 : client: [274] opened from 127.0.0.1:32982
+Mar 21 11:49 : client: [272] closed
+Mar 21 11:49 : client: [275] opened from 127.0.0.1:32986
+Mar 21 11:49 : client: [273] closed
+Mar 21 11:49 : client: [276] opened from 127.0.0.1:32990
+Mar 21 11:49 : client: [274] closed
+Mar 21 11:49 : client: [277] opened from 127.0.0.1:32994
+Mar 21 11:49 : client: [275] closed
+Mar 21 11:49 : client: [278] opened from 127.0.0.1:32998
+Mar 21 11:49 : client: [276] closed
+Mar 21 11:49 : client: [277] closed
+Mar 21 11:49 : client: [278] closed
+Mar 21 11:49 : client: [279] opened from 127.0.0.1:33002
+Mar 21 11:49 : client: [280] opened from 127.0.0.1:33006
+Mar 21 11:49 : client: [281] opened from 127.0.0.1:33010
+Mar 21 11:49 : client: [280] closed
+Mar 21 11:49 : client: [281] closed
+Mar 21 11:49 : client: [279] closed
+Mar 21 11:49 : client: [282] opened from 127.0.0.1:33014
+Mar 21 11:49 : client: [283] opened from 127.0.0.1:33018
+Mar 21 11:49 : client: [284] opened from 127.0.0.1:33022
+Mar 21 11:49 : client: [283] closed
+Mar 21 11:49 : client: [285] opened from 127.0.0.1:33026
+Mar 21 11:49 : client: [284] closed
+Mar 21 11:49 : client: [282] closed
+Mar 21 11:49 : client: [285] closed
+Mar 21 11:49 : client: [286] opened from 127.0.0.1:33030
+Mar 21 11:49 : client: [287] opened from 127.0.0.1:33034
+Mar 21 11:49 : client: [288] opened from 127.0.0.1:33038
+Mar 21 11:49 : client: [289] opened from 127.0.0.1:33042
+Mar 21 11:49 : client: [286] closed
+Mar 21 11:49 : client: [288] closed
+Mar 21 11:49 : client: [287] closed
+Mar 21 11:49 : client: [290] opened from 127.0.0.1:33046
+Mar 21 11:49 : client: [289] closed
+Mar 21 11:49 : client: [291] opened from 127.0.0.1:33050
+Mar 21 11:49 : client: [290] closed
+Mar 21 11:49 : client: [291] closed
+Mar 21 11:49 : client: [292] opened from 127.0.0.1:33054
+Mar 21 11:49 : client: [292] closed
+Mar 21 11:49 : client: [293] opened from 127.0.0.1:33058
+Mar 21 11:49 : client: [293] closed
+Mar 21 11:49 : client: [294] opened from 127.0.0.1:33062
+Mar 21 11:49 : client: [295] opened from 127.0.0.1:33066
+Mar 21 11:49 : client: [294] closed
+Mar 21 11:49 : client: [295] closed
+Mar 21 11:49 : client: [296] opened from 127.0.0.1:33070
+Mar 21 11:49 : client: [297] opened from 127.0.0.1:33074
+Mar 21 11:49 : client: [298] opened from 127.0.0.1:33078
+Mar 21 11:49 : client: [296] closed
+Mar 21 11:49 : client: [297] closed
+Mar 21 11:49 : client: [298] closed
+Mar 21 11:49 : client: [299] opened from 127.0.0.1:33082
+Mar 21 11:49 : client: [299] closed
+Mar 21 11:49 : client: [300] opened from 127.0.0.1:33086
+Mar 21 11:49 : client: [300] closed
+Mar 21 11:49 : client: [301] opened from 127.0.0.1:33090
+Mar 21 11:49 : client: [302] opened from 127.0.0.1:33094
+Mar 21 11:49 : client: [303] opened from 127.0.0.1:33098
+Mar 21 11:49 : client: [302] closed
+Mar 21 11:49 : client: [301] closed
+Mar 21 11:49 : client: [304] opened from 127.0.0.1:33102
+Mar 21 11:49 : client: [305] opened from 127.0.0.1:33106
+Mar 21 11:49 : client: [305] closed
+Mar 21 11:49 : client: [304] closed
+Mar 21 11:49 : client: [303] closed
+Mar 21 11:49 : client: [306] opened from 127.0.0.1:33110
+Mar 21 11:49 : client: [306] closed
+Mar 21 11:49 : client: [307] opened from 127.0.0.1:33114
+Mar 21 11:49 : client: [307] closed
+Mar 21 11:49 : client: [308] opened from 127.0.0.1:33118
+Mar 21 11:49 : client: [308] closed
+Mar 21 11:49 : client: [309] opened from 127.0.0.1:33122
+Mar 21 11:49 : client: [310] opened from 127.0.0.1:33126
+Mar 21 11:49 : client: [311] opened from 127.0.0.1:33130
+Mar 21 11:49 : client: [312] opened from 127.0.0.1:33134
+Mar 21 11:49 : client: [309] closed
+Mar 21 11:49 : client: [312] closed
+Mar 21 11:49 : client: [311] closed
+Mar 21 11:49 : client: [310] closed
+Mar 21 11:49 : client: [313] opened from 127.0.0.1:33138
+Mar 21 11:49 : client: [314] opened from 127.0.0.1:33142
+Mar 21 11:49 : client: [314] closed
+Mar 21 11:49 : client: [313] closed
+Mar 21 11:49 : client: [315] opened from 127.0.0.1:33152
+Mar 21 11:49 : client: [316] opened from 127.0.0.1:33150
+Mar 21 11:49 : client: [317] opened from 127.0.0.1:33158
+Mar 21 11:49 : client: [315] closed
+Mar 21 11:49 : client: [318] opened from 127.0.0.1:33162
+Mar 21 11:49 : client: [319] opened from 127.0.0.1:33166
+Mar 21 11:49 : client: [317] closed
+Mar 21 11:49 : client: [316] closed
+Mar 21 11:49 : client: [319] closed
+Mar 21 11:49 : client: [320] opened from 127.0.0.1:33170
+Mar 21 11:49 : client: [321] opened from 127.0.0.1:33174
+Mar 21 11:49 : client: [318] closed
+Mar 21 11:49 : client: [320] closed
+Mar 21 11:49 : client: [321] closed
+Mar 21 11:49 : client: [322] opened from 127.0.0.1:33178
+Mar 21 11:49 : client: [323] opened from 127.0.0.1:33182
+Mar 21 11:49 : client: [324] opened from 127.0.0.1:33186
+Mar 21 11:49 : client: [325] opened from 127.0.0.1:33190
+Mar 21 11:49 : client: [325] closed
+Mar 21 11:49 : client: [326] opened from 127.0.0.1:33194
+Mar 21 11:49 : client: [322] closed
+Mar 21 11:49 : client: [326] closed
+Mar 21 11:49 : client: [327] opened from 127.0.0.1:33198
+Mar 21 11:49 : client: [323] closed
+Mar 21 11:49 : client: [324] closed
+Mar 21 11:49 : client: [328] opened from 127.0.0.1:33202
+Mar 21 11:49 : client: [327] closed
+Mar 21 11:49 : client: [328] closed
+Mar 21 11:49 : client: [329] opened from 127.0.0.1:33206
+Mar 21 11:49 : client: [329] closed
+Mar 21 11:49 : client: [330] opened from 127.0.0.1:33210
+Mar 21 11:49 : client: [331] opened from 127.0.0.1:33214
+Mar 21 11:49 : client: [332] opened from 127.0.0.1:33218
+Mar 21 11:49 : client: [333] opened from 127.0.0.1:33222
+Mar 21 11:49 : client: [332] closed
+Mar 21 11:49 : client: [331] closed
+Mar 21 11:49 : client: [330] closed
+Mar 21 11:49 : client: [333] closed
+Mar 21 11:49 : client: [334] opened from 127.0.0.1:33226
+Mar 21 11:49 : client: [335] opened from 127.0.0.1:33230
+Mar 21 11:49 : client: [335] closed
+Mar 21 11:49 : client: [334] closed
+Mar 21 11:49 : client: [336] opened from 127.0.0.1:33234
+Mar 21 11:49 : client: [337] opened from 127.0.0.1:33242
+Mar 21 11:49 : client: [338] opened from 127.0.0.1:33238
+Mar 21 11:49 : client: [336] closed
+Mar 21 11:49 : client: [337] closed
+Mar 21 11:49 : client: [338] closed
+Mar 21 11:49 : client: [339] opened from 127.0.0.1:33246
+Mar 21 11:49 : client: [340] opened from 127.0.0.1:33250
+Mar 21 11:49 : client: [340] closed
+Mar 21 11:49 : client: [341] opened from 127.0.0.1:33254
+Mar 21 11:49 : client: [342] opened from 127.0.0.1:33258
+Mar 21 11:49 : client: [339] closed
+Mar 21 11:49 : client: [341] closed
+Mar 21 11:49 : client: [342] closed
+Mar 21 11:49 : client: [343] opened from 127.0.0.1:33262
+Mar 21 11:49 : client: [343] closed
+Mar 21 11:49 : client: [344] opened from 127.0.0.1:33266
+Mar 21 11:49 : client: [345] opened from 127.0.0.1:33270
+Mar 21 11:49 : client: [346] opened from 127.0.0.1:33274
+Mar 21 11:49 : client: [346] closed
+Mar 21 11:49 : client: [345] closed
+Mar 21 11:49 : client: [347] opened from 127.0.0.1:33278
+Mar 21 11:49 : client: [344] closed
+Mar 21 11:49 : client: [348] opened from 127.0.0.1:33282
+Mar 21 11:49 : client: [347] closed
+Mar 21 11:49 : client: [349] opened from 127.0.0.1:33286
+Mar 21 11:49 : client: [348] closed
+Mar 21 11:49 : client: [349] closed
+Mar 21 11:49 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:49 : client: [268] closed
+Mar 21 11:50 : client: [350] opened from 127.0.0.1:33290
+Mar 21 11:50 : client: [351] opened from 127.0.0.1:33294
+Mar 21 11:50 : client: [352] opened from 127.0.0.1:33298
+Mar 21 11:50 : client: [351] closed
+Mar 21 11:50 : client: [350] closed
+Mar 21 11:50 : client: [352] closed
+Mar 21 11:50 : client: [353] opened from 127.0.0.1:33302
+Mar 21 11:50 : client: [353] closed
+Mar 21 11:50 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:50 : client: [354] opened from 127.0.0.1:33306
+Mar 21 11:50 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/14.The Man Who Sold The World.mp3"
+Mar 21 11:50 : client: [354] closed
+Mar 21 11:50 : client: [355] opened from 127.0.0.1:33310
+Mar 21 11:50 : client: [355] closed
+Mar 21 11:50 : client: [356] opened from 127.0.0.1:33314
+Mar 21 11:50 : client: [356] closed
+Mar 21 11:50 : client: [357] opened from 127.0.0.1:33318
+Mar 21 11:50 : client: [358] opened from 127.0.0.1:33322
+Mar 21 11:50 : client: [358] closed
+Mar 21 11:50 : client: [359] opened from 127.0.0.1:33326
+Mar 21 11:50 : client: [357] closed
+Mar 21 11:50 : client: [359] closed
+Mar 21 11:50 : client: [360] opened from 127.0.0.1:33330
+Mar 21 11:50 : client: [360] closed
+Mar 21 11:50 : client: [361] opened from 127.0.0.1:33334
+Mar 21 11:50 : client: [361] closed
+Mar 21 11:50 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:50 : client: [362] opened from 127.0.0.1:33338
+Mar 21 11:50 : client: [362] closed
+Mar 21 11:50 : client: [363] opened from 127.0.0.1:33342
+Mar 21 11:50 : client: [364] opened from 127.0.0.1:33346
+Mar 21 11:50 : client: [363] closed
+Mar 21 11:50 : client: [365] opened from 127.0.0.1:33350
+Mar 21 11:50 : client: [364] closed
+Mar 21 11:50 : client: [365] closed
+Mar 21 11:50 : client: [366] opened from 127.0.0.1:33354
+Mar 21 11:50 : client: [366] closed
+Mar 21 11:50 : client: [367] opened from 127.0.0.1:33358
+Mar 21 11:50 : client: [367] closed
+Mar 21 11:50 : client: [368] opened from 127.0.0.1:33362
+Mar 21 11:50 : client: [368] closed
+Mar 21 11:50 : client: [369] opened from 127.0.0.1:33366
+Mar 21 11:50 : client: [370] opened from 127.0.0.1:33370
+Mar 21 11:50 : client: [369] closed
+Mar 21 11:50 : client: [370] closed
+Mar 21 11:50 : client: [371] opened from 127.0.0.1:33374
+Mar 21 11:50 : client: [371] closed
+Mar 21 11:50 : client: [372] opened from 127.0.0.1:33378
+Mar 21 11:50 : client: [372] closed
+Mar 21 11:50 : client: [373] opened from 127.0.0.1:33382
+Mar 21 11:50 : client: [374] opened from 127.0.0.1:33386
+Mar 21 11:50 : client: [375] opened from 127.0.0.1:33390
+Mar 21 11:50 : client: [373] closed
+Mar 21 11:50 : client: [374] closed
+Mar 21 11:50 : client: [375] closed
+Mar 21 11:50 : client: [376] opened from 127.0.0.1:33394
+Mar 21 11:50 : client: [376] closed
+Mar 21 11:50 : client: [377] opened from 127.0.0.1:33398
+Mar 21 11:50 : client: [377] closed
+Mar 21 11:50 : client: [378] opened from 127.0.0.1:33402
+Mar 21 11:50 : client: [379] opened from 127.0.0.1:33406
+Mar 21 11:50 : client: [379] closed
+Mar 21 11:50 : client: [380] opened from 127.0.0.1:33410
+Mar 21 11:50 : client: [378] closed
+Mar 21 11:50 : client: [380] closed
+Mar 21 11:50 : client: [381] opened from 127.0.0.1:33414
+Mar 21 11:50 : client: [381] closed
+Mar 21 11:50 : client: [382] opened from 127.0.0.1:33418
+Mar 21 11:50 : client: [382] closed
+Mar 21 11:50 : client: [383] opened from 127.0.0.1:33422
+Mar 21 11:50 : client: [384] opened from 127.0.0.1:33426
+Mar 21 11:50 : client: [384] closed
+Mar 21 11:50 : client: [385] opened from 127.0.0.1:33430
+Mar 21 11:50 : client: [383] closed
+Mar 21 11:50 : client: [386] opened from 127.0.0.1:33434
+Mar 21 11:50 : client: [385] closed
+Mar 21 11:50 : client: [386] closed
+Mar 21 11:50 : client: [387] opened from 127.0.0.1:33438
+Mar 21 11:50 : client: [387] closed
+Mar 21 11:50 : client: [388] opened from 127.0.0.1:33442
+Mar 21 11:50 : client: [388] closed
+Mar 21 11:50 : client: [389] opened from 127.0.0.1:33446
+Mar 21 11:50 : client: [390] opened from 127.0.0.1:33450
+Mar 21 11:50 : client: [389] closed
+Mar 21 11:50 : client: [390] closed
+Mar 21 11:50 : client: [391] opened from 127.0.0.1:33454
+Mar 21 11:50 : client: [391] closed
+Mar 21 11:50 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:50 : client: [392] opened from 127.0.0.1:33458
+Mar 21 11:50 : client: [392] closed
+Mar 21 11:50 : client: [393] opened from 127.0.0.1:33462
+Mar 21 11:50 : client: [393] closed
+Mar 21 11:50 : client: [394] opened from 127.0.0.1:33466
+Mar 21 11:50 : client: [395] opened from 127.0.0.1:33470
+Mar 21 11:50 : client: [395] closed
+Mar 21 11:50 : client: [394] closed
+Mar 21 11:50 : client: [396] opened from 127.0.0.1:33474
+Mar 21 11:50 : client: [396] closed
+Mar 21 11:50 : client: [397] opened from 127.0.0.1:33478
+Mar 21 11:50 : client: [397] closed
+Mar 21 11:50 : client: [398] opened from 127.0.0.1:33482
+Mar 21 11:50 : client: [399] opened from 127.0.0.1:33486
+Mar 21 11:50 : client: [398] closed
+Mar 21 11:50 : client: [399] closed
+Mar 21 11:50 : client: [400] opened from 127.0.0.1:33490
+Mar 21 11:50 : client: [400] closed
+Mar 21 11:50 : client: [401] opened from 127.0.0.1:33494
+Mar 21 11:50 : client: [401] closed
+Mar 21 11:50 : client: [402] opened from 127.0.0.1:33498
+Mar 21 11:50 : client: [402] closed
+Mar 21 11:50 : client: [403] opened from 127.0.0.1:33502
+Mar 21 11:50 : client: [404] opened from 127.0.0.1:33506
+Mar 21 11:50 : client: [403] closed
+Mar 21 11:50 : client: [404] closed
+Mar 21 11:50 : client: [405] opened from 127.0.0.1:33510
+Mar 21 11:50 : client: [405] closed
+Mar 21 11:50 : client: [406] opened from 127.0.0.1:33514
+Mar 21 11:50 : client: [406] closed
+Mar 21 11:50 : client: [407] opened from 127.0.0.1:33518
+Mar 21 11:50 : client: [407] closed
+Mar 21 11:50 : client: [408] opened from 127.0.0.1:33522
+Mar 21 11:50 : client: [409] opened from 127.0.0.1:33526
+Mar 21 11:50 : client: [408] closed
+Mar 21 11:50 : client: [410] opened from 127.0.0.1:33530
+Mar 21 11:50 : client: [409] closed
+Mar 21 11:50 : client: [410] closed
+Mar 21 11:50 : client: [411] opened from 127.0.0.1:33534
+Mar 21 11:50 : client: [411] closed
+Mar 21 11:50 : client: [412] opened from 127.0.0.1:33538
+Mar 21 11:50 : client: [412] closed
+Mar 21 11:50 : client: [413] opened from 127.0.0.1:33542
+Mar 21 11:50 : client: [413] closed
+Mar 21 11:50 : client: [414] opened from 127.0.0.1:33546
+Mar 21 11:50 : client: [415] opened from 127.0.0.1:33550
+Mar 21 11:50 : client: [414] closed
+Mar 21 11:50 : client: [415] closed
+Mar 21 11:50 : client: [416] opened from 127.0.0.1:33554
+Mar 21 11:50 : client: [416] closed
+Mar 21 11:50 : client: [417] opened from 127.0.0.1:33558
+Mar 21 11:50 : client: [417] closed
+Mar 21 11:50 : client: [418] opened from 127.0.0.1:33562
+Mar 21 11:50 : client: [419] opened from 127.0.0.1:33566
+Mar 21 11:50 : client: [420] opened from 127.0.0.1:33570
+Mar 21 11:50 : client: [419] closed
+Mar 21 11:50 : client: [418] closed
+Mar 21 11:50 : client: [420] closed
+Mar 21 11:50 : client: [421] opened from 127.0.0.1:33574
+Mar 21 11:50 : client: [421] closed
+Mar 21 11:54 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/13.All Apologies.mp3"
+Mar 21 11:54 : client: [422] opened from 127.0.0.1:33608
+Mar 21 11:54 : client: [423] opened from 127.0.0.1:33612
+Mar 21 11:54 : client: [424] opened from 127.0.0.1:33616
+Mar 21 11:54 : client: [422] closed
+Mar 21 11:54 : client: [425] opened from 127.0.0.1:33620
+Mar 21 11:54 : client: [425] closed
+Mar 21 11:54 : client: [423] closed
+Mar 21 11:54 : client: [424] closed
+Mar 21 11:54 : client: [426] opened from 127.0.0.1:33624
+Mar 21 11:54 : client: [426] closed
+Mar 21 11:55 : client: [83] closed
+Mar 21 11:56 : client: [427] opened from 127.0.0.1:33646
+Mar 21 11:56 : client: [427] closed
+Mar 21 11:56 : client: [428] opened from 127.0.0.1:33650
+Mar 21 11:56 : client: [428] closed
+Mar 21 11:56 : client: [429] opened from 127.0.0.1:33654
+Mar 21 11:56 : client: [429] closed
+Mar 21 11:56 : client: [430] opened from 127.0.0.1:33658
+Mar 21 11:56 : client: [430] closed
+Mar 21 11:56 : client: [431] opened from 127.0.0.1:33662
+Mar 21 11:56 : client: [431] closed
+Mar 21 11:56 : client: [432] opened from 127.0.0.1:33666
+Mar 21 11:56 : client: [432] closed
+Mar 21 11:56 : client: [433] opened from 127.0.0.1:33670
+Mar 21 11:56 : client: [433] closed
+Mar 21 11:56 : client: [434] opened from 127.0.0.1:33674
+Mar 21 11:56 : client: [434] closed
+Mar 21 11:57 : client: [435] opened from 127.0.0.1:33684
+Mar 21 11:57 : client: [435] closed
+Mar 21 11:57 : client: [436] opened from 127.0.0.1:33688
+Mar 21 11:57 : client: [437] opened from 127.0.0.1:33692
+Mar 21 11:57 : client: [438] opened from 127.0.0.1:33696
+Mar 21 11:57 : client: [437] closed
+Mar 21 11:57 : client: [438] closed
+Mar 21 11:57 : client: [439] opened from 127.0.0.1:33700
+Mar 21 11:57 : client: [439] closed
+Mar 21 11:57 : client: [440] opened from 127.0.0.1:33704
+Mar 21 11:57 : client: [440] closed
+Mar 21 11:57 : client: [441] opened from 127.0.0.1:33708
+Mar 21 11:57 : client: [441] closed
+Mar 21 11:57 : client: [442] opened from 127.0.0.1:33712
+Mar 21 11:57 : client: [442] closed
+Mar 21 11:57 : client: [443] opened from 127.0.0.1:33716
+Mar 21 11:57 : client: [444] opened from 127.0.0.1:33720
+Mar 21 11:57 : client: [443] closed
+Mar 21 11:57 : client: [445] opened from 127.0.0.1:33724
+Mar 21 11:57 : client: [444] closed
+Mar 21 11:57 : client: [445] closed
+Mar 21 11:57 : client: [446] opened from 127.0.0.1:33728
+Mar 21 11:57 : client: [446] closed
+Mar 21 11:57 : client: [447] opened from 127.0.0.1:33732
+Mar 21 11:57 : client: [448] opened from 127.0.0.1:33736
+Mar 21 11:57 : client: [448] closed
+Mar 21 11:57 : client: [449] opened from 127.0.0.1:33740
+Mar 21 11:57 : client: [447] closed
+Mar 21 11:57 : client: [450] opened from 127.0.0.1:33744
+Mar 21 11:57 : client: [449] closed
+Mar 21 11:57 : client: [450] closed
+Mar 21 11:57 : client: [451] opened from 127.0.0.1:33748
+Mar 21 11:57 : client: [452] opened from 127.0.0.1:33752
+Mar 21 11:57 : client: [451] closed
+Mar 21 11:57 : client: [453] opened from 127.0.0.1:33756
+Mar 21 11:57 : client: [452] closed
+Mar 21 11:57 : client: [454] opened from 127.0.0.1:33760
+Mar 21 11:57 : client: [453] closed
+Mar 21 11:57 : client: [454] closed
+Mar 21 11:57 : client: [455] opened from 127.0.0.1:33764
+Mar 21 11:57 : client: [456] opened from 127.0.0.1:33768
+Mar 21 11:57 : client: [455] closed
+Mar 21 11:57 : client: [457] opened from 127.0.0.1:33772
+Mar 21 11:57 : client: [457] closed
+Mar 21 11:57 : client: [456] closed
+Mar 21 11:57 : client: [458] opened from 127.0.0.1:33776
+Mar 21 11:57 : client: [458] closed
+Mar 21 11:57 : client: [459] opened from 127.0.0.1:33784
+Mar 21 11:57 : client: [460] opened from 127.0.0.1:33788
+Mar 21 11:57 : client: [461] opened from 127.0.0.1:33780
+Mar 21 11:57 : client: [460] closed
+Mar 21 11:57 : client: [459] closed
+Mar 21 11:57 : client: [461] closed
+Mar 21 11:57 : client: [462] opened from 127.0.0.1:33792
+Mar 21 11:57 : client: [462] closed
+Mar 21 11:57 : client: [463] opened from 127.0.0.1:33796
+Mar 21 11:57 : client: [463] closed
+Mar 21 11:57 : client: [464] opened from 127.0.0.1:33800
+Mar 21 11:57 : client: [465] opened from 127.0.0.1:33804
+Mar 21 11:57 : client: [465] closed
+Mar 21 11:57 : client: [464] closed
+Mar 21 11:57 : client: [466] opened from 127.0.0.1:33808
+Mar 21 11:57 : client: [466] closed
+Mar 21 11:57 : client: [467] opened from 127.0.0.1:33812
+Mar 21 11:57 : client: [467] closed
+Mar 21 11:57 : client: [468] opened from 127.0.0.1:33816
+Mar 21 11:57 : client: [469] opened from 127.0.0.1:33820
+Mar 21 11:57 : client: [468] closed
+Mar 21 11:57 : client: [469] closed
+Mar 21 11:57 : client: [470] opened from 127.0.0.1:33824
+Mar 21 11:57 : client: [470] closed
+Mar 21 11:57 : client: [471] opened from 127.0.0.1:33828
+Mar 21 11:57 : client: [471] closed
+Mar 21 11:57 : client: [472] opened from 127.0.0.1:33832
+Mar 21 11:57 : client: [473] opened from 127.0.0.1:33836
+Mar 21 11:57 : client: [474] opened from 127.0.0.1:33840
+Mar 21 11:57 : client: [472] closed
+Mar 21 11:57 : client: [473] closed
+Mar 21 11:57 : client: [474] closed
+Mar 21 11:57 : client: [475] opened from 127.0.0.1:33844
+Mar 21 11:57 : client: [475] closed
+Mar 21 11:57 : client: [436] closed
+Mar 21 11:57 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 11:57 : client: [476] opened from 127.0.0.1:33848
+Mar 21 11:57 : client: [476] closed
+Mar 21 11:57 : client: [477] opened from 127.0.0.1:33852
+Mar 21 11:57 : client: [477] closed
+Mar 21 12:03 : client: [478] opened from 127.0.0.1:33910
+Mar 21 12:03 : client: [478] closed
+Mar 21 12:03 : client: [479] opened from 127.0.0.1:33914
+Mar 21 12:03 : client: [479] closed
+Mar 21 12:03 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 12:03 : client: [480] opened from 127.0.0.1:33918
+Mar 21 12:03 : client: [480] closed
+Mar 21 12:03 : client: [481] opened from 127.0.0.1:33922
+Mar 21 12:03 : client: [481] closed
+Mar 21 12:03 : client: [482] opened from 127.0.0.1:33926
+Mar 21 12:03 : client: [482] closed
+Mar 21 12:03 : client: [483] opened from 127.0.0.1:33930
+Mar 21 12:03 : client: [483] closed
+Mar 21 12:06 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/06.Come As You Are.mp3"
+Mar 21 12:06 : client: [484] opened from 127.0.0.1:33934
+Mar 21 12:06 : client: [484] closed
+Mar 21 12:08 : client: [485] opened from 127.0.0.1:33940
+Mar 21 12:08 : client: [485] closed
+Mar 21 12:08 : client: [486] opened from 127.0.0.1:33944
+Mar 21 12:08 : client: [486] closed
+Mar 21 12:08 : client: [487] opened from 127.0.0.1:33948
+Mar 21 12:08 : client: [487] closed
+Mar 21 12:08 : client: [488] opened from 127.0.0.1:33952
+Mar 21 12:08 : client: [488] closed
+Mar 21 12:08 : client: [489] opened from 127.0.0.1:33956
+Mar 21 12:08 : client: [489] closed
+Mar 21 12:08 : client: [490] opened from 127.0.0.1:33960
+Mar 21 12:08 : client: [490] closed
+Mar 21 12:08 : client: [491] opened from 127.0.0.1:33964
+Mar 21 12:08 : client: [491] closed
+Mar 21 12:08 : client: [492] opened from 127.0.0.1:33968
+Mar 21 12:08 : client: [492] closed
+Mar 21 12:08 : client: [493] opened from 127.0.0.1:33972
+Mar 21 12:08 : client: [493] closed
+Mar 21 12:08 : client: [494] opened from 127.0.0.1:33976
+Mar 21 12:08 : client: [494] closed
+Mar 21 12:10 : client: [495] opened from 127.0.0.1:33980
+Mar 21 12:10 : client: [495] closed
+Mar 21 12:10 : client: [108] closed
+Mar 21 12:10 : client: [496] opened from 127.0.0.1:33984
+Mar 21 13:23 : client: [497] opened from 127.0.0.1:34338
+Mar 21 13:23 : client: [497] closed
+Mar 21 13:23 : client: [498] opened from 127.0.0.1:34342
+Mar 21 13:23 : client: [498] closed
+Mar 21 13:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:25 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/07.Lithium.mp3"
+Mar 21 13:25 : client: [499] opened from 127.0.0.1:34356
+Mar 21 13:25 : client: [499] closed
+Mar 21 13:29 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/08.In Bloom.mp3"
+Mar 21 13:29 : client: [500] opened from 127.0.0.1:34452
+Mar 21 13:29 : client: [500] closed
+Mar 21 13:34 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/09.Heart Shaped Box.mp3"
+Mar 21 13:34 : client: [501] opened from 127.0.0.1:34548
+Mar 21 13:34 : client: [501] closed
+Mar 21 13:36 : client: [502] opened from 127.0.0.1:34582
+Mar 21 13:36 : client: [502] closed
+Mar 21 13:36 : client: [496] closed
+Mar 21 13:36 : client: [503] opened from 127.0.0.1:34586
+Mar 21 13:37 : client: [504] opened from 127.0.0.1:34592
+Mar 21 13:37 : client: [504] closed
+Mar 21 13:37 : client: [505] opened from 127.0.0.1:34596
+Mar 21 13:37 : client: [505] closed
+Mar 21 13:38 : client: [506] opened from 127.0.0.1:34602
+Mar 21 13:38 : client: [506] closed
+Mar 21 13:38 : client: [503] closed
+Mar 21 13:38 : client: [507] opened from 127.0.0.1:34606
+Mar 21 13:38 : client: [508] opened from 127.0.0.1:34610
+Mar 21 13:38 : client: [508] closed
+Mar 21 13:38 : client: [507] closed
+Mar 21 13:38 : client: [509] opened from 127.0.0.1:34614
+Mar 21 13:39 : client: [510] opened from 127.0.0.1:34620
+Mar 21 13:39 : client: [510] closed
+Mar 21 13:39 : client: [509] closed
+Mar 21 13:39 : client: [511] opened from 127.0.0.1:34624
+Mar 21 13:40 : client: [512] opened from 127.0.0.1:34632
+Mar 21 13:40 : client: [512] closed
+Mar 21 13:40 : client: [511] closed
+Mar 21 13:40 : client: [513] opened from 127.0.0.1:34636
+Mar 21 13:40 : client: [514] opened from 127.0.0.1:34642
+Mar 21 13:40 : client: [514] closed
+Mar 21 13:40 : client: [513] closed
+Mar 21 13:40 : client: [515] opened from 127.0.0.1:34646
+Mar 21 13:40 : client: [516] opened from 127.0.0.1:34650
+Mar 21 13:40 : client: [516] closed
+Mar 21 13:40 : client: [515] closed
+Mar 21 13:41 : client: [517] opened from 127.0.0.1:34654
+Mar 21 13:41 : client: [518] opened from 127.0.0.1:34658
+Mar 21 13:41 : client: [518] closed
+Mar 21 13:41 : client: [517] closed
+Mar 21 13:41 : client: [519] opened from 127.0.0.1:34662
+Mar 21 13:41 : client: [520] opened from 127.0.0.1:34668
+Mar 21 13:41 : client: [520] closed
+Mar 21 13:41 : client: [519] closed
+Mar 21 13:41 : client: [521] opened from 127.0.0.1:34672
+Mar 21 13:42 : client: [522] opened from 127.0.0.1:34678
+Mar 21 13:42 : client: [522] closed
+Mar 21 13:42 : client: [521] closed
+Mar 21 13:42 : client: [523] opened from 127.0.0.1:34682
+Mar 21 13:42 : client: [524] opened from 127.0.0.1:34686
+Mar 21 13:42 : client: [524] closed
+Mar 21 13:42 : client: [523] closed
+Mar 21 13:42 : client: [525] opened from 127.0.0.1:34690
+Mar 21 13:43 : client: [526] opened from 127.0.0.1:34696
+Mar 21 13:43 : client: [526] closed
+Mar 21 13:43 : client: [525] closed
+Mar 21 13:43 : client: [527] opened from 127.0.0.1:34700
+Mar 21 13:43 : client: [528] opened from 127.0.0.1:34706
+Mar 21 13:43 : client: [528] closed
+Mar 21 13:43 : client: [527] closed
+Mar 21 13:43 : client: [529] opened from 127.0.0.1:34710
+Mar 21 13:44 : client: [530] opened from 127.0.0.1:34714
+Mar 21 13:44 : client: [530] closed
+Mar 21 13:44 : client: [531] opened from 127.0.0.1:34718
+Mar 21 13:44 : client: [531] closed
+Mar 21 13:44 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:44 : client: [532] opened from 127.0.0.1:34724
+Mar 21 13:44 : client: [532] closed
+Mar 21 13:44 : client: [529] closed
+Mar 21 13:44 : client: [533] opened from 127.0.0.1:34728
+Mar 21 13:44 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/10.Pennyroyal Tea.mp3"
+Mar 21 13:44 : client: [534] opened from 127.0.0.1:34732
+Mar 21 13:44 : client: [535] opened from 127.0.0.1:34736
+Mar 21 13:44 : client: [534] closed
+Mar 21 13:44 : client: [535] closed
+Mar 21 13:45 : client: [536] opened from 127.0.0.1:34740
+Mar 21 13:45 : client: [536] closed
+Mar 21 13:45 : client: [533] closed
+Mar 21 13:45 : client: [537] opened from 127.0.0.1:34744
+Mar 21 13:47 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/11.Rape Me.mp3"
+Mar 21 13:47 : client: [538] opened from 127.0.0.1:34834
+Mar 21 13:47 : client: [538] closed
+Mar 21 13:50 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/12.Dumb.mp3"
+Mar 21 13:50 : client: [539] opened from 127.0.0.1:34866
+Mar 21 13:50 : client: [539] closed
+Mar 21 13:54 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/13.All Apologies.mp3"
+Mar 21 13:54 : client: [540] opened from 127.0.0.1:34886
+Mar 21 13:54 : client: [540] closed
+Mar 21 13:57 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:57 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/14.The Man Who Sold The World.mp3"
+Mar 21 13:57 : client: [541] opened from 127.0.0.1:34900
+Mar 21 13:57 : client: [541] closed
+Mar 21 13:58 : client: [542] opened from 127.0.0.1:34904
+Mar 21 13:58 : client: [542] closed
+Mar 21 13:58 : client: [543] opened from 127.0.0.1:34908
+Mar 21 13:58 : client: [543] closed
+Mar 21 13:58 : client: [544] opened from 127.0.0.1:34912
+Mar 21 13:58 : client: [544] closed
+Mar 21 13:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:58 : client: [545] opened from 127.0.0.1:34920
+Mar 21 13:58 : client: [545] closed
+Mar 21 13:58 : client: [546] opened from 127.0.0.1:34924
+Mar 21 13:58 : client: [546] closed
+Mar 21 13:58 : client: [547] opened from 127.0.0.1:34928
+Mar 21 13:58 : client: [547] closed
+Mar 21 13:58 : client: [548] opened from 127.0.0.1:34932
+Mar 21 13:58 : client: [548] closed
+Mar 21 13:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 13:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:01 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/01.You Know You're Right.mp3"
+Mar 21 14:01 : client: [549] opened from 127.0.0.1:34982
+Mar 21 14:01 : client: [549] closed
+Mar 21 14:04 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/02.About A Girl.mp3"
+Mar 21 14:04 : client: [550] opened from 127.0.0.1:35104
+Mar 21 14:04 : client: [550] closed
+Mar 21 14:06 : client: [551] opened from 127.0.0.1:35162
+Mar 21 14:06 : client: [551] closed
+Mar 21 14:06 : client: [552] opened from 127.0.0.1:35166
+Mar 21 14:06 : client: [552] closed
+Mar 21 14:06 : client: [553] opened from 127.0.0.1:35170
+Mar 21 14:06 : client: [553] closed
+Mar 21 14:06 : client: [554] opened from 127.0.0.1:35174
+Mar 21 14:06 : client: [554] closed
+Mar 21 14:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:07 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/03.Been A Son.mp3"
+Mar 21 14:07 : client: [555] opened from 127.0.0.1:35178
+Mar 21 14:07 : client: [555] closed
+Mar 21 14:09 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/04.Sliver.mp3"
+Mar 21 14:09 : client: [556] opened from 127.0.0.1:35260
+Mar 21 14:09 : client: [556] closed
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/05. Those Kinda Nights (feat. Ed Sheeran).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/16. Lock It Up (feat. Anderson .Paak).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/15. Little Engine.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/18. No Regrets (feat. Don Toliver).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/11. Stepdad (Intro).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/01. Premonition (Intro).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/13. Marsh.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/08. Darkness.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/17. Farewell.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/06. In Too Deep.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/19. I Will (feat. Kxng Crooked, Royce Da 5'9', and Joell Ortiz).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/02. Unaccommodating (feat. Young M.A).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/07. Godzilla (feat. Juice WRLD).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/14. Never Love Again.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/12. Stepdad.mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/20. Alfred (Outro).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/09. Leaving Heaven (feat. Skylar Grey).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/10. Yah Yah (feat. Royce Da 5'9', Black Thought, Q-Tip, and dEnAuN).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/03. You Gon’ Learn (feat. Royce Da 5'9' and White Gold).mp3
+Mar 21 14:10 : update: added Eminem - Music To Be Murdered By (2020) [320KBPS]/04. Alfred (Interlude).mp3
+Mar 21 14:10 : client: [557] opened from 127.0.0.1:35266
+Mar 21 14:10 : client: [558] opened from 127.0.0.1:35270
+Mar 21 14:10 : client: [558] closed
+Mar 21 14:10 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:10 : client: [559] opened from 127.0.0.1:35274
+Mar 21 14:10 : client: [559] closed
+Mar 21 14:14 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/07. Godzilla (feat. Juice WRLD).mp3"
+Mar 21 14:14 : client: [560] opened from 127.0.0.1:35288
+Mar 21 14:14 : client: [560] closed
+Mar 21 14:15 : client: [561] opened from 127.0.0.1:35294
+Mar 21 14:15 : client: [561] closed
+Mar 21 14:15 : client: [562] opened from 127.0.0.1:35298
+Mar 21 14:15 : client: [562] closed
+Mar 21 14:15 : client: [557] closed
+Mar 21 14:15 : client: [563] opened from 127.0.0.1:35304
+Mar 21 14:15 : client: [563] closed
+Mar 21 14:15 : client: [537] closed
+Mar 21 14:15 : client: [564] opened from 127.0.0.1:35308
+Mar 21 14:20 : client: [565] opened from 127.0.0.1:35382
+Mar 21 14:20 : client: [566] opened from 127.0.0.1:35386
+Mar 21 14:20 : client: [566] closed
+Mar 21 14:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:20 : client: [567] opened from 127.0.0.1:35390
+Mar 21 14:20 : client: [567] closed
+Mar 21 14:20 : client: [568] opened from 127.0.0.1:35394
+Mar 21 14:20 : client: [568] closed
+Mar 21 14:20 : client: [569] opened from 127.0.0.1:35398
+Mar 21 14:20 : client: [569] closed
+Mar 21 14:20 : client: [570] opened from 127.0.0.1:35402
+Mar 21 14:20 : client: [570] closed
+Mar 21 14:20 : client: [571] opened from 127.0.0.1:35406
+Mar 21 14:20 : client: [571] closed
+Mar 21 14:20 : client: [572] opened from 127.0.0.1:35410
+Mar 21 14:20 : client: [572] closed
+Mar 21 14:20 : client: [573] opened from 127.0.0.1:35414
+Mar 21 14:20 : client: [573] closed
+Mar 21 14:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:20 : client: [574] opened from 127.0.0.1:35418
+Mar 21 14:20 : client: [574] closed
+Mar 21 14:20 : client: [575] opened from 127.0.0.1:35422
+Mar 21 14:20 : client: [575] closed
+Mar 21 14:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:23 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/06. In Too Deep.mp3"
+Mar 21 14:23 : client: [576] opened from 127.0.0.1:35506
+Mar 21 14:23 : client: [576] closed
+Mar 21 14:35 : client: [577] opened from 127.0.0.1:35676
+Mar 21 14:35 : client: [577] closed
+Mar 21 14:35 : client: [578] opened from 127.0.0.1:35680
+Mar 21 14:35 : client: [578] closed
+Mar 21 14:35 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:38 : client: [579] opened from 127.0.0.1:35772
+Mar 21 14:38 : client: [579] closed
+Mar 21 14:38 : client: [580] opened from 127.0.0.1:35776
+Mar 21 14:38 : client: [580] closed
+Mar 21 14:38 : client: [581] opened from 127.0.0.1:35780
+Mar 21 14:38 : client: [581] closed
+Mar 21 14:38 : client: [582] opened from 127.0.0.1:35784
+Mar 21 14:38 : client: [582] closed
+Mar 21 14:38 : client: [583] opened from 127.0.0.1:35788
+Mar 21 14:38 : client: [583] closed
+Mar 21 14:38 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:38 : client: [584] opened from 127.0.0.1:35792
+Mar 21 14:38 : client: [584] closed
+Mar 21 14:38 : client: [585] opened from 127.0.0.1:35796
+Mar 21 14:38 : client: [585] closed
+Mar 21 14:39 : client: [586] opened from 127.0.0.1:35800
+Mar 21 14:39 : client: [586] closed
+Mar 21 14:39 : client: [587] opened from 127.0.0.1:35804
+Mar 21 14:39 : client: [587] closed
+Mar 21 14:39 : client: [588] opened from 127.0.0.1:35810
+Mar 21 14:39 : client: [588] closed
+Mar 21 14:39 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:39 : client: [589] opened from 127.0.0.1:35814
+Mar 21 14:39 : client: [589] closed
+Mar 21 14:39 : client: [590] opened from 127.0.0.1:35818
+Mar 21 14:39 : client: [590] closed
+Mar 21 14:39 : client: [591] opened from 127.0.0.1:35822
+Mar 21 14:39 : client: [591] closed
+Mar 21 14:39 : client: [592] opened from 127.0.0.1:35826
+Mar 21 14:39 : client: [592] closed
+Mar 21 14:39 : client: [593] opened from 127.0.0.1:35830
+Mar 21 14:39 : client: [593] closed
+Mar 21 14:39 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:39 : client: [594] opened from 127.0.0.1:35834
+Mar 21 14:39 : client: [594] closed
+Mar 21 14:39 : client: [595] opened from 127.0.0.1:35838
+Mar 21 14:39 : client: [595] closed
+Mar 21 14:39 : client: [596] opened from 127.0.0.1:35842
+Mar 21 14:39 : client: [596] closed
+Mar 21 14:39 : client: [597] opened from 127.0.0.1:35846
+Mar 21 14:39 : client: [597] closed
+Mar 21 14:39 : client: [598] opened from 127.0.0.1:35850
+Mar 21 14:39 : client: [598] closed
+Mar 21 14:39 : client: [599] opened from 127.0.0.1:35854
+Mar 21 14:39 : client: [599] closed
+Mar 21 14:39 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:39 : client: [600] opened from 127.0.0.1:35858
+Mar 21 14:39 : client: [600] closed
+Mar 21 14:39 : client: [601] opened from 127.0.0.1:35862
+Mar 21 14:39 : client: [601] closed
+Mar 21 14:39 : client: [602] opened from 127.0.0.1:35866
+Mar 21 14:39 : client: [602] closed
+Mar 21 14:39 : client: [603] opened from 127.0.0.1:35870
+Mar 21 14:39 : client: [603] closed
+Mar 21 14:39 : client: [604] opened from 127.0.0.1:35874
+Mar 21 14:39 : client: [604] closed
+Mar 21 14:39 : client: [605] opened from 127.0.0.1:35878
+Mar 21 14:39 : client: [605] closed
+Mar 21 14:39 : client: [606] opened from 127.0.0.1:35882
+Mar 21 14:39 : client: [606] closed
+Mar 21 14:39 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:39 : client: [607] opened from 127.0.0.1:35886
+Mar 21 14:39 : client: [607] closed
+Mar 21 14:39 : client: [608] opened from 127.0.0.1:35890
+Mar 21 14:39 : client: [608] closed
+Mar 21 14:39 : client: [609] opened from 127.0.0.1:35894
+Mar 21 14:39 : client: [609] closed
+Mar 21 14:39 : client: [610] opened from 127.0.0.1:35898
+Mar 21 14:39 : client: [610] closed
+Mar 21 14:39 : client: [611] opened from 127.0.0.1:35902
+Mar 21 14:39 : client: [611] closed
+Mar 21 14:39 : client: [612] opened from 127.0.0.1:35906
+Mar 21 14:39 : client: [612] closed
+Mar 21 14:39 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 14:39 : client: [613] opened from 127.0.0.1:35910
+Mar 21 14:39 : client: [613] closed
+Mar 21 14:39 : client: [614] opened from 127.0.0.1:35914
+Mar 21 14:39 : client: [614] closed
+Mar 21 14:39 : client: [615] opened from 127.0.0.1:35918
+Mar 21 14:39 : client: [615] closed
+Mar 21 14:40 : client: [616] opened from 127.0.0.1:35922
+Mar 21 14:40 : client: [616] closed
+Mar 21 14:40 : client: [617] opened from 127.0.0.1:35926
+Mar 21 14:40 : client: [617] closed
+Mar 21 14:40 : client: [618] opened from 127.0.0.1:35930
+Mar 21 14:40 : client: [618] closed
+Mar 21 14:40 : client: [619] opened from 127.0.0.1:35934
+Mar 21 14:40 : client: [619] closed
+Mar 21 14:40 : client: [620] opened from 127.0.0.1:35940
+Mar 21 14:40 : client: [620] closed
+Mar 21 14:40 : client: [621] opened from 127.0.0.1:35944
+Mar 21 14:40 : client: [621] closed
+Mar 21 14:40 : client: [622] opened from 127.0.0.1:35948
+Mar 21 14:40 : client: [622] closed
+Mar 21 14:40 : client: [623] opened from 127.0.0.1:35952
+Mar 21 14:40 : client: [623] closed
+Mar 21 14:40 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/04. Alfred (Interlude).mp3"
+Mar 21 14:40 : client: [624] opened from 127.0.0.1:35956
+Mar 21 14:40 : client: [624] closed
+Mar 21 14:41 : client: [625] opened from 127.0.0.1:35960
+Mar 21 14:41 : client: [625] closed
+Mar 21 14:41 : client: [626] opened from 127.0.0.1:35966
+Mar 21 14:41 : client: [626] closed
+Mar 21 14:41 : client: [627] opened from 127.0.0.1:35970
+Mar 21 14:41 : client: [627] closed
+Mar 21 14:41 : client: [628] opened from 127.0.0.1:35974
+Mar 21 14:41 : client: [628] closed
+Mar 21 14:42 : client: [629] opened from 127.0.0.1:35982
+Mar 21 14:42 : client: [629] closed
+Mar 21 14:42 : client: [564] closed
+Mar 21 14:42 : client: [630] opened from 127.0.0.1:35986
+Mar 21 14:42 : client: [565] closed
+Mar 21 14:42 : client: [631] opened from 127.0.0.1:35990
+Mar 21 14:42 : client: [631] closed
+Mar 21 14:43 : client: [632] opened from 127.0.0.1:35996
+Mar 21 14:43 : client: [632] closed
+Mar 21 14:43 : client: [630] closed
+Mar 21 14:43 : client: [633] opened from 127.0.0.1:36000
+Mar 21 14:44 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/10.Pennyroyal Tea.mp3"
+Mar 21 14:44 : client: [634] opened from 127.0.0.1:36020
+Mar 21 14:44 : client: [634] closed
+Mar 21 14:45 : client: [635] opened from 127.0.0.1:36026
+Mar 21 14:45 : client: [635] closed
+Mar 21 14:46 : client: [636] opened from 127.0.0.1:36032
+Mar 21 14:46 : client: [636] closed
+Mar 21 14:46 : client: [633] closed
+Mar 21 14:46 : client: [637] opened from 127.0.0.1:36036
+Mar 21 14:46 : client: [638] opened from 127.0.0.1:36040
+Mar 21 14:46 : client: [638] closed
+Mar 21 14:46 : client: [637] closed
+Mar 21 14:46 : client: [639] opened from 127.0.0.1:36044
+Mar 21 14:47 : client: [640] opened from 127.0.0.1:36050
+Mar 21 14:47 : client: [640] closed
+Mar 21 14:47 : client: [639] closed
+Mar 21 14:47 : client: [641] opened from 127.0.0.1:36054
+Mar 21 14:47 : client: [642] opened from 127.0.0.1:36060
+Mar 21 14:47 : client: [642] closed
+Mar 21 14:47 : client: [641] closed
+Mar 21 14:47 : client: [643] opened from 127.0.0.1:36064
+Mar 21 14:47 : client: [644] opened from 127.0.0.1:36068
+Mar 21 14:47 : client: [644] closed
+Mar 21 14:47 : client: [643] closed
+Mar 21 14:47 : client: [645] opened from 127.0.0.1:36072
+Mar 21 14:47 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/11.Rape Me.mp3"
+Mar 21 14:47 : client: [646] opened from 127.0.0.1:36076
+Mar 21 14:47 : client: [646] closed
+Mar 21 14:47 : client: [647] opened from 127.0.0.1:36080
+Mar 21 14:47 : client: [647] closed
+Mar 21 14:47 : client: [645] closed
+Mar 21 14:47 : client: [648] opened from 127.0.0.1:36084
+Mar 21 14:50 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/12.Dumb.mp3"
+Mar 21 14:50 : client: [649] opened from 127.0.0.1:36196
+Mar 21 14:50 : client: [649] closed
+Mar 21 14:50 : client: [650] opened from 127.0.0.1:36200
+Mar 21 14:50 : client: [650] closed
+Mar 21 14:52 : client: [651] opened from 127.0.0.1:36214
+Mar 21 14:52 : client: [651] closed
+Mar 21 14:52 : client: [648] closed
+Mar 21 14:52 : client: [652] opened from 127.0.0.1:36218
+Mar 21 14:52 : client: [653] opened from 127.0.0.1:36222
+Mar 21 14:52 : client: [653] closed
+Mar 21 14:52 : client: [652] closed
+Mar 21 14:52 : client: [654] opened from 127.0.0.1:36226
+Mar 21 14:52 : client: [655] opened from 127.0.0.1:36230
+Mar 21 14:52 : client: [655] closed
+Mar 21 14:52 : client: [654] closed
+Mar 21 14:52 : client: [656] opened from 127.0.0.1:36234
+Mar 21 14:53 : client: [657] opened from 127.0.0.1:36238
+Mar 21 14:53 : client: [657] closed
+Mar 21 14:53 : client: [656] closed
+Mar 21 14:53 : client: [658] opened from 127.0.0.1:36242
+Mar 21 14:53 : client: [659] opened from 127.0.0.1:36246
+Mar 21 14:53 : client: [659] closed
+Mar 21 14:53 : client: [658] closed
+Mar 21 14:53 : client: [660] opened from 127.0.0.1:36250
+Mar 21 14:53 : client: [661] opened from 127.0.0.1:36256
+Mar 21 14:53 : client: [661] closed
+Mar 21 14:53 : client: [660] closed
+Mar 21 14:54 : client: [662] opened from 127.0.0.1:36260
+Mar 21 14:54 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/13.All Apologies.mp3"
+Mar 21 14:54 : client: [663] opened from 127.0.0.1:36264
+Mar 21 14:54 : client: [663] closed
+Mar 21 14:57 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/14.The Man Who Sold The World.mp3"
+Mar 21 14:57 : client: [664] opened from 127.0.0.1:36280
+Mar 21 14:57 : client: [664] closed
+Mar 21 14:57 : client: [665] opened from 127.0.0.1:36284
+Mar 21 14:57 : client: [665] closed
+Mar 21 14:59 : client: [666] opened from 127.0.0.1:36294
+Mar 21 14:59 : client: [666] closed
+Mar 21 14:59 : client: [662] closed
+Mar 21 14:59 : client: [667] opened from 127.0.0.1:36298
+Mar 21 15:00 : client: [668] opened from 127.0.0.1:36306
+Mar 21 15:00 : client: [668] closed
+Mar 21 15:00 : client: [667] closed
+Mar 21 15:00 : client: [669] opened from 127.0.0.1:36310
+Mar 21 15:02 : client: [670] opened from 127.0.0.1:36320
+Mar 21 15:02 : client: [670] closed
+Mar 21 15:02 : client: [669] closed
+Mar 21 15:02 : client: [671] opened from 127.0.0.1:36326
+Mar 21 15:03 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/08. Darkness.mp3"
+Mar 21 15:03 : client: [672] opened from 127.0.0.1:36332
+Mar 21 15:03 : client: [672] closed
+Mar 21 15:06 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/05. Those Kinda Nights (feat. Ed Sheeran).mp3"
+Mar 21 15:06 : client: [671] closed
+Mar 21 15:08 : client: [673] opened from 127.0.0.1:36352
+Mar 21 15:08 : client: [673] closed
+Mar 21 15:08 : client: [674] opened from 127.0.0.1:36356
+Mar 21 15:09 : client: [675] opened from 127.0.0.1:36364
+Mar 21 15:09 : client: [675] closed
+Mar 21 15:09 : client: [674] closed
+Mar 21 15:09 : client: [676] opened from 127.0.0.1:36368
+Mar 21 15:10 : client: [677] opened from 127.0.0.1:36374
+Mar 21 15:10 : client: [677] closed
+Mar 21 15:10 : client: [676] closed
+Mar 21 15:10 : client: [678] opened from 127.0.0.1:36378
+Mar 21 15:10 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/09. Leaving Heaven (feat. Skylar Grey).mp3"
+Mar 21 15:10 : client: [679] opened from 127.0.0.1:36384
+Mar 21 15:10 : client: [679] closed
+Mar 21 15:15 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/10. Yah Yah (feat. Royce Da 5'9', Black Thought, Q-Tip, and dEnAuN).mp3"
+Mar 21 15:15 : client: [680] opened from 127.0.0.1:36400
+Mar 21 15:15 : client: [680] closed
+Mar 21 15:16 : client: [681] opened from 127.0.0.1:36406
+Mar 21 15:16 : client: [681] closed
+Mar 21 15:16 : client: [678] closed
+Mar 21 15:16 : client: [682] opened from 127.0.0.1:36410
+Mar 21 15:19 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/12. Stepdad.mp3"
+Mar 21 15:19 : client: [683] opened from 127.0.0.1:36422
+Mar 21 15:19 : client: [683] closed
+Mar 21 15:22 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/14. Never Love Again.mp3"
+Mar 21 15:22 : client: [684] opened from 127.0.0.1:36436
+Mar 21 15:22 : client: [684] closed
+Mar 21 15:22 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/20. Alfred (Outro).mp3"
+Mar 21 15:22 : client: [685] opened from 127.0.0.1:36442
+Mar 21 15:22 : client: [685] closed
+Mar 21 15:26 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/06. In Too Deep.mp3"
+Mar 21 15:26 : client: [686] opened from 127.0.0.1:36470
+Mar 21 15:26 : client: [686] closed
+Mar 21 15:29 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/07. Godzilla (feat. Juice WRLD).mp3"
+Mar 21 15:29 : client: [687] opened from 127.0.0.1:36488
+Mar 21 15:29 : client: [687] closed
+Mar 21 15:32 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/01. Premonition (Intro).mp3"
+Mar 21 15:32 : client: [688] opened from 127.0.0.1:36508
+Mar 21 15:32 : client: [688] closed
+Mar 21 15:35 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/01. Premonition (Intro).mp3"
+Mar 21 15:35 : client: [689] opened from 127.0.0.1:36520
+Mar 21 15:35 : client: [689] closed
+Mar 21 15:36 : client: [690] opened from 127.0.0.1:36526
+Mar 21 15:36 : client: [690] closed
+Mar 21 15:36 : client: [682] closed
+Mar 21 15:36 : client: [691] opened from 127.0.0.1:36530
+Mar 21 15:36 : client: [692] opened from 127.0.0.1:36536
+Mar 21 15:36 : client: [692] closed
+Mar 21 15:36 : client: [693] opened from 127.0.0.1:36540
+Mar 21 15:36 : client: [693] closed
+Mar 21 15:36 : client: [694] opened from 127.0.0.1:36544
+Mar 21 15:36 : client: [694] closed
+Mar 21 15:36 : client: [695] opened from 127.0.0.1:36548
+Mar 21 15:36 : client: [695] closed
+Mar 21 15:36 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 15:38 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/02. Unaccommodating (feat. Young M.A).mp3"
+Mar 21 15:38 : client: [696] opened from 127.0.0.1:36658
+Mar 21 15:38 : client: [696] closed
+Mar 21 15:42 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/03. You Gon’ Learn (feat. Royce Da 5'9' and White Gold).mp3"
+Mar 21 15:42 : client: [697] opened from 127.0.0.1:36698
+Mar 21 15:42 : client: [697] closed
+Mar 21 15:43 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/04. Alfred (Interlude).mp3"
+Mar 21 15:43 : client: [698] opened from 127.0.0.1:36702
+Mar 21 15:43 : client: [698] closed
+Mar 21 15:43 : client: [699] opened from 127.0.0.1:36706
+Mar 21 15:43 : client: [699] closed
+Mar 21 15:46 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/05. Those Kinda Nights (feat. Ed Sheeran).mp3"
+Mar 21 15:46 : client: [700] opened from 127.0.0.1:36716
+Mar 21 15:46 : client: [700] closed
+Mar 21 15:49 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/06. In Too Deep.mp3"
+Mar 21 15:49 : client: [701] opened from 127.0.0.1:36728
+Mar 21 15:49 : client: [701] closed
+Mar 21 15:53 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/07. Godzilla (feat. Juice WRLD).mp3"
+Mar 21 15:53 : client: [702] opened from 127.0.0.1:36742
+Mar 21 15:53 : client: [702] closed
+Mar 21 15:58 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/08. Darkness.mp3"
+Mar 21 15:58 : client: [703] opened from 127.0.0.1:36760
+Mar 21 15:58 : client: [703] closed
+Mar 21 16:03 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/09. Leaving Heaven (feat. Skylar Grey).mp3"
+Mar 21 16:03 : client: [704] opened from 127.0.0.1:36778
+Mar 21 16:03 : client: [704] closed
+Mar 21 16:07 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/10. Yah Yah (feat. Royce Da 5'9', Black Thought, Q-Tip, and dEnAuN).mp3"
+Mar 21 16:07 : client: [705] opened from 127.0.0.1:36794
+Mar 21 16:07 : client: [705] closed
+Mar 21 16:11 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/12. Stepdad.mp3"
+Mar 21 16:11 : client: [706] opened from 127.0.0.1:36806
+Mar 21 16:11 : client: [706] closed
+Mar 21 16:14 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/13. Marsh.mp3"
+Mar 21 16:14 : client: [707] opened from 127.0.0.1:36820
+Mar 21 16:14 : client: [707] closed
+Mar 21 16:17 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/14. Never Love Again.mp3"
+Mar 21 16:17 : client: [708] opened from 127.0.0.1:36850
+Mar 21 16:17 : client: [708] closed
+Mar 21 16:20 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/15. Little Engine.mp3"
+Mar 21 16:20 : client: [709] opened from 127.0.0.1:36860
+Mar 21 16:20 : client: [709] closed
+Mar 21 16:23 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/16. Lock It Up (feat. Anderson .Paak).mp3"
+Mar 21 16:23 : client: [710] opened from 127.0.0.1:36876
+Mar 21 16:23 : client: [710] closed
+Mar 21 16:23 : client: [711] opened from 127.0.0.1:36880
+Mar 21 16:23 : client: [711] closed
+Mar 21 16:27 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/17. Farewell.mp3"
+Mar 21 16:27 : client: [712] opened from 127.0.0.1:36894
+Mar 21 16:27 : client: [712] closed
+Mar 21 16:27 : client: [713] opened from 127.0.0.1:36898
+Mar 21 16:27 : client: [713] closed
+Mar 21 16:31 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/18. No Regrets (feat. Don Toliver).mp3"
+Mar 21 16:31 : client: [714] opened from 127.0.0.1:36914
+Mar 21 16:31 : client: [714] closed
+Mar 21 16:32 : client: [715] opened from 127.0.0.1:36922
+Mar 21 16:32 : client: [715] closed
+Mar 21 16:32 : client: [691] closed
+Mar 21 16:32 : client: [716] opened from 127.0.0.1:36926
+Mar 21 16:36 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/19. I Will (feat. Kxng Crooked, Royce Da 5'9', and Joell Ortiz).mp3"
+Mar 21 16:36 : client: [717] opened from 127.0.0.1:37004
+Mar 21 16:36 : client: [717] closed
+Mar 21 16:36 : client: [718] opened from 127.0.0.1:37010
+Mar 21 16:36 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/20. Alfred (Outro).mp3"
+Mar 21 16:36 : client: [719] opened from 127.0.0.1:37014
+Mar 21 16:36 : client: [719] closed
+Mar 21 16:36 : client: [720] opened from 127.0.0.1:37018
+Mar 21 16:36 : client: [720] closed
+Mar 21 16:36 : client: [721] opened from 127.0.0.1:37022
+Mar 21 16:36 : client: [721] closed
+Mar 21 16:39 : client: [722] opened from 127.0.0.1:37140
+Mar 21 16:39 : client: [722] closed
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/07 Screen.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/08 The Run And Go.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/10 Guns For Hands.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/05 Car Radio.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/02 Holding On To You.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/01 Ode To Sleep.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/06 Semi-Automatic.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/11 Trees.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/03 Migraine.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/04 House of Gold.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/09 Fake You Out.mp3
+Mar 21 16:41 : update: added twenty one pilots/2013 - Vessel/12 Truce.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/13 Before You Start Your Day.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/09 Air Catcher.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/11 A Car, a Torch, a Death.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/04 Addict With A Pen.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/01 Implicit Demand For Proof.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/08 Oh Ms Believer.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/07 Johnny Boy.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/03 The Pantaloon.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/06 March To The Sea.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/12 Taxi Cab.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/14 Isle Of Flightless Birds.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/05 Friend, Please.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/02 Fall Away.mp3
+Mar 21 16:41 : update: added twenty one pilots/2009 - Twenty One Pilots/10 Trapdoor.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/12 Trees.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/10 Lovely.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/05 Car Radio.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/02 Holding On to You.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/03 Ode to Sleep.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/06 Forest.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/07 Glowing Eyes.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/11 Ruby.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/04 Slowtown.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/13 Be Concerned.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/09 Anathema.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/15 House Of Gold (Bonus Track).mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/14 Clear.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/08 Kitchen Sink.mp3
+Mar 21 16:41 : update: added twenty one pilots/2011 - Regional At Best/01 Guns for Hands.mp3
+Mar 21 16:41 : client: [723] opened from 127.0.0.1:37184
+Mar 21 16:41 : client: [723] closed
+Mar 21 16:41 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:41 : client: [724] opened from 127.0.0.1:37188
+Mar 21 16:41 : client: [724] closed
+Mar 21 16:41 : client: [725] opened from 127.0.0.1:37192
+Mar 21 16:41 : client: [725] closed
+Mar 21 16:41 : client: [726] opened from 127.0.0.1:37196
+Mar 21 16:41 : client: [726] closed
+Mar 21 16:41 : client: [727] opened from 127.0.0.1:37200
+Mar 21 16:41 : client: [727] closed
+Mar 21 16:41 : client: [728] opened from 127.0.0.1:37204
+Mar 21 16:41 : client: [728] closed
+Mar 21 16:41 : client: [729] opened from 127.0.0.1:37208
+Mar 21 16:41 : client: [729] closed
+Mar 21 16:41 : client: [730] opened from 127.0.0.1:37212
+Mar 21 16:41 : client: [730] closed
+Mar 21 16:41 : client: [731] opened from 127.0.0.1:37216
+Mar 21 16:41 : client: [731] closed
+Mar 21 16:41 : client: [732] opened from 127.0.0.1:37220
+Mar 21 16:41 : client: [732] closed
+Mar 21 16:41 : client: [733] opened from 127.0.0.1:37224
+Mar 21 16:41 : client: [733] closed
+Mar 21 16:41 : client: [734] opened from 127.0.0.1:37228
+Mar 21 16:41 : client: [734] closed
+Mar 21 16:41 : client: [735] opened from 127.0.0.1:37232
+Mar 21 16:41 : client: [735] closed
+Mar 21 16:41 : client: [736] opened from 127.0.0.1:37236
+Mar 21 16:41 : client: [736] closed
+Mar 21 16:41 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:41 : client: [737] opened from 127.0.0.1:37240
+Mar 21 16:41 : client: [737] closed
+Mar 21 16:41 : client: [738] opened from 127.0.0.1:37244
+Mar 21 16:41 : client: [738] closed
+Mar 21 16:41 : client: [739] opened from 127.0.0.1:37248
+Mar 21 16:41 : client: [739] closed
+Mar 21 16:41 : client: [740] opened from 127.0.0.1:37252
+Mar 21 16:41 : client: [740] closed
+Mar 21 16:41 : client: [741] opened from 127.0.0.1:37256
+Mar 21 16:41 : client: [741] closed
+Mar 21 16:41 : client: [742] opened from 127.0.0.1:37260
+Mar 21 16:41 : client: [742] closed
+Mar 21 16:41 : client: [743] opened from 127.0.0.1:37264
+Mar 21 16:41 : client: [743] closed
+Mar 21 16:41 : client: [744] opened from 127.0.0.1:37268
+Mar 21 16:41 : client: [744] closed
+Mar 21 16:41 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:41 : client: [745] opened from 127.0.0.1:37272
+Mar 21 16:41 : client: [745] closed
+Mar 21 16:41 : client: [746] opened from 127.0.0.1:37276
+Mar 21 16:41 : client: [746] closed
+Mar 21 16:41 : client: [747] opened from 127.0.0.1:37280
+Mar 21 16:41 : client: [747] closed
+Mar 21 16:42 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:42 : client: [748] opened from 127.0.0.1:37284
+Mar 21 16:42 : client: [748] closed
+Mar 21 16:42 : client: [749] opened from 127.0.0.1:37290
+Mar 21 16:42 : client: [749] closed
+Mar 21 16:42 : client: [750] opened from 127.0.0.1:37294
+Mar 21 16:42 : client: [750] closed
+Mar 21 16:42 : client: [751] opened from 127.0.0.1:37298
+Mar 21 16:42 : client: [751] closed
+Mar 21 16:42 : client: [752] opened from 127.0.0.1:37302
+Mar 21 16:42 : client: [752] closed
+Mar 21 16:42 : client: [753] opened from 127.0.0.1:37306
+Mar 21 16:42 : client: [753] closed
+Mar 21 16:42 : client: [754] opened from 127.0.0.1:37310
+Mar 21 16:42 : client: [754] closed
+Mar 21 16:42 : client: [755] opened from 127.0.0.1:37314
+Mar 21 16:42 : client: [755] closed
+Mar 21 16:42 : client: [756] opened from 127.0.0.1:37318
+Mar 21 16:42 : client: [756] closed
+Mar 21 16:42 : client: [757] opened from 127.0.0.1:37322
+Mar 21 16:42 : client: [757] closed
+Mar 21 16:42 : client: [758] opened from 127.0.0.1:37326
+Mar 21 16:42 : client: [758] closed
+Mar 21 16:42 : client: [759] opened from 127.0.0.1:37330
+Mar 21 16:42 : client: [759] closed
+Mar 21 16:42 : client: [760] opened from 127.0.0.1:37334
+Mar 21 16:42 : client: [760] closed
+Mar 21 16:42 : client: [761] opened from 127.0.0.1:37338
+Mar 21 16:42 : client: [761] closed
+Mar 21 16:42 : client: [762] opened from 127.0.0.1:37342
+Mar 21 16:42 : client: [762] closed
+Mar 21 16:42 : client: [763] opened from 127.0.0.1:37346
+Mar 21 16:42 : client: [763] closed
+Mar 21 16:42 : client: [764] opened from 127.0.0.1:37350
+Mar 21 16:42 : client: [764] closed
+Mar 21 16:42 : client: [765] opened from 127.0.0.1:37354
+Mar 21 16:42 : client: [765] closed
+Mar 21 16:42 : client: [766] opened from 127.0.0.1:37358
+Mar 21 16:42 : client: [766] closed
+Mar 21 16:42 : client: [767] opened from 127.0.0.1:37362
+Mar 21 16:42 : client: [767] closed
+Mar 21 16:42 : client: [768] opened from 127.0.0.1:37366
+Mar 21 16:42 : client: [768] closed
+Mar 21 16:42 : client: [769] opened from 127.0.0.1:37370
+Mar 21 16:42 : client: [769] closed
+Mar 21 16:42 : client: [770] opened from 127.0.0.1:37374
+Mar 21 16:42 : client: [770] closed
+Mar 21 16:42 : client: [771] opened from 127.0.0.1:37378
+Mar 21 16:42 : client: [771] closed
+Mar 21 16:42 : client: [772] opened from 127.0.0.1:37382
+Mar 21 16:42 : client: [772] closed
+Mar 21 16:42 : client: [773] opened from 127.0.0.1:37386
+Mar 21 16:42 : client: [773] closed
+Mar 21 16:42 : client: [774] opened from 127.0.0.1:37390
+Mar 21 16:42 : client: [774] closed
+Mar 21 16:42 : client: [775] opened from 127.0.0.1:37394
+Mar 21 16:42 : client: [775] closed
+Mar 21 16:42 : client: [776] opened from 127.0.0.1:37398
+Mar 21 16:42 : client: [776] closed
+Mar 21 16:42 : client: [777] opened from 127.0.0.1:37402
+Mar 21 16:42 : client: [777] closed
+Mar 21 16:42 : client: [778] opened from 127.0.0.1:37406
+Mar 21 16:42 : client: [778] closed
+Mar 21 16:42 : client: [779] opened from 127.0.0.1:37410
+Mar 21 16:42 : client: [779] closed
+Mar 21 16:42 : client: [780] opened from 127.0.0.1:37414
+Mar 21 16:42 : client: [780] closed
+Mar 21 16:42 : client: [781] opened from 127.0.0.1:37418
+Mar 21 16:42 : client: [781] closed
+Mar 21 16:42 : client: [782] opened from 127.0.0.1:37422
+Mar 21 16:42 : client: [782] closed
+Mar 21 16:42 : client: [783] opened from 127.0.0.1:37426
+Mar 21 16:42 : client: [783] closed
+Mar 21 16:42 : client: [784] opened from 127.0.0.1:37430
+Mar 21 16:42 : client: [784] closed
+Mar 21 16:42 : client: [785] opened from 127.0.0.1:37434
+Mar 21 16:42 : client: [785] closed
+Mar 21 16:42 : client: [786] opened from 127.0.0.1:37438
+Mar 21 16:42 : client: [786] closed
+Mar 21 16:42 : client: [787] opened from 127.0.0.1:37442
+Mar 21 16:42 : client: [787] closed
+Mar 21 16:42 : client: [788] opened from 127.0.0.1:37446
+Mar 21 16:42 : client: [788] closed
+Mar 21 16:42 : client: [789] opened from 127.0.0.1:37450
+Mar 21 16:42 : client: [789] closed
+Mar 21 16:42 : client: [790] opened from 127.0.0.1:37454
+Mar 21 16:42 : client: [790] closed
+Mar 21 16:42 : client: [791] opened from 127.0.0.1:37458
+Mar 21 16:42 : client: [791] closed
+Mar 21 16:42 : client: [792] opened from 127.0.0.1:37462
+Mar 21 16:42 : client: [792] closed
+Mar 21 16:42 : client: [793] opened from 127.0.0.1:37466
+Mar 21 16:42 : client: [793] closed
+Mar 21 16:42 : client: [794] opened from 127.0.0.1:37470
+Mar 21 16:42 : client: [794] closed
+Mar 21 16:42 : client: [795] opened from 127.0.0.1:37474
+Mar 21 16:42 : client: [795] closed
+Mar 21 16:42 : client: [796] opened from 127.0.0.1:37478
+Mar 21 16:42 : client: [796] closed
+Mar 21 16:42 : client: [797] opened from 127.0.0.1:37482
+Mar 21 16:42 : client: [797] closed
+Mar 21 16:42 : client: [798] opened from 127.0.0.1:37486
+Mar 21 16:42 : client: [798] closed
+Mar 21 16:42 : client: [799] opened from 127.0.0.1:37490
+Mar 21 16:42 : client: [799] closed
+Mar 21 16:42 : client: [800] opened from 127.0.0.1:37494
+Mar 21 16:42 : client: [800] closed
+Mar 21 16:42 : client: [801] opened from 127.0.0.1:37498
+Mar 21 16:42 : client: [801] closed
+Mar 21 16:42 : client: [802] opened from 127.0.0.1:37502
+Mar 21 16:42 : client: [802] closed
+Mar 21 16:42 : client: [803] opened from 127.0.0.1:37506
+Mar 21 16:42 : client: [803] closed
+Mar 21 16:42 : client: [804] opened from 127.0.0.1:37510
+Mar 21 16:42 : client: [804] closed
+Mar 21 16:42 : client: [805] opened from 127.0.0.1:37514
+Mar 21 16:42 : client: [805] closed
+Mar 21 16:42 : client: [806] opened from 127.0.0.1:37518
+Mar 21 16:42 : client: [806] closed
+Mar 21 16:42 : client: [807] opened from 127.0.0.1:37522
+Mar 21 16:42 : client: [807] closed
+Mar 21 16:44 : client: [718] closed
+Mar 21 16:46 : player: played "twenty one pilots/2011 - Regional At Best/09 Anathema.mp3"
+Mar 21 16:46 : client: [808] opened from 127.0.0.1:37554
+Mar 21 16:46 : client: [808] closed
+Mar 21 16:46 : client: [809] opened from 127.0.0.1:37558
+Mar 21 16:46 : client: [809] closed
+Mar 21 16:47 : client: [810] opened from 127.0.0.1:37566
+Mar 21 16:47 : client: [811] opened from 127.0.0.1:37570
+Mar 21 16:47 : client: [811] closed
+Mar 21 16:47 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:47 : client: [812] opened from 127.0.0.1:37576
+Mar 21 16:47 : client: [812] closed
+Mar 21 16:47 : client: [813] opened from 127.0.0.1:37580
+Mar 21 16:47 : client: [813] closed
+Mar 21 16:47 : client: [814] opened from 127.0.0.1:37584
+Mar 21 16:47 : client: [814] closed
+Mar 21 16:47 : client: [815] opened from 127.0.0.1:37588
+Mar 21 16:47 : client: [815] closed
+Mar 21 16:47 : client: [816] opened from 127.0.0.1:37592
+Mar 21 16:47 : client: [816] closed
+Mar 21 16:47 : client: [817] opened from 127.0.0.1:37596
+Mar 21 16:47 : client: [817] closed
+Mar 21 16:47 : client: [818] opened from 127.0.0.1:37600
+Mar 21 16:47 : client: [818] closed
+Mar 21 16:47 : client: [810] closed
+Mar 21 16:47 : player: played "Eminem - Music To Be Murdered By (2020) [320KBPS]/11. Stepdad (Intro).mp3"
+Mar 21 16:47 : client: [819] opened from 127.0.0.1:37604
+Mar 21 16:47 : client: [819] closed
+Mar 21 16:47 : client: [820] opened from 127.0.0.1:37608
+Mar 21 16:47 : client: [821] opened from 127.0.0.1:37612
+Mar 21 16:47 : client: [821] closed
+Mar 21 16:47 : client: [822] opened from 127.0.0.1:37616
+Mar 21 16:47 : client: [822] closed
+Mar 21 16:47 : client: [823] opened from 127.0.0.1:37620
+Mar 21 16:47 : client: [823] closed
+Mar 21 16:47 : client: [824] opened from 127.0.0.1:37624
+Mar 21 16:47 : client: [824] closed
+Mar 21 16:47 : client: [825] opened from 127.0.0.1:37628
+Mar 21 16:47 : client: [825] closed
+Mar 21 16:47 : client: [826] opened from 127.0.0.1:37632
+Mar 21 16:47 : client: [826] closed
+Mar 21 16:47 : client: [827] opened from 127.0.0.1:37636
+Mar 21 16:47 : client: [827] closed
+Mar 21 16:48 : client: [820] closed
+Mar 21 16:48 : client: [828] opened from 127.0.0.1:37640
+Mar 21 16:48 : client: [828] closed
+Mar 21 16:48 : client: [829] opened from 127.0.0.1:37644
+Mar 21 16:48 : client: [830] opened from 127.0.0.1:37648
+Mar 21 16:48 : client: [831] opened from 127.0.0.1:37652
+Mar 21 16:48 : client: [830] closed
+Mar 21 16:48 : client: [831] closed
+Mar 21 16:48 : client: [832] opened from 127.0.0.1:37656
+Mar 21 16:48 : client: [832] closed
+Mar 21 16:48 : client: [833] opened from 127.0.0.1:37662
+Mar 21 16:48 : client: [834] opened from 127.0.0.1:37666
+Mar 21 16:48 : client: [833] closed
+Mar 21 16:48 : client: [835] opened from 127.0.0.1:37668
+Mar 21 16:48 : client: [835] closed
+Mar 21 16:48 : client: [836] opened from 127.0.0.1:37672
+Mar 21 16:48 : client: [834] closed
+Mar 21 16:48 : client: [836] closed
+Mar 21 16:48 : client: [837] opened from 127.0.0.1:37676
+Mar 21 16:48 : client: [837] closed
+Mar 21 16:48 : client: [838] opened from 127.0.0.1:37680
+Mar 21 16:48 : client: [839] opened from 127.0.0.1:37684
+Mar 21 16:48 : client: [839] closed
+Mar 21 16:48 : client: [838] closed
+Mar 21 16:48 : client: [840] opened from 127.0.0.1:37688
+Mar 21 16:48 : client: [840] closed
+Mar 21 16:48 : client: [841] opened from 127.0.0.1:37692
+Mar 21 16:48 : client: [841] closed
+Mar 21 16:48 : client: [842] opened from 127.0.0.1:37696
+Mar 21 16:48 : client: [842] closed
+Mar 21 16:48 : client: [843] opened from 127.0.0.1:37700
+Mar 21 16:48 : client: [844] opened from 127.0.0.1:37704
+Mar 21 16:48 : client: [843] closed
+Mar 21 16:48 : client: [844] closed
+Mar 21 16:48 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:48 : client: [845] opened from 127.0.0.1:37708
+Mar 21 16:48 : client: [846] opened from 127.0.0.1:37712
+Mar 21 16:48 : client: [845] closed
+Mar 21 16:48 : client: [846] closed
+Mar 21 16:48 : client: [847] opened from 127.0.0.1:37716
+Mar 21 16:48 : client: [847] closed
+Mar 21 16:48 : client: [848] opened from 127.0.0.1:37720
+Mar 21 16:48 : client: [848] closed
+Mar 21 16:48 : client: [849] opened from 127.0.0.1:37726
+Mar 21 16:48 : client: [850] opened from 127.0.0.1:37730
+Mar 21 16:48 : client: [850] closed
+Mar 21 16:48 : client: [851] opened from 127.0.0.1:37734
+Mar 21 16:48 : client: [849] closed
+Mar 21 16:48 : client: [852] opened from 127.0.0.1:37738
+Mar 21 16:48 : client: [851] closed
+Mar 21 16:48 : client: [852] closed
+Mar 21 16:48 : client: [853] opened from 127.0.0.1:37742
+Mar 21 16:48 : client: [853] closed
+Mar 21 16:48 : client: [854] opened from 127.0.0.1:37746
+Mar 21 16:48 : client: [855] opened from 127.0.0.1:37750
+Mar 21 16:48 : client: [854] closed
+Mar 21 16:48 : client: [855] closed
+Mar 21 16:48 : client: [856] opened from 127.0.0.1:37754
+Mar 21 16:48 : client: [856] closed
+Mar 21 16:48 : client: [857] opened from 127.0.0.1:37758
+Mar 21 16:48 : client: [857] closed
+Mar 21 16:48 : client: [858] opened from 127.0.0.1:37762
+Mar 21 16:48 : client: [859] opened from 127.0.0.1:37766
+Mar 21 16:48 : client: [858] closed
+Mar 21 16:48 : client: [859] closed
+Mar 21 16:48 : client: [860] opened from 127.0.0.1:37770
+Mar 21 16:48 : client: [860] closed
+Mar 21 16:48 : client: [861] opened from 127.0.0.1:37774
+Mar 21 16:48 : client: [861] closed
+Mar 21 16:48 : client: [862] opened from 127.0.0.1:37778
+Mar 21 16:48 : client: [863] opened from 127.0.0.1:37782
+Mar 21 16:48 : client: [862] closed
+Mar 21 16:48 : client: [863] closed
+Mar 21 16:48 : client: [864] opened from 127.0.0.1:37786
+Mar 21 16:48 : client: [864] closed
+Mar 21 16:48 : client: [865] opened from 127.0.0.1:37790
+Mar 21 16:48 : client: [865] closed
+Mar 21 16:48 : client: [866] opened from 127.0.0.1:37794
+Mar 21 16:48 : client: [867] opened from 127.0.0.1:37798
+Mar 21 16:48 : client: [867] closed
+Mar 21 16:48 : client: [866] closed
+Mar 21 16:48 : client: [868] opened from 127.0.0.1:37802
+Mar 21 16:48 : client: [868] closed
+Mar 21 16:48 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:48 : client: [869] opened from 127.0.0.1:37806
+Mar 21 16:48 : client: [870] opened from 127.0.0.1:37810
+Mar 21 16:48 : client: [870] closed
+Mar 21 16:48 : client: [869] closed
+Mar 21 16:48 : client: [871] opened from 127.0.0.1:37814
+Mar 21 16:48 : client: [871] closed
+Mar 21 16:48 : client: [872] opened from 127.0.0.1:37818
+Mar 21 16:48 : client: [872] closed
+Mar 21 16:48 : client: [873] opened from 127.0.0.1:37822
+Mar 21 16:48 : client: [874] opened from 127.0.0.1:37828
+Mar 21 16:48 : client: [873] closed
+Mar 21 16:48 : client: [875] opened from 127.0.0.1:37830
+Mar 21 16:48 : client: [876] opened from 127.0.0.1:37834
+Mar 21 16:48 : client: [875] closed
+Mar 21 16:48 : client: [874] closed
+Mar 21 16:48 : client: [876] closed
+Mar 21 16:48 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 21 16:48 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:48 : client: [877] opened from 127.0.0.1:37838
+Mar 21 16:48 : client: [878] opened from 127.0.0.1:37842
+Mar 21 16:48 : client: [879] opened from 127.0.0.1:37846
+Mar 21 16:48 : client: [877] closed
+Mar 21 16:48 : client: [880] opened from 127.0.0.1:37850
+Mar 21 16:48 : client: [879] closed
+Mar 21 16:48 : client: [878] closed
+Mar 21 16:48 : client: [880] closed
+Mar 21 16:48 : client: [881] opened from 127.0.0.1:37856
+Mar 21 16:48 : client: [882] opened from 127.0.0.1:37858
+Mar 21 16:48 : client: [883] opened from 127.0.0.1:37862
+Mar 21 16:48 : client: [882] closed
+Mar 21 16:48 : client: [881] closed
+Mar 21 16:48 : client: [883] closed
+Mar 21 16:48 : client: [884] opened from 127.0.0.1:37866
+Mar 21 16:48 : client: [884] closed
+Mar 21 16:48 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:48 : client: [885] opened from 127.0.0.1:37870
+Mar 21 16:48 : client: [885] closed
+Mar 21 16:48 : client: [886] opened from 127.0.0.1:37874
+Mar 21 16:48 : client: [887] opened from 127.0.0.1:37878
+Mar 21 16:48 : client: [887] closed
+Mar 21 16:48 : client: [886] closed
+Mar 21 16:48 : client: [888] opened from 127.0.0.1:37882
+Mar 21 16:48 : client: [888] closed
+Mar 21 16:52 : client: [889] opened from 127.0.0.1:37902
+Mar 21 16:52 : client: [890] opened from 127.0.0.1:37904
+Mar 21 16:52 : client: [889] closed
+Mar 21 16:52 : client: [890] closed
+Mar 21 16:52 : client: [891] opened from 127.0.0.1:37908
+Mar 21 16:52 : client: [892] opened from 127.0.0.1:37912
+Mar 21 16:52 : client: [892] closed
+Mar 21 16:52 : client: [891] closed
+Mar 21 16:52 : client: [893] opened from 127.0.0.1:37916
+Mar 21 16:52 : client: [893] closed
+Mar 21 16:52 : client: [894] opened from 127.0.0.1:37920
+Mar 21 16:52 : client: [895] opened from 127.0.0.1:37924
+Mar 21 16:52 : client: [894] closed
+Mar 21 16:52 : client: [895] closed
+Mar 21 16:52 : client: [896] opened from 127.0.0.1:37928
+Mar 21 16:52 : client: [896] closed
+Mar 21 16:52 : client: [897] opened from 127.0.0.1:37932
+Mar 21 16:52 : client: [897] closed
+Mar 21 16:52 : client: [898] opened from 127.0.0.1:37936
+Mar 21 16:52 : client: [899] opened from 127.0.0.1:37940
+Mar 21 16:52 : client: [899] closed
+Mar 21 16:52 : client: [898] closed
+Mar 21 16:52 : client: [900] opened from 127.0.0.1:37944
+Mar 21 16:52 : client: [900] closed
+Mar 21 16:52 : client: [901] opened from 127.0.0.1:37948
+Mar 21 16:52 : client: [901] closed
+Mar 21 16:52 : client: [902] opened from 127.0.0.1:37952
+Mar 21 16:52 : client: [903] opened from 127.0.0.1:37956
+Mar 21 16:52 : client: [903] closed
+Mar 21 16:52 : client: [904] opened from 127.0.0.1:37960
+Mar 21 16:52 : client: [902] closed
+Mar 21 16:52 : client: [904] closed
+Mar 21 16:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:52 : client: [905] opened from 127.0.0.1:37964
+Mar 21 16:52 : client: [905] closed
+Mar 21 16:52 : client: [906] opened from 127.0.0.1:37968
+Mar 21 16:52 : client: [907] opened from 127.0.0.1:37972
+Mar 21 16:52 : client: [908] opened from 127.0.0.1:37976
+Mar 21 16:52 : client: [908] closed
+Mar 21 16:52 : client: [906] closed
+Mar 21 16:52 : client: [907] closed
+Mar 21 16:52 : client: [909] opened from 127.0.0.1:37982
+Mar 21 16:52 : client: [910] opened from 127.0.0.1:37986
+Mar 21 16:52 : client: [911] opened from 127.0.0.1:37990
+Mar 21 16:52 : client: [909] closed
+Mar 21 16:52 : client: [910] closed
+Mar 21 16:52 : client: [911] closed
+Mar 21 16:52 : client: [912] opened from 127.0.0.1:37994
+Mar 21 16:52 : client: [912] closed
+Mar 21 16:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:52 : client: [913] opened from 127.0.0.1:37998
+Mar 21 16:52 : client: [914] opened from 127.0.0.1:38002
+Mar 21 16:52 : client: [915] opened from 127.0.0.1:38006
+Mar 21 16:52 : client: [915] closed
+Mar 21 16:52 : client: [913] closed
+Mar 21 16:52 : client: [914] closed
+Mar 21 16:52 : client: [916] opened from 127.0.0.1:38010
+Mar 21 16:52 : client: [916] closed
+Mar 21 16:52 : client: [917] opened from 127.0.0.1:38014
+Mar 21 16:52 : client: [918] opened from 127.0.0.1:38018
+Mar 21 16:52 : client: [917] closed
+Mar 21 16:52 : client: [918] closed
+Mar 21 16:52 : client: [919] opened from 127.0.0.1:38022
+Mar 21 16:52 : client: [919] closed
+Mar 21 16:52 : client: [920] opened from 127.0.0.1:38026
+Mar 21 16:52 : client: [920] closed
+Mar 21 16:52 : client: [921] opened from 127.0.0.1:38030
+Mar 21 16:52 : client: [921] closed
+Mar 21 16:52 : client: [922] opened from 127.0.0.1:38034
+Mar 21 16:52 : client: [923] opened from 127.0.0.1:38038
+Mar 21 16:52 : client: [922] closed
+Mar 21 16:52 : client: [924] opened from 127.0.0.1:38042
+Mar 21 16:52 : client: [923] closed
+Mar 21 16:52 : client: [924] closed
+Mar 21 16:52 : client: [925] opened from 127.0.0.1:38046
+Mar 21 16:52 : client: [925] closed
+Mar 21 16:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 16:52 : client: [926] opened from 127.0.0.1:38050
+Mar 21 16:52 : client: [927] opened from 127.0.0.1:38054
+Mar 21 16:52 : client: [928] opened from 127.0.0.1:38058
+Mar 21 16:52 : client: [926] closed
+Mar 21 16:52 : client: [928] closed
+Mar 21 16:52 : client: [927] closed
+Mar 21 16:52 : client: [929] opened from 127.0.0.1:38062
+Mar 21 16:52 : client: [929] closed
+Mar 21 16:52 : client: [930] opened from 127.0.0.1:38066
+Mar 21 16:52 : client: [931] opened from 127.0.0.1:38070
+Mar 21 16:52 : client: [932] opened from 127.0.0.1:38074
+Mar 21 16:52 : client: [932] closed
+Mar 21 16:52 : client: [931] closed
+Mar 21 16:52 : client: [930] closed
+Mar 21 16:52 : client: [933] opened from 127.0.0.1:38078
+Mar 21 16:52 : client: [933] closed
+Mar 21 16:52 : client: [934] opened from 127.0.0.1:38086
+Mar 21 16:52 : client: [934] closed
+Mar 21 16:52 : client: [935] opened from 127.0.0.1:38084
+Mar 21 16:52 : client: [935] closed
+Mar 21 16:52 : client: [936] opened from 127.0.0.1:38090
+Mar 21 16:52 : client: [937] opened from 127.0.0.1:38094
+Mar 21 16:52 : client: [936] closed
+Mar 21 16:52 : client: [937] closed
+Mar 21 16:52 : client: [938] opened from 127.0.0.1:38098
+Mar 21 16:52 : client: [938] closed
+Mar 21 16:52 : client: [939] opened from 127.0.0.1:38104
+Mar 21 16:52 : client: [940] opened from 127.0.0.1:38106
+Mar 21 16:52 : client: [939] closed
+Mar 21 16:52 : client: [940] closed
+Mar 21 16:52 : client: [941] opened from 127.0.0.1:38110
+Mar 21 16:52 : client: [941] closed
+Mar 21 16:55 : client: [942] opened from 127.0.0.1:38122
+Mar 21 16:55 : client: [942] closed
+Mar 21 16:55 : client: [716] closed
+Mar 21 16:55 : client: [943] opened from 127.0.0.1:38126
+Mar 21 16:55 : client: [944] opened from 127.0.0.1:38130
+Mar 21 16:55 : client: [944] closed
+Mar 21 16:55 : client: [943] closed
+Mar 21 16:55 : client: [945] opened from 127.0.0.1:38134
+Mar 21 16:56 : client: [946] opened from 127.0.0.1:38140
+Mar 21 16:56 : client: [946] closed
+Mar 21 16:57 : client: [945] closed
+Mar 21 16:57 : client: [947] opened from 127.0.0.1:38144
+Mar 21 16:57 : client: [948] opened from 127.0.0.1:38150
+Mar 21 16:57 : client: [948] closed
+Mar 21 16:57 : client: [947] closed
+Mar 21 16:57 : client: [949] opened from 127.0.0.1:38154
+Mar 21 16:57 : client: [950] opened from 127.0.0.1:38160
+Mar 21 16:57 : client: [950] closed
+Mar 21 16:57 : client: [949] closed
+Mar 21 16:57 : client: [951] opened from 127.0.0.1:38164
+Mar 21 16:57 : client: [952] opened from 127.0.0.1:38168
+Mar 21 16:57 : client: [952] closed
+Mar 21 16:57 : client: [953] opened from 127.0.0.1:38172
+Mar 21 16:57 : client: [953] closed
+Mar 21 16:57 : client: [954] opened from 127.0.0.1:38176
+Mar 21 16:57 : client: [954] closed
+Mar 21 16:57 : client: [955] opened from 127.0.0.1:38180
+Mar 21 16:57 : client: [955] closed
+Mar 21 16:57 : client: [956] opened from 127.0.0.1:38184
+Mar 21 16:57 : client: [956] closed
+Mar 21 16:57 : client: [957] opened from 127.0.0.1:38188
+Mar 21 16:57 : client: [957] closed
+Mar 21 16:57 : client: [958] opened from 127.0.0.1:38192
+Mar 21 16:57 : client: [958] closed
+Mar 21 16:57 : client: [959] opened from 127.0.0.1:38196
+Mar 21 16:57 : client: [959] closed
+Mar 21 16:57 : client: [960] opened from 127.0.0.1:38200
+Mar 21 16:57 : client: [960] closed
+Mar 21 16:57 : client: [961] opened from 127.0.0.1:38204
+Mar 21 16:57 : client: [961] closed
+Mar 21 16:57 : client: [962] opened from 127.0.0.1:38208
+Mar 21 16:57 : client: [962] closed
+Mar 21 16:57 : client: [963] opened from 127.0.0.1:38212
+Mar 21 16:57 : client: [963] closed
+Mar 21 16:57 : client: [964] opened from 127.0.0.1:38216
+Mar 21 16:57 : client: [964] closed
+Mar 21 16:57 : client: [965] opened from 127.0.0.1:38220
+Mar 21 16:57 : client: [965] closed
+Mar 21 16:57 : client: [966] opened from 127.0.0.1:38224
+Mar 21 16:57 : client: [966] closed
+Mar 21 16:57 : client: [967] opened from 127.0.0.1:38228
+Mar 21 16:57 : client: [967] closed
+Mar 21 16:58 : player: played "twenty one pilots/2011 - Regional At Best/08 Kitchen Sink.mp3"
+Mar 21 16:58 : client: [968] opened from 127.0.0.1:38234
+Mar 21 16:58 : client: [968] closed
+Mar 21 16:58 : client: [969] opened from 127.0.0.1:38238
+Mar 21 16:58 : client: [970] opened from 127.0.0.1:38242
+Mar 21 16:58 : client: [969] closed
+Mar 21 16:58 : client: [970] closed
+Mar 21 16:58 : client: [971] opened from 127.0.0.1:38246
+Mar 21 16:58 : client: [971] closed
+Mar 21 16:59 : client: [829] closed
+Mar 21 16:59 : client: [972] opened from 127.0.0.1:38256
+Mar 21 16:59 : client: [972] closed
+Mar 21 16:59 : client: [973] opened from 127.0.0.1:38260
+Mar 21 16:59 : client: [973] closed
+Mar 21 18:58 : client: [974] opened from 127.0.0.1:39274
+Mar 21 18:58 : client: [974] closed
+Mar 21 18:58 : client: [975] opened from 127.0.0.1:39278
+Mar 21 18:58 : client: [975] closed
+Mar 21 18:58 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 18:58 : client: [976] opened from 127.0.0.1:39282
+Mar 21 18:58 : client: [976] closed
+Mar 21 18:58 : client: [977] opened from 127.0.0.1:39286
+Mar 21 18:58 : client: [977] closed
+Mar 21 19:00 : player: played "twenty one pilots/2011 - Regional At Best/09 Anathema.mp3"
+Mar 21 19:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 19:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 19:13 : avahi: Service 'Music Player @ poketstation' successfully established.
+Mar 21 19:13 : client: [0] opened from 127.0.0.1:46280
+Mar 21 19:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 19:13 : client: [0] closed
+Mar 21 19:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 19:13 : client: [1] opened from 127.0.0.1:46284
+Mar 21 19:13 : client: [1] closed
+Mar 21 19:13 : client: [2] opened from 127.0.0.1:46288
+Mar 21 19:13 : client: [2] closed
+Mar 21 19:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 19:13 : client: [3] opened from 127.0.0.1:46292
+Mar 21 19:13 : client: [3] closed
+Mar 21 19:13 : client: [4] opened from 127.0.0.1:46296
+Mar 21 19:16 : player: played "twenty one pilots/2011 - Regional At Best/09 Anathema.mp3"
+Mar 21 19:16 : client: [5] opened from 127.0.0.1:46300
+Mar 21 19:16 : client: [5] closed
+Mar 21 19:16 : client: [6] opened from 127.0.0.1:46306
+Mar 21 19:16 : client: [6] closed
+Mar 21 19:16 : client: [4] closed
+Mar 21 19:16 : client: [7] opened from 127.0.0.1:46310
+Mar 21 19:19 : player: played "twenty one pilots/2011 - Regional At Best/10 Lovely.mp3"
+Mar 21 19:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 19:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 19:20 : avahi: Service 'Music Player @ poketstation' successfully established.
+Mar 21 19:20 : client: [0] opened from 127.0.0.1:44000
+Mar 21 19:20 : client: [0] closed
+Mar 21 19:20 : client: [1] opened from 127.0.0.1:44004
+Mar 21 19:21 : client: [2] opened from 127.0.0.1:44008
+Mar 21 19:21 : client: [2] closed
+Mar 21 19:21 : client: [1] closed
+Mar 21 19:21 : client: [3] opened from 127.0.0.1:44012
+Mar 21 19:27 : client: [4] opened from 127.0.0.1:44018
+Mar 21 19:27 : client: [4] closed
+Mar 21 19:27 : client: [3] closed
+Mar 21 19:27 : client: [5] opened from 127.0.0.1:44022
+Mar 21 19:27 : client: [6] opened from 127.0.0.1:44026
+Mar 21 19:27 : client: [6] closed
+Mar 21 19:27 : client: [5] closed
+Mar 21 19:27 : client: [7] opened from 127.0.0.1:44030
+Mar 21 19:28 : client: [8] opened from 127.0.0.1:44034
+Mar 21 19:28 : client: [8] closed
+Mar 21 19:28 : client: [7] closed
+Mar 21 19:28 : client: [9] opened from 127.0.0.1:44038
+Mar 21 19:28 : client: [10] opened from 127.0.0.1:44042
+Mar 21 19:28 : client: [10] closed
+Mar 21 19:28 : client: [9] closed
+Mar 21 19:28 : client: [11] opened from 127.0.0.1:44046
+Mar 21 19:37 : client: [12] opened from 127.0.0.1:44054
+Mar 21 19:37 : client: [12] closed
+Mar 21 19:37 : client: [11] closed
+Mar 21 19:37 : client: [13] opened from 127.0.0.1:44058
+Mar 21 19:39 : client: [14] opened from 127.0.0.1:44062
+Mar 21 19:39 : client: [14] closed
+Mar 21 19:39 : client: [13] closed
+Mar 21 19:39 : client: [15] opened from 127.0.0.1:44066
+Mar 21 20:11 : client: [16] opened from 127.0.0.1:44462
+Mar 21 20:11 : client: [16] closed
+Mar 21 20:11 : client: [15] closed
+Mar 21 20:11 : client: [17] opened from 127.0.0.1:44466
+Mar 21 20:12 : client: [18] opened from 127.0.0.1:44470
+Mar 21 20:12 : client: [18] closed
+Mar 21 20:12 : client: [17] closed
+Mar 21 20:12 : client: [19] opened from 127.0.0.1:44474
+Mar 21 21:51 : client: [20] opened from 127.0.0.1:46130
+Mar 21 21:51 : client: [20] closed
+Mar 21 21:51 : client: [21] opened from 127.0.0.1:46134
+Mar 21 21:51 : client: [21] closed
+Mar 21 21:51 : client: [22] opened from 127.0.0.1:46138
+Mar 21 21:51 : client: [22] closed
+Mar 21 21:52 : client: [23] opened from 127.0.0.1:46144
+Mar 21 21:52 : client: [23] closed
+Mar 21 21:52 : client: [24] opened from 127.0.0.1:46148
+Mar 21 21:52 : client: [24] closed
+Mar 21 21:52 : client: [25] opened from 127.0.0.1:46152
+Mar 21 21:52 : client: [26] opened from 127.0.0.1:46156
+Mar 21 21:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 21:52 : client: [26] closed
+Mar 21 21:52 : client: [27] opened from 127.0.0.1:46160
+Mar 21 21:52 : client: [27] closed
+Mar 21 21:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 21:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 21:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 21:53 : client: [28] opened from 127.0.0.1:46164
+Mar 21 21:53 : client: [25] closed
+Mar 21 21:53 : client: [29] opened from 127.0.0.1:46168
+Mar 21 21:53 : client: [29] closed
+Mar 21 21:53 : client: [30] opened from 127.0.0.1:46172
+Mar 21 21:53 : client: [30] closed
+Mar 21 21:53 : client: [31] opened from 127.0.0.1:46176
+Mar 21 21:53 : client: [31] closed
+Mar 21 21:53 : client: [32] opened from 127.0.0.1:46180
+Mar 21 21:53 : client: [28] closed
+Mar 21 21:53 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 21 21:56 : player: played "twenty one pilots/2011 - Regional At Best/09 Anathema.mp3"
+Mar 22 10:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 22 10:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 22 10:43 : avahi: Service 'Music Player @ poketstation' successfully established.
+Mar 22 10:43 : client: [0] opened from 127.0.0.1:51172
+Mar 22 10:43 : client: [0] closed
+Mar 22 10:43 : client: [1] opened from 127.0.0.1:51176
+Mar 22 10:45 : client: [2] opened from 127.0.0.1:51180
+Mar 22 10:45 : client: [2] closed
+Mar 22 10:45 : client: [1] closed
+Mar 22 10:45 : client: [3] opened from 127.0.0.1:51184
+Mar 22 10:45 : client: [4] opened from 127.0.0.1:51188
+Mar 22 10:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 22 10:45 : client: [4] closed
+Mar 22 10:45 : client: [5] opened from 127.0.0.1:51192
+Mar 22 10:45 : client: [5] closed
+Mar 22 10:45 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 10:46 : player: played "twenty one pilots/2011 - Regional At Best/09 Anathema.mp3"
+Mar 22 10:46 : client: [6] opened from 127.0.0.1:51304
+Mar 22 10:46 : client: [6] closed
+Mar 22 10:50 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 10:50 : player: played "twenty one pilots/2011 - Regional At Best/10 Lovely.mp3"
+Mar 22 10:50 : client: [7] opened from 127.0.0.1:51418
+Mar 22 10:50 : client: [7] closed
+Mar 22 11:05 : client: [8] opened from 127.0.0.1:51700
+Mar 22 11:05 : client: [8] closed
+Mar 22 11:05 : client: [3] closed
+Mar 22 11:05 : client: [9] opened from 127.0.0.1:51704
+Mar 22 11:05 : client: [10] opened from 127.0.0.1:51708
+Mar 22 11:05 : client: [10] closed
+Mar 22 11:05 : client: [9] closed
+Mar 22 11:05 : client: [11] opened from 127.0.0.1:51712
+Mar 22 11:06 : client: [12] opened from 127.0.0.1:51716
+Mar 22 11:06 : client: [12] closed
+Mar 22 11:06 : client: [13] opened from 127.0.0.1:51720
+Mar 22 11:06 : client: [13] closed
+Mar 22 11:06 : client: [14] opened from 127.0.0.1:51724
+Mar 22 11:06 : client: [14] closed
+Mar 22 11:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:10 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/01.You Know You're Right.mp3"
+Mar 22 11:10 : client: [15] opened from 127.0.0.1:51790
+Mar 22 11:10 : client: [15] closed
+Mar 22 11:12 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/02.About A Girl.mp3"
+Mar 22 11:12 : client: [16] opened from 127.0.0.1:51828
+Mar 22 11:12 : client: [16] closed
+Mar 22 11:15 : player: played "Nirvana - Greatest Hits (2002) vtwin88cube/03.Been A Son.mp3"
+Mar 22 11:15 : client: [17] opened from 127.0.0.1:51838
+Mar 22 11:15 : client: [17] closed
+Mar 22 11:16 : client: [18] opened from 127.0.0.1:51842
+Mar 22 11:16 : client: [19] opened from 127.0.0.1:51846
+Mar 22 11:16 : client: [19] closed
+Mar 22 11:16 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 22 11:16 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:16 : client: [20] opened from 127.0.0.1:51850
+Mar 22 11:16 : client: [20] closed
+Mar 22 11:16 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:16 : client: [21] opened from 127.0.0.1:51854
+Mar 22 11:16 : client: [21] closed
+Mar 22 11:16 : client: [22] opened from 127.0.0.1:51858
+Mar 22 11:16 : client: [22] closed
+Mar 22 11:16 : client: [23] opened from 127.0.0.1:51862
+Mar 22 11:16 : client: [23] closed
+Mar 22 11:16 : client: [24] opened from 127.0.0.1:51866
+Mar 22 11:16 : client: [24] closed
+Mar 22 11:16 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:16 : client: [25] opened from 127.0.0.1:51870
+Mar 22 11:16 : client: [25] closed
+Mar 22 11:16 : client: [26] opened from 127.0.0.1:51874
+Mar 22 11:16 : client: [26] closed
+Mar 22 11:16 : client: [27] opened from 127.0.0.1:51878
+Mar 22 11:16 : client: [27] closed
+Mar 22 11:16 : client: [28] opened from 127.0.0.1:51882
+Mar 22 11:16 : client: [28] closed
+Mar 22 11:16 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:16 : client: [29] opened from 127.0.0.1:51886
+Mar 22 11:16 : client: [29] closed
+Mar 22 11:16 : client: [30] opened from 127.0.0.1:51890
+Mar 22 11:16 : client: [30] closed
+Mar 22 11:16 : client: [31] opened from 127.0.0.1:51894
+Mar 22 11:16 : client: [31] closed
+Mar 22 11:16 : client: [32] opened from 127.0.0.1:51898
+Mar 22 11:16 : client: [32] closed
+Mar 22 11:16 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:16 : client: [33] opened from 127.0.0.1:51902
+Mar 22 11:16 : client: [33] closed
+Mar 22 11:16 : client: [34] opened from 127.0.0.1:51906
+Mar 22 11:16 : client: [34] closed
+Mar 22 11:16 : client: [35] opened from 127.0.0.1:51910
+Mar 22 11:16 : client: [35] closed
+Mar 22 11:16 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 11:16 : client: [36] opened from 127.0.0.1:51914
+Mar 22 11:16 : client: [36] closed
+Mar 22 11:16 : exception: Failed to open /home/pika/.config/mpd/playlists: No such file or directory
+Mar 22 11:18 : client: [18] closed
+Mar 22 11:18 : client: [37] opened from 127.0.0.1:51920
+Mar 22 11:18 : client: [37] closed
+Mar 22 11:18 : client: [11] closed
+Mar 22 11:18 : client: [38] opened from 127.0.0.1:51924
+Mar 22 11:18 : client: [39] opened from 127.0.0.1:51928
+Mar 22 11:18 : client: [39] closed
+Mar 22 11:18 : client: [38] closed
+Mar 22 11:18 : client: [40] opened from 127.0.0.1:51932
+Mar 22 11:19 : client: [41] opened from 127.0.0.1:51936
+Mar 22 11:19 : client: [41] closed
+Mar 22 11:19 : client: [40] closed
+Mar 22 11:19 : client: [42] opened from 127.0.0.1:51940
+Mar 22 11:20 : player: played "twenty one pilots/2013 - Vessel/03 Migraine.mp3"
+Mar 22 11:20 : client: [43] opened from 127.0.0.1:52072
+Mar 22 11:20 : client: [44] opened from 127.0.0.1:52076
+Mar 22 11:20 : client: [43] closed
+Mar 22 11:20 : client: [44] closed
+Mar 22 11:23 : player: played "twenty one pilots/2013 - Vessel/04 House of Gold.mp3"
+Mar 22 11:23 : client: [42] closed
+Mar 22 11:23 : client: [45] opened from 127.0.0.1:52084
+Mar 22 11:23 : client: [45] closed
+Mar 22 11:23 : client: [46] opened from 127.0.0.1:52088
+Mar 22 11:24 : client: [47] opened from 127.0.0.1:52092
+Mar 22 11:24 : client: [47] closed
+Mar 22 11:24 : client: [46] closed
+Mar 22 11:24 : client: [48] opened from 127.0.0.1:52096
+Mar 22 11:24 : client: [49] opened from 127.0.0.1:52100
+Mar 22 11:24 : client: [49] closed
+Mar 22 11:24 : client: [48] closed
+Mar 22 11:24 : client: [50] opened from 127.0.0.1:52104
+Mar 22 11:25 : client: [51] opened from 127.0.0.1:52110
+Mar 22 11:25 : client: [51] closed
+Mar 22 11:25 : client: [50] closed
+Mar 22 11:25 : client: [52] opened from 127.0.0.1:52114
+Mar 22 11:26 : client: [53] opened from 127.0.0.1:52118
+Mar 22 11:26 : client: [53] closed
+Mar 22 11:26 : client: [52] closed
+Mar 22 11:26 : client: [54] opened from 127.0.0.1:52122
+Mar 22 11:27 : client: [55] opened from 127.0.0.1:52126
+Mar 22 11:27 : client: [55] closed
+Mar 22 11:27 : client: [54] closed
+Mar 22 11:27 : client: [56] opened from 127.0.0.1:52130
+Mar 22 11:27 : client: [57] opened from 127.0.0.1:52134
+Mar 22 11:27 : client: [57] closed
+Mar 22 11:27 : client: [56] closed
+Mar 22 11:27 : client: [58] opened from 127.0.0.1:52138
+Mar 22 11:27 : player: played "twenty one pilots/2013 - Vessel/05 Car Radio.mp3"
+Mar 22 11:27 : client: [59] opened from 127.0.0.1:52142
+Mar 22 11:27 : client: [59] closed
+Mar 22 11:28 : client: [60] opened from 127.0.0.1:52146
+Mar 22 11:28 : client: [60] closed
+Mar 22 11:28 : client: [58] closed
+Mar 22 11:28 : client: [61] opened from 127.0.0.1:52150
+Mar 22 11:28 : client: [62] opened from 127.0.0.1:52154
+Mar 22 11:28 : client: [62] closed
+Mar 22 11:28 : client: [61] closed
+Mar 22 11:28 : client: [63] opened from 127.0.0.1:52158
+Mar 22 11:29 : client: [64] opened from 127.0.0.1:52164
+Mar 22 11:29 : client: [64] closed
+Mar 22 11:29 : client: [63] closed
+Mar 22 11:29 : client: [65] opened from 127.0.0.1:52168
+Mar 22 11:29 : client: [66] opened from 127.0.0.1:52172
+Mar 22 11:29 : client: [66] closed
+Mar 22 11:29 : client: [65] closed
+Mar 22 11:29 : client: [67] opened from 127.0.0.1:52176
+Mar 22 11:30 : client: [68] opened from 127.0.0.1:52180
+Mar 22 11:30 : client: [68] closed
+Mar 22 11:30 : client: [67] closed
+Mar 22 11:30 : client: [69] opened from 127.0.0.1:52184
+Mar 22 11:30 : client: [70] opened from 127.0.0.1:52188
+Mar 22 11:30 : client: [70] closed
+Mar 22 11:30 : client: [69] closed
+Mar 22 11:30 : client: [71] opened from 127.0.0.1:52192
+Mar 22 11:30 : client: [72] opened from 127.0.0.1:52196
+Mar 22 11:30 : client: [72] closed
+Mar 22 11:30 : client: [71] closed
+Mar 22 11:30 : client: [73] opened from 127.0.0.1:52200
+Mar 22 11:31 : client: [74] opened from 127.0.0.1:52204
+Mar 22 11:31 : client: [74] closed
+Mar 22 11:31 : client: [73] closed
+Mar 22 11:31 : client: [75] opened from 127.0.0.1:52208
+Mar 22 11:32 : player: played "twenty one pilots/2013 - Vessel/06 Semi-Automatic.mp3"
+Mar 22 11:32 : client: [76] opened from 127.0.0.1:52212
+Mar 22 11:32 : client: [76] closed
+Mar 22 11:32 : client: [77] opened from 127.0.0.1:52216
+Mar 22 11:32 : client: [77] closed
+Mar 22 11:33 : client: [78] opened from 127.0.0.1:52220
+Mar 22 11:33 : client: [78] closed
+Mar 22 11:33 : client: [75] closed
+Mar 22 11:33 : client: [79] opened from 127.0.0.1:52224
+Mar 22 11:33 : client: [80] opened from 127.0.0.1:52228
+Mar 22 11:33 : client: [80] closed
+Mar 22 11:33 : client: [79] closed
+Mar 22 11:33 : client: [81] opened from 127.0.0.1:52232
+Mar 22 11:33 : client: [82] opened from 127.0.0.1:52238
+Mar 22 11:33 : client: [82] closed
+Mar 22 11:33 : client: [81] closed
+Mar 22 11:33 : client: [83] opened from 127.0.0.1:52242
+Mar 22 11:33 : client: [84] opened from 127.0.0.1:52246
+Mar 22 11:33 : client: [84] closed
+Mar 22 11:33 : client: [83] closed
+Mar 22 11:33 : client: [85] opened from 127.0.0.1:52250
+Mar 22 11:34 : client: [86] opened from 127.0.0.1:52254
+Mar 22 11:34 : client: [86] closed
+Mar 22 11:34 : client: [85] closed
+Mar 22 11:34 : client: [87] opened from 127.0.0.1:52258
+Mar 22 11:34 : client: [88] opened from 127.0.0.1:52262
+Mar 22 11:34 : client: [88] closed
+Mar 22 11:34 : client: [87] closed
+Mar 22 11:34 : client: [89] opened from 127.0.0.1:52266
+Mar 22 11:34 : client: [90] opened from 127.0.0.1:52270
+Mar 22 11:34 : client: [90] closed
+Mar 22 11:34 : client: [89] closed
+Mar 22 11:34 : client: [91] opened from 127.0.0.1:52274
+Mar 22 11:34 : client: [92] opened from 127.0.0.1:52278
+Mar 22 11:34 : client: [92] closed
+Mar 22 11:34 : client: [91] closed
+Mar 22 11:34 : client: [93] opened from 127.0.0.1:52282
+Mar 22 11:34 : client: [94] opened from 127.0.0.1:52286
+Mar 22 11:34 : client: [94] closed
+Mar 22 11:34 : client: [93] closed
+Mar 22 11:34 : client: [95] opened from 127.0.0.1:52290
+Mar 22 11:34 : client: [96] opened from 127.0.0.1:52294
+Mar 22 11:34 : client: [96] closed
+Mar 22 11:34 : client: [95] closed
+Mar 22 11:34 : client: [97] opened from 127.0.0.1:52298
+Mar 22 11:34 : client: [98] opened from 127.0.0.1:52302
+Mar 22 11:34 : client: [98] closed
+Mar 22 11:34 : client: [97] closed
+Mar 22 11:34 : client: [99] opened from 127.0.0.1:52306
+Mar 22 11:35 : client: [100] opened from 127.0.0.1:52310
+Mar 22 11:35 : client: [100] closed
+Mar 22 11:35 : client: [99] closed
+Mar 22 11:35 : client: [101] opened from 127.0.0.1:52314
+Mar 22 11:36 : player: played "twenty one pilots/2013 - Vessel/07 Screen.mp3"
+Mar 22 11:36 : client: [102] opened from 127.0.0.1:52318
+Mar 22 11:36 : client: [102] closed
+Mar 22 11:37 : client: [103] opened from 127.0.0.1:52322
+Mar 22 11:37 : client: [103] closed
+Mar 22 11:37 : client: [101] closed
+Mar 22 11:37 : client: [104] opened from 127.0.0.1:52326
+Mar 22 11:37 : client: [105] opened from 127.0.0.1:52330
+Mar 22 11:37 : client: [105] closed
+Mar 22 11:37 : client: [104] closed
+Mar 22 11:37 : client: [106] opened from 127.0.0.1:52334
+Mar 22 11:39 : player: played "twenty one pilots/2013 - Vessel/08 The Run And Go.mp3"
+Mar 22 11:39 : client: [107] opened from 127.0.0.1:52344
+Mar 22 11:39 : client: [107] closed
+Mar 22 11:43 : player: played "twenty one pilots/2013 - Vessel/09 Fake You Out.mp3"
+Mar 22 11:43 : client: [108] opened from 127.0.0.1:52458
+Mar 22 11:43 : client: [108] closed
+Mar 22 11:44 : client: [109] opened from 127.0.0.1:52500
+Mar 22 11:44 : client: [109] closed
+Mar 22 11:44 : client: [106] closed
+Mar 22 11:44 : client: [110] opened from 127.0.0.1:52504
+Mar 22 11:44 : client: [111] opened from 127.0.0.1:52508
+Mar 22 11:44 : client: [111] closed
+Mar 22 11:44 : client: [110] closed
+Mar 22 11:44 : client: [112] opened from 127.0.0.1:52512
+Mar 22 11:44 : client: [113] opened from 127.0.0.1:52516
+Mar 22 11:44 : client: [113] closed
+Mar 22 11:44 : client: [112] closed
+Mar 22 11:45 : client: [114] opened from 127.0.0.1:52520
+Mar 22 11:45 : client: [115] opened from 127.0.0.1:52524
+Mar 22 11:45 : client: [115] closed
+Mar 22 11:45 : client: [114] closed
+Mar 22 11:45 : client: [116] opened from 127.0.0.1:52528
+Mar 22 11:45 : client: [117] opened from 127.0.0.1:52532
+Mar 22 11:45 : client: [117] closed
+Mar 22 11:45 : client: [116] closed
+Mar 22 11:45 : client: [118] opened from 127.0.0.1:52536
+Mar 22 11:48 : player: played "twenty one pilots/2013 - Vessel/10 Guns For Hands.mp3"
+Mar 22 11:48 : client: [119] opened from 127.0.0.1:52544
+Mar 22 11:48 : client: [119] closed
+Mar 22 11:52 : client: [120] opened from 127.0.0.1:52572
+Mar 22 11:52 : client: [120] closed
+Mar 22 11:52 : client: [118] closed
+Mar 22 11:52 : client: [121] opened from 127.0.0.1:52576
+Mar 22 11:52 : player: played "twenty one pilots/2013 - Vessel/11 Trees.mp3"
+Mar 22 11:52 : client: [122] opened from 127.0.0.1:52580
+Mar 22 11:52 : client: [122] closed
+Mar 22 11:55 : player: played "twenty one pilots/2013 - Vessel/12 Truce.mp3"
+Mar 22 11:55 : client: [123] opened from 127.0.0.1:52624
+Mar 22 11:55 : client: [123] closed
+Mar 22 11:55 : client: [124] opened from 127.0.0.1:52628
+Mar 22 11:55 : client: [124] closed
+Mar 22 11:55 : client: [121] closed
+Mar 22 11:55 : client: [125] opened from 127.0.0.1:52634
+Mar 22 11:55 : client: [126] opened from 127.0.0.1:52638
+Mar 22 11:55 : client: [126] closed
+Mar 22 11:55 : client: [125] closed
+Mar 22 11:55 : client: [127] opened from 127.0.0.1:52642
+Mar 22 11:59 : player: played "twenty one pilots/2011 - Regional At Best/07 Glowing Eyes.mp3"
+Mar 22 11:59 : client: [128] opened from 127.0.0.1:52702
+Mar 22 11:59 : client: [129] opened from 127.0.0.1:52706
+Mar 22 11:59 : client: [128] closed
+Mar 22 11:59 : client: [129] closed
+Mar 22 11:59 : client: [130] opened from 127.0.0.1:52720
+Mar 22 11:59 : client: [130] closed
+Mar 22 11:59 : client: [131] opened from 127.0.0.1:52724
+Mar 22 11:59 : client: [131] closed
+Mar 22 12:15 : client: [132] opened from 127.0.0.1:52860
+Mar 22 12:15 : client: [132] closed
+Mar 22 12:15 : client: [127] closed
+Mar 22 12:15 : client: [133] opened from 127.0.0.1:52864
+Mar 22 12:16 : client: [134] opened from 127.0.0.1:52868
+Mar 22 12:16 : client: [134] closed
+Mar 22 12:16 : client: [133] closed
+Mar 22 12:16 : client: [135] opened from 127.0.0.1:52872
+Mar 22 12:16 : client: [136] opened from 127.0.0.1:52876
+Mar 22 12:16 : client: [136] closed
+Mar 22 12:16 : client: [135] closed
+Mar 22 12:16 : client: [137] opened from 127.0.0.1:52880
+Mar 22 12:16 : client: [138] opened from 127.0.0.1:52884
+Mar 22 12:16 : client: [138] closed
+Mar 22 12:16 : client: [137] closed
+Mar 22 12:16 : client: [139] opened from 127.0.0.1:52888
+Mar 22 12:25 : client: [140] opened from 127.0.0.1:52926
+Mar 22 12:25 : client: [140] closed
+Mar 22 12:25 : client: [139] closed
+Mar 22 12:25 : client: [141] opened from 127.0.0.1:52930
+Mar 22 12:25 : client: [142] opened from 127.0.0.1:52934
+Mar 22 12:25 : client: [142] closed
+Mar 22 12:25 : client: [141] closed
+Mar 22 12:25 : client: [143] opened from 127.0.0.1:52938
+Mar 22 12:25 : client: [144] opened from 127.0.0.1:52942
+Mar 22 12:25 : client: [144] closed
+Mar 22 12:25 : client: [143] closed
+Mar 22 12:25 : client: [145] opened from 127.0.0.1:52946
+Mar 22 12:25 : client: [146] opened from 127.0.0.1:52950
+Mar 22 12:25 : client: [146] closed
+Mar 22 12:25 : client: [145] closed
+Mar 22 12:25 : client: [147] opened from 127.0.0.1:52954
+Mar 22 12:26 : client: [148] opened from 127.0.0.1:52958
+Mar 22 12:26 : client: [148] closed
+Mar 22 12:26 : client: [147] closed
+Mar 22 12:26 : client: [149] opened from 127.0.0.1:52964
+Mar 22 12:27 : client: [150] opened from 127.0.0.1:52970
+Mar 22 12:27 : client: [150] closed
+Mar 22 12:27 : client: [149] closed
+Mar 22 12:27 : client: [151] opened from 127.0.0.1:52974
+Mar 22 12:27 : client: [152] opened from 127.0.0.1:52982
+Mar 22 12:27 : client: [152] closed
+Mar 22 12:27 : client: [151] closed
+Mar 22 12:27 : client: [153] opened from 127.0.0.1:52986
+Mar 22 12:31 : client: [154] opened from 127.0.0.1:52992
+Mar 22 12:31 : client: [154] closed
+Mar 22 12:31 : client: [153] closed
+Mar 22 12:31 : client: [155] opened from 127.0.0.1:52996
+Mar 22 12:32 : client: [156] opened from 127.0.0.1:53004
+Mar 22 12:32 : client: [156] closed
+Mar 22 12:32 : client: [155] closed
+Mar 22 12:32 : client: [157] opened from 127.0.0.1:53008
+Mar 22 12:36 : client: [158] opened from 127.0.0.1:53042
+Mar 22 12:36 : client: [158] closed
+Mar 22 12:36 : client: [157] closed
+Mar 22 12:36 : client: [159] opened from 127.0.0.1:53046
+Mar 22 12:41 : client: [160] opened from 127.0.0.1:53102
+Mar 22 12:41 : client: [160] closed
+Mar 22 12:41 : client: [159] closed
+Mar 22 12:41 : client: [161] opened from 127.0.0.1:53106
+Mar 22 12:41 : client: [162] opened from 127.0.0.1:53110
+Mar 22 12:41 : client: [162] closed
+Mar 22 12:41 : client: [161] closed
+Mar 22 12:42 : client: [163] opened from 127.0.0.1:53114
+Mar 22 12:42 : client: [164] opened from 127.0.0.1:53118
+Mar 22 12:42 : client: [164] closed
+Mar 22 12:42 : client: [163] closed
+Mar 22 12:42 : client: [165] opened from 127.0.0.1:53122
+Mar 22 12:42 : client: [166] opened from 127.0.0.1:53126
+Mar 22 12:42 : client: [166] closed
+Mar 22 12:42 : client: [165] closed
+Mar 22 12:42 : client: [167] opened from 127.0.0.1:53130
+Mar 22 12:42 : client: [168] opened from 127.0.0.1:53134
+Mar 22 12:42 : client: [168] closed
+Mar 22 12:42 : client: [167] closed
+Mar 22 12:42 : client: [169] opened from 127.0.0.1:53138
+Mar 22 12:43 : client: [170] opened from 127.0.0.1:53146
+Mar 22 12:43 : client: [170] closed
+Mar 22 12:43 : client: [169] closed
+Mar 22 12:43 : client: [171] opened from 127.0.0.1:53150
+Mar 22 12:59 : client: [172] opened from 127.0.0.1:53416
+Mar 22 12:59 : client: [172] closed
+Mar 22 12:59 : client: [171] closed
+Mar 22 12:59 : client: [173] opened from 127.0.0.1:53420
+Mar 22 13:02 : client: [174] opened from 127.0.0.1:53490
+Mar 22 13:02 : client: [174] closed
+Mar 22 13:02 : client: [173] closed
+Mar 22 13:02 : client: [175] opened from 127.0.0.1:53494
+Mar 22 13:03 : client: [176] opened from 127.0.0.1:53524
+Mar 22 13:03 : client: [176] closed
+Mar 22 13:03 : client: [175] closed
+Mar 22 13:03 : client: [177] opened from 127.0.0.1:53528
+Mar 22 14:27 : client: [178] opened from 127.0.0.1:54694
+Mar 22 14:27 : client: [178] closed
+Mar 22 14:28 : client: [177] closed
+Mar 22 14:28 : client: [179] opened from 127.0.0.1:54698
+Mar 22 14:45 : client: [180] opened from 127.0.0.1:54994
+Mar 22 14:45 : client: [180] closed
+Mar 22 14:45 : client: [179] closed
+Mar 22 14:45 : client: [181] opened from 127.0.0.1:54998
+Mar 22 14:52 : client: [182] opened from 127.0.0.1:55138
+Mar 22 14:52 : client: [182] closed
+Mar 22 14:52 : client: [181] closed
+Mar 22 14:52 : client: [183] opened from 127.0.0.1:55142
+Mar 22 14:54 : client: [184] opened from 127.0.0.1:55216
+Mar 22 14:54 : client: [184] closed
+Mar 22 14:54 : client: [183] closed
+Mar 22 14:54 : client: [185] opened from 127.0.0.1:55220
+Mar 22 15:16 : client: [186] opened from 127.0.0.1:55530
+Mar 22 15:16 : client: [186] closed
+Mar 22 15:16 : client: [185] closed
+Mar 22 15:16 : client: [187] opened from 127.0.0.1:55534
+Mar 22 15:17 : client: [188] opened from 127.0.0.1:55540
+Mar 22 15:17 : client: [188] closed
+Mar 22 15:17 : client: [187] closed
+Mar 22 15:17 : client: [189] opened from 127.0.0.1:55544
+Mar 22 15:23 : client: [190] opened from 127.0.0.1:55618
+Mar 22 15:23 : client: [190] closed
+Mar 22 15:23 : client: [189] closed
+Mar 22 15:23 : client: [191] opened from 127.0.0.1:55622
+Mar 22 15:30 : client: [192] opened from 127.0.0.1:55870
+Mar 22 15:30 : client: [192] closed
+Mar 22 15:30 : client: [191] closed
+Mar 22 15:30 : client: [193] opened from 127.0.0.1:55874
+Mar 22 15:30 : client: [194] opened from 127.0.0.1:55878
+Mar 22 15:30 : client: [194] closed
+Mar 22 15:30 : client: [193] closed
+Mar 22 15:30 : client: [195] opened from 127.0.0.1:55882
+Mar 22 15:35 : client: [196] opened from 127.0.0.1:55904
+Mar 22 15:35 : client: [196] closed
+Mar 22 15:35 : client: [195] closed
+Mar 22 15:35 : client: [197] opened from 127.0.0.1:55908
+Mar 22 15:40 : client: [198] opened from 127.0.0.1:55924
+Mar 22 15:40 : client: [198] closed
+Mar 22 15:40 : client: [197] closed
+Mar 22 15:40 : client: [199] opened from 127.0.0.1:55928
+Mar 22 15:40 : client: [200] opened from 127.0.0.1:55934
+Mar 22 15:40 : client: [200] closed
+Mar 22 15:40 : client: [199] closed
+Mar 22 15:40 : client: [201] opened from 127.0.0.1:55938
+Mar 22 15:53 : client: [202] opened from 127.0.0.1:56166
+Mar 22 15:53 : client: [202] closed
+Mar 22 15:53 : client: [201] closed
+Mar 22 15:53 : client: [203] opened from 127.0.0.1:56170
+Mar 22 16:10 : client: [204] opened from 127.0.0.1:56260
+Mar 22 16:10 : client: [204] closed
+Mar 22 16:10 : client: [203] closed
+Mar 22 16:10 : client: [205] opened from 127.0.0.1:56266
+Mar 22 16:36 : client: [206] opened from 127.0.0.1:56440
+Mar 22 16:36 : client: [206] closed
+Mar 22 16:36 : client: [207] opened from 127.0.0.1:56444
+Mar 22 16:36 : client: [207] closed
+Mar 22 16:36 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Mar 22 16:37 : client: [208] opened from 127.0.0.1:56478
+Mar 22 16:37 : client: [208] closed
+Mar 22 16:37 : client: [205] closed
+Mar 22 16:37 : client: [209] opened from 127.0.0.1:56482
+Mar 22 16:37 : client: [210] opened from 127.0.0.1:56486
+Mar 22 16:37 : client: [210] closed
+Mar 22 16:37 : client: [209] closed
+Mar 22 16:37 : client: [211] opened from 127.0.0.1:56492
+Mar 22 16:40 : player: played "twenty one pilots/2011 - Regional At Best/06 Forest.mp3"
+Mar 22 16:40 : client: [212] opened from 127.0.0.1:56554
+Mar 22 16:40 : client: [212] closed
+Mar 22 16:42 : client: [213] opened from 127.0.0.1:56606
+Mar 22 16:42 : client: [213] closed
+Mar 22 16:42 : client: [211] closed
+Mar 22 16:42 : client: [214] opened from 127.0.0.1:56610
+Mar 22 16:43 : client: [215] opened from 127.0.0.1:56616
+Mar 22 16:43 : client: [215] closed
+Mar 22 16:43 : client: [216] opened from 127.0.0.1:56620
+Mar 22 16:43 : client: [216] closed
+Mar 22 16:49 : client: [217] opened from 127.0.0.1:56744
+Mar 22 16:49 : client: [217] closed
+Mar 22 16:49 : client: [214] closed
+Mar 22 16:49 : client: [218] opened from 127.0.0.1:56748
+Mar 22 16:50 : client: [219] opened from 127.0.0.1:56754
+Mar 22 16:50 : client: [219] closed
+Mar 22 16:50 : client: [218] closed
+Mar 22 16:50 : client: [220] opened from 127.0.0.1:56758
+Mar 22 16:50 : client: [221] opened from 127.0.0.1:56762
+Mar 22 16:50 : client: [221] closed
+Mar 22 16:50 : client: [222] opened from 127.0.0.1:56766
+Mar 22 16:50 : client: [222] closed
+Mar 22 16:50 : client: [223] opened from 127.0.0.1:56770
+Mar 22 16:50 : client: [223] closed
+Mar 22 16:50 : client: [224] opened from 127.0.0.1:56774
+Mar 22 16:50 : client: [224] closed
+Mar 22 16:50 : client: [225] opened from 127.0.0.1:56778
+Mar 22 16:50 : client: [225] closed
+Mar 22 16:50 : client: [220] closed
+Mar 22 16:50 : client: [226] opened from 127.0.0.1:56782
+Mar 22 16:51 : client: [227] opened from 127.0.0.1:56790
+Mar 22 16:51 : client: [227] closed
+Mar 22 16:51 : client: [226] closed
+Mar 22 16:51 : client: [228] opened from 127.0.0.1:56794
+Mar 22 17:10 : client: [229] opened from 127.0.0.1:57038
+Mar 22 17:10 : client: [229] closed
+Mar 22 17:10 : client: [228] closed
+Mar 22 17:10 : client: [230] opened from 127.0.0.1:57042
+Mar 22 17:11 : client: [231] opened from 127.0.0.1:57104
+Mar 22 17:11 : client: [231] closed
+Mar 22 17:11 : client: [230] closed
+Mar 22 17:11 : client: [232] opened from 127.0.0.1:57108
+Mar 22 17:12 : client: [233] opened from 127.0.0.1:57114
+Mar 22 17:12 : client: [233] closed
+Mar 22 17:12 : client: [232] closed
+Mar 22 17:12 : client: [234] opened from 127.0.0.1:57118
+Mar 22 17:14 : client: [235] opened from 127.0.0.1:57128
+Mar 22 17:14 : client: [235] closed
+Mar 22 17:14 : client: [234] closed
+Mar 22 17:14 : client: [236] opened from 127.0.0.1:57132
+Mar 22 17:14 : client: [237] opened from 127.0.0.1:57140
+Mar 22 17:14 : client: [237] closed
+Mar 22 17:14 : client: [236] closed
+Mar 22 17:14 : client: [238] opened from 127.0.0.1:57144
+Mar 22 17:15 : client: [239] opened from 127.0.0.1:57148
+Mar 22 17:15 : client: [239] closed
+Mar 22 17:15 : client: [238] closed
+Mar 22 17:15 : client: [240] opened from 127.0.0.1:57152
+Mar 22 17:15 : client: [241] opened from 127.0.0.1:57156
+Mar 22 17:15 : client: [241] closed
+Mar 22 17:15 : client: [240] closed
+Mar 22 17:15 : client: [242] opened from 127.0.0.1:57160
+Mar 22 17:16 : client: [243] opened from 127.0.0.1:57194
+Mar 22 17:16 : client: [243] closed
+Mar 22 17:16 : client: [242] closed
+Mar 22 17:16 : client: [244] opened from 127.0.0.1:57198
+Mar 22 17:19 : client: [245] opened from 127.0.0.1:57246
+Mar 22 17:19 : client: [245] closed
+Mar 22 17:19 : client: [246] opened from 127.0.0.1:57250
+Mar 22 17:19 : client: [246] closed
+Mar 22 17:20 : client: [247] opened from 127.0.0.1:57254
+Mar 22 17:20 : client: [247] closed
+Mar 22 17:20 : client: [248] opened from 127.0.0.1:57258
+Mar 22 17:20 : client: [248] closed
+Mar 22 18:24 : update: added Kill Bill Vol. 1 OST - Various Artists/20 - [no artist] - Flip Sting.flac
+Mar 22 18:27 : update: added Kill Bill Vol. 1 OST - Various Artists/16 - Quincy Jones - Ironside (Excerpt).flac
+Mar 22 18:27 : update: added Kill Bill Vol. 1 OST - Various Artists/22 - [no artist] - Axe Throws.flac
+Mar 22 18:28 : update: added Kill Bill Vol. 1 OST - Various Artists/21 - [no artist] - Sword Swings.flac
+Mar 22 18:28 : update: added Kill Bill Vol. 1 OST - Various Artists/05 - Julie Dreyfus - Queen Of The Crime Council.flac
+Mar 22 18:28 : update: added Kill Bill Vol. 1 OST - Various Artists/18 - RZA - Yakuza Oren 1.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/19 - RZA - Banister Fight.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/15 - Uma Thurman - You're My Wicked Life.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/03 - Luis Bacalov - The Grand Duel (Parte Prima).flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/10 - Santa Esmeralda - Don't Let Me Be Misunderstood.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/08 - Al Hirt - Green Hornet.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/07 - Isaac Hayes - Run Fay Run.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/01 - Nancy Sinatra - Bang Bang (My Baby Shot Me Down).flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/17 - Neu! - Super 16 (Excerpt).flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/11 - The 5.6.7.8's - Woo Hoo.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/09 - Tomoyasu Hotei - Battle Without Honor Or Humanity.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/04 - Bernard Herrmann - Twisted Nerve.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/06 - RZA - Ode To Oren Ishii.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/13 - Meiko Kaji - The Flower Of Carnage.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/12 - RZA - Crane - White Lightning.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/02 - Charlie Feathers - That Certain Female.flac
+Mar 22 18:29 : update: added Kill Bill Vol. 1 OST - Various Artists/14 - Gheorghe Zamfir - The Lonely Shepherd.flac
+Mar 22 18:57 : client: [249] opened from 127.0.0.1:57980
+Mar 22 18:57 : client: [250] opened from 127.0.0.1:57984
+Mar 22 18:57 : client: [250] closed
+Mar 22 18:57 : client: [251] opened from 127.0.0.1:57988
+Mar 22 18:57 : client: [251] closed
+Mar 22 18:58 : client: [252] opened from 127.0.0.1:57992
+Mar 22 18:58 : client: [252] closed
+Mar 22 18:58 : client: [253] opened from 127.0.0.1:57996
+Mar 22 18:58 : client: [253] closed
+Mar 22 18:58 : client: [249] closed
+Mar 22 18:58 : client: [254] opened from 127.0.0.1:58002
+Mar 22 18:58 : client: [254] closed
+Mar 22 18:58 : client: [244] closed
+Mar 22 18:58 : client: [255] opened from 127.0.0.1:58006
+Mar 22 18:58 : client: [256] opened from 127.0.0.1:58012
+Mar 22 18:58 : client: [256] closed
+Mar 22 18:58 : client: [255] closed
+Mar 22 18:58 : client: [257] opened from 127.0.0.1:58016
+Mar 22 18:59 : client: [258] opened from 127.0.0.1:58020
+Mar 22 18:59 : client: [258] closed
+Mar 22 18:59 : client: [257] closed
+Mar 22 18:59 : client: [259] opened from 127.0.0.1:58024
+Mar 22 18:59 : client: [260] opened from 127.0.0.1:58042
+Mar 22 18:59 : client: [260] closed
+Mar 22 18:59 : client: [259] closed
+Mar 22 18:59 : client: [261] opened from 127.0.0.1:58046
+Mar 22 19:14 : player: played "Kill Bill Vol. 1 OST - Various Artists/01 - Nancy Sinatra - Bang Bang (My Baby Shot Me Down).flac"
+Mar 22 19:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 22 19:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 22 19:16 : avahi: Service 'Music Player @ poketstation' successfully established.
+Mar 22 19:16 : client: [0] opened from 127.0.0.1:47710
+Mar 22 19:16 : client: [0] closed
+Mar 22 19:16 : client: [1] opened from 127.0.0.1:47714
+Mar 22 19:20 : client: [2] opened from 127.0.0.1:47748
+Mar 22 19:20 : client: [2] closed
+Mar 22 19:20 : client: [1] closed
+Mar 22 19:20 : client: [3] opened from 127.0.0.1:47752
+Mar 22 20:13 : client: [4] opened from 127.0.0.1:49130
+Mar 22 20:13 : client: [4] closed
+Mar 22 20:13 : client: [3] closed
+Mar 22 20:13 : client: [5] opened from 127.0.0.1:49134

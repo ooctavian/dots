@@ -1,6 +1,0 @@
-#+TITLE:   My dmenu fork
-#+DATE:    January 30, 2020
-#+SINCE:   {replace with next tagged release version}
-#+STARTUP: inlineimages nofold
-*  Features
-just googledark scheme installed
