@@ -1,0 +1,6 @@
+require("lemons.cpu")
+require("lemons.temperature")
+require("lemons.mpd")
+require("lemons.pkgs")
+require("lemons.volume")
+require("lemons.battery")
