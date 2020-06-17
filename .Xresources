@@ -1,3 +1,4 @@
+#include ".config/xcolorschemes/lovelace.Xresources"
 Xft.dpi:                        109
 URxvt*termName:                 rxvt-256color
 URxvt.letterSpace: 0
@@ -12,48 +13,20 @@ URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
-! Colors
-! ------------------------------------------------------------------------------
-! Colour Configuration
-! ------------------------------------------------------------------------------
-
-! special
-*.foreground:   #d8dee8
-*.background:   #2f343f
-*.cursorColor:  #b48ead
-
-! black
-*.color0  : #4b5262
-*.color8  : #434a5a
-
-! red
-*.color1  : #bf616a
-*.color9  : #b3555e
-
-! green
-*.color2  : #a3be8c
-*.color10 : #93ae7c
-
-! yellow
-*.color3  : #ebcb8b
-*.color11 : #dbbb7b
-
-! blue
-*.color4  : #81a1c1
-*.color12 : #7191b1
-
-! magenta
-*.color5  : #b48ead
-*.color13 : #a6809f
-
-! cyan
-*.color6  : #89d0bA
-*.color14 : #7dbba8
-
-! white
-*.color7  : #e5e9f0
-*.color15 : #d1d5dc
 URxvt.font: xft:Iosevka:style=Regular:size=8
 URxvt.boldFont: xft:Iosevka:style=Bold:size=8
 URxvt.italicFont: xft:Iosevka:style=Italic:size=8
 URxvt.boldItalicFont: xft:Iosevka:style=Bold Italic:size=8
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1

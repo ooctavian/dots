@@ -1,7 +1,0 @@
-#! /bin/sh
-imagepath="$HOME/Pictures/wallpapers/"
-category=$(ls $imagepath | rofi -dmenu -i  -p "Select category")
-wall=$(ls $imagepath/$category | rofi -dmenu -i  -p "Select wall")
-wal -i $HOME/.config/wall.png &&
-reload_dunst &
-[ ! -z "$imagepath$category/$wall" ] && cp "$imagepath$category/$wall" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed." 

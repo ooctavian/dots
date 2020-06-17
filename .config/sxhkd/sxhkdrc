@@ -1,20 +1,18 @@
 #
 # wm independent hotkeys
-#
-# scratchterm 
-super + u 
-    scratchterm
 # terminal emulator
 super + Return
 	$TERMINAL
 
 # program launcher
 super + d
-    dmenu_run
-	#rofi -show drun -show-icons
+    dmenu_run 
 #changewal script
 super + shift + d
     changewal
+#Clipboard selection 
+super + shift + c
+    maim  -s | xclip -selection clipboard -t image/png
 # Window switcher 
 alt  + Tab
 	rofi -show window -show-icons
@@ -34,7 +32,7 @@ super + x
     exitmenu
 # lock 
 super + shift + x 
-    betterlockscreen -l blur dim 
+    slock
 # Raise and lower the volume 
 {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
      pulsemixer {--change-volume +3,--change-volume -3,--toggle-mute}

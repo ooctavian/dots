@@ -1,5 +1,3 @@
-
-
 * Table of Contents :TOC_3:noexport:
 - [[#description][Description]]
 - [[#screen][Screenshots]]
@@ -10,21 +8,20 @@ for arch user =yay -s awesome-git= (easy af)
 
 copy my files 
 
-run fc-cache  ( to load fonts) 
+run =fc-cache=  ( to load fonts) 
 
 enter awesomewm sension (either from Display manager or .xinitrc) 
 
 Profit
 * Description
 This is probably the worst dotfiles you have ever seen.
-+ Awesome-git - my current wm
-+ =bspwm= && =sxhkd=  ---  old window manager && hotkey daemon
-+ =dmenu= && =st= -- program launcher &&  terminal
-+ =polybar= -- bar
++ =Awesome-git=, =Openbox=, =Bspwm=
++ =sxhkd=  --- if you want to use bspwm
++ =rofi= -program launcher 
++ =polybar= - bar for bspwm 
++ =tint2= - panel for openbox
 * Screen
 [[./images/screen.png]]
-
 [[./images/screen1.png]]
 [[./images/screen2.png]]
-[[./images/screen3.png]]
-[[./images/screen4.png]]
+
