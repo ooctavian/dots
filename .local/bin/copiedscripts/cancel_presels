@@ -1,2 +1,0 @@
-#!/bin/sh
-for window in $(bspc query -N -d focused); do bspc node $window -p cancel; done

@@ -22,7 +22,7 @@ lyrics_directory = ~/.local/share/lyrics
 #
 ## Needed for tag editor and file operations to work.
 ##
-execute_on_song_change = nmuc   
+execute_on_song_change =    
 mpd_music_dir = "~/Music"
 #
 #mpd_crossfade_time = 5

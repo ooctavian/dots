@@ -1,4 +1,0 @@
-#! usr//bin/env sh
-imagepath="$HOME/Pictures/wall/"
-wall=$(ls $imagepath | dmenu -i  -p "Select wall")
-setbg $imagepath$wall

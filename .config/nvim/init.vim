@@ -10,12 +10,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'tpope/vim-commentary'
+Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 call plug#end()
-autocmd FileType cpp  nnoremap <F8> :w! <CR> :sp <CR> <C-w>j :term compile %  <CR> i
-nnoremap <F2> :bnext <CR> 
-nnoremap <F3> :bprevious <CR> 
+autocmd FileType cpp  nnoremap <F8> :w! <CR>  :term compilec %  <CR> i 
+nnoremap <F3> :bnext <CR> 
+nnoremap <F2> :bprevious <CR> 
 " Some basics:
 	nnoremap c "_c
 	set nocompatible
@@ -63,8 +65,28 @@ set t_Co=16
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 autocmd BufWritePost  config.h !sudo make install
-" vim airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+autocmd BufWritePost *themerc,rc.xml !openbox --reconfigure 
 :set mouse=a 
+" Set status line display
+set laststatus=2
+hi StatusLine ctermfg=black ctermbg=red cterm=NONE
+hi StatusLineNC ctermfg=black ctermbg=red cterm=NONE
+hi User1 ctermfg=black ctermbg=magenta
+hi User2 ctermfg=NONE ctermbg=NONE
+hi User3 ctermfg=black ctermbg=blue
+hi User4 ctermfg=black ctermbg=cyan
+set statusline=\                    " Padding
+set statusline+=%f                  " Path to the file
+set statusline+=\ %1*\              " Padding & switch colour
+set statusline+=%y                  " File type
+set statusline+=\ %2*\              " Padding & switch colour
+set statusline+=%=                  " Switch to right-side
+set statusline+=\ %3*\              " Padding & switch colour
+set statusline+=line                " of Text
+set statusline+=\                   " Padding
+set statusline+=%l                  " Current line
+set statusline+=\ %4*\              " Padding & switch colour
+set statusline+=of                  " of Text
+set statusline+=\                   " Padding
+set statusline+=%L                  " Total line
+set statusline+=\                   " Padding

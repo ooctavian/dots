@@ -291,7 +291,7 @@
 #def_key "g"
 #  jump_to_position_in_song
 #
-#def_key "l"
+#def_key ""
 #  show_lyrics
 #
 #def_key "ctrl-v"
