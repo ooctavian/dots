@@ -267,36 +267,6 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
-    <keybind key="A-Tab">
-      <action name="NextWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -938,7 +908,7 @@
   <action name="UnmaximizeFull"/>
   <action name="MoveResizeTo">
     <width>50%</width>
-    <height>50%</height>
+    <height>47%</height>
     <x>50%</x>
     <y>50%</y>
   </action>
@@ -975,6 +945,42 @@
     <command>thunar</command>
   </action>
 </keybind>
-
+  <keybind key="Print">
+      <action name="Execute">
+        <command>scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; sxiv $$(xdg-user-dir PICTURES)/$f'</command>
+      </action>
+    </keybind>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <command>scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; sxiv $$(xdg-user-dir PICTURES)/$f'</command>
+    </action>
+</keybind>
+     <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+          <command> pactl -- set-sink-volume 0 +3% </command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command> pactl -- set-sink-volume 0 -3% </command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>pactl set-sink-mute 0 toggle</command>
+      </action>
+    </keybind>
 </keyboard>
+    <keybind key="A-Tab">
+      <action name="NextWindow">
+        <allDesktops>yes</allDesktops>
+        <raise>yes</raise>
+        <!-- Hide black border around windows -->
+        <bar>no</bar>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="UnshadeRaise"/>
+        </finalactions>
+      </action>
+    </keybind>
 </openbox_config>
