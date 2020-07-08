@@ -22,10 +22,10 @@ Xresources everytime because are used by my =lemonbar= , and =awesomewm= setup .
 * Screenshots
 ** 2Borders Awesome
 [[./images/awesome1.png]]
-**Things I use**: =Awesome=, =urxvt= 
+*Things I use*: =Awesome=, =urxvt= 
 ** Openbox - Lovelace
 [[./images/Lovelace.png]]
-**Things I use here**: =openbox= , =tint2= , =slim= - the display manager, =thunar= , =urxvt= with =neovim= opened 
+*Things I use here*: =openbox= , =tint2= , =slim= - the display manager, =thunar= , =urxvt= with =neovim= opened 
 ** Bspwm
 This stuff is a mess 
 [[./images/screen.png]]
