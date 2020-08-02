@@ -1,0 +1,37 @@
+#define base00 #1C1E26
+#define base01 #232530
+#define base02 #2E303E
+#define base03 #6F6F70
+#define base04 #9DA0A2
+#define base05 #CBCED0
+#define base06 #DCDFE4
+#define base07 #E3E6EE
+#define base08 #E95678
+#define base09 #FAB795
+#define base0A #FAC29A
+#define base0B #29D398
+#define base0C #59E1E3
+#define base0D #26BBD9
+#define base0E #EE64AC
+#define base0F #F09383
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07

@@ -1,9 +1,6 @@
-! special
-!! aaaaa 
-! 2b303b 
-!! special 
+!! special
 *foreground:   #dfe3e1
-*background:   #1d1f21
+*background:   #23272a
 *cursorColor:  #dfe3e1
 ! black
 *.color0:       #666d78
@@ -36,4 +33,3 @@
 ! white
 *.color7:       #ccd1d8
 *.color15:      #e7e9ed
-

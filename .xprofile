@@ -1,8 +1,0 @@
-setbg &
-xrdb ~/.Xresources &&
-bar &
-mpd &
-xcompmgr &
-unclutter &
-setxkbmap -option caps:escape &
-xsetroot -cursor_name "left_ptr" &

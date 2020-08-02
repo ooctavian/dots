@@ -36,5 +36,3 @@
 ! white
 *.color7: #bfbaac
 *.color15: #fdf6e3
-dmenu.selbackground: #2587cc
-dmenu.selforeground: #141c21
