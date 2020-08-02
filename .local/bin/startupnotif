@@ -1,0 +1,5 @@
+#! /bin/sh 
+#Start up notification 
+name=$(echo "$USER" | sed 's/\(.\)/\U\1/'  ) 
+id="1239955" #random numbrer notification id 
+dunstify -r "$id" "Have a good day, "$name""

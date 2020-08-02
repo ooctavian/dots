@@ -1,0 +1,20 @@
+#! /bin/sh
+start() {
+    COMMAND=$1
+    shift
+    ARGS=$*
+    pgrep -u "$USER" -ic "$COMMAND" > /dev/null || $COMMAND $ARGS &
+}
+
+xrdb ~/.Xresources ;
+setbg &
+start urxvtd 
+start dunst 
+xsetroot -cursor_name left_ptr &
+setxkbmap -option "caps:swapescape" &
+mpc load playlist 
+mpc shuffle
+2bspwm &
+startupnotif &
+compmgr -S &
+$HOME/.config/polybar/launch.sh;

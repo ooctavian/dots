@@ -1,51 +1,13 @@
-#
 # wm independent hotkeys
-# terminal emulator
-super + Return
-	$TERMINAL
-
-# program launcher
-super + d
-    dmenu_run 
-#changewal script
-super + shift + d
-    changewal
-#Clipboard selection 
-super + shift + c
-    maim  -s | xclip -selection clipboard -t image/png
-# Window switcher 
-alt  + Tab
-	rofi -show window -show-icons
-#Music player
-super + m 
-    $TERMINAL -n MusicPlayer -e ncmpcpp
-#Browser
-super + w
-    $BROWSER
-super + shift + w
-    rofiweb
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
-# exit menu 
-super + x 
-    exitmenu
-# lock 
-super + shift + x 
-    slock
-# Raise and lower the volume 
-{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
-     pulsemixer {--change-volume +3,--change-volume -3,--toggle-mute}
-
-#    volume {up,down,mute}
-{XF86AudioNext,XF86AudioPlay,XF86AudioPrev}
-    mpc {next,toggle,prev}
 #
 # bspwm hotkeys
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + shift + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill

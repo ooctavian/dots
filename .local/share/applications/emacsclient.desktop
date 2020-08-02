@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment= Emacs client 
+Terminal=false
+Name= Emacsclient
+Categories=AudioVideo;Audio;Player;
+Exec= emacsclient -c
+Type=Application
+Icon=emacs

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment= NCMPCPP with album art 
+Terminal=false
+Name= Ncmpcpp
+Categories=AudioVideo;Audio;Player;
+Exec= ncmpcppalbumart
+Type=Application
+Icon=mpd

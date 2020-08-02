@@ -1,0 +1,43 @@
+#!/bin/sh
+# Start a composition manager.
+# (xcompmgr in this case)
+# script rewrittn for posix from arch wiki #xcompmgr
+
+comphelp() {
+    printf "%s\n" "Fuhrer's xcompmgr manager"
+    printf "%s\n" "Composition Manager:"
+    printf "%s\n" "toggle: COMP (no arguments)"
+    printf "%s\n" "(re)start: COMP -S"
+    printf "%s\n" "stop:      COMP -s"
+    printf "%s\n" "query:     COMP -q"
+    exit
+}
+
+
+stopcomp() {
+	killall xcompmgr 
+}
+
+startcomp() {
+    xcompmgr -Cc -t-1 -l-3 -r4.2 -o1
+}
+restart() {
+     stopcomp && startcomp & 
+}
+togglecomp() {
+    if [ -z "$(pgrep xcompmgr)"  ]; then
+	startcomp &
+	echo "Started compositor"
+    else
+	stopcomp &
+	echo "Stopped compositor"
+    fi
+}
+ case "$1" in
+     "") togglecomp ;;
+     "-S") startcomp ;;
+     "-q") checkcomp ;;
+     "-h") comphelp ;;
+     "-r") restart ;;
+     "-s") stopcomp; exit ;;
+ esac

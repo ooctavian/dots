@@ -1,19 +1,75 @@
 #!/usr/bin/env sh
-#
-
-        #-lb "${color0}" \
- reload_dunst() {
+#Reading xcolors
+#Delete colors you don't use
+while read -r color hex _ ; do
+    case $color in
+	*"foreground"*)
+	    foreground="$hex"
+	    ;;
+	*"background"*)
+	    background="$hex"
+	    ;;
+	*"color0"*)
+	    color0="$hex"
+	    ;;
+	*"color1"*)
+	    color1="$hex"
+	    ;;
+	*"color2"*)
+	    color2="$hex"
+	    ;;
+	*"color3"*)
+	    color3="$hex"
+	    ;;
+	*"color4"*)
+	    color4="$hex"
+	    ;;
+	*"color5"*)
+	    color5="$hex"
+	    ;;
+	*"color6"*)
+	    color6="$hex"
+	    ;;
+	*"color7"*)
+	    color7="$hex"
+	    ;;
+	*"color8"*)
+	    color8="$hex"
+	    ;;
+	*"color9"*)
+	    color9="$hex"
+	    ;;
+	*"color10"*)
+	    color10="$hex"
+	    ;;
+	*"color11"*)
+	    color11="$hex"
+	    ;;
+	*"color12"*)
+	    color12="$hex"
+	    ;;
+	*"color13"*)
+	    color13="$hex"
+	    ;;
+	*"color14"*)
+	    color14="$hex"
+	    ;;
+	*"color15"*)
+	    color15="$hex"
+	    ;;
+esac
+done <<-EOF
+$(xrdb -query)
+EOF
+#Launching actually dunst
+#look into manual what every flag does
     pkill dunst
-    dunst \
-	-frame_width 0 \
-        -lb "$(xrdb -query | grep 'background:'| awk '{print $NF}')" \
-        -nb "$(xrdb -query | grep 'background:'| awk '{print $NF}')" \
-        -cb "$(xrdb -query | grep 'background:'| awk '{print $NF}')" \
-        -lf "$(xrdb -query | grep 'color7:'| awk '{print $NF}')" \
-        -bf "$(xrdb -query | grep 'color7:'| awk '{print $NF}')" \
-        -cf "$(xrdb -query | grep 'color7:'| awk '{print $NF}')" \
-        -nf "$(xrdb -query | grep 'color7:'| awk '{print $NF}')" &
-}
-
-reload_dunst
-
+    dunst
+      -frame_width 2 \
+      -lb "$background" \
+      -nb "$background" \
+      -cb "$background" \
+      -lf "$foreground" \
+      -bf "$foreground" \
+      -cf "$foreground" \
+      -nf "$foreground" &

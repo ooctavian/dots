@@ -1,0 +1,40 @@
+#! /bin/sh
+# Script to change volume and OSD
+# It is a partially modified version of that avalabile on Dunst Arch Wiki
+# written in POSIX shell and with pulseaudio
+case "$1" in
+    "up")
+	pactl set-sink-volume @DEFAULT_SINK@ +3%;;
+    "down")
+	pactl set-sink-volume @DEFAULT_SINK@ -3%;;
+     "mute")
+	  pactl set-sink-mute 0 toggle;;
+esac
+# get msg ID which will used to send notification and replace previous OSD notifications
+msgId="991049"
+# Grep mute and percentage . thanks to Tam . his version of code is much faster + his explanations  + his explanations . thanks buddy. his dots https://github.com/alnj/dotfiles
+# for every line of "pactl list sinks",
+# assign first field (word) to property
+# second field to mute_status
+# fifth field to volume
+while read -r property mute_status _ _ volume _; do
+    # if in the current line the property is Mute,
+    # store the temporary mute_status variable into
+    # a permanent variable
+    test "$property" = "Mute:" && mute="$mute_status"
+
+    # if the current line's property is volume,
+    # stop reading. exiting the loop with the value
+    # that the current line assigned to $volume
+    # so technically no need to reassign it
+    test "$property" = "Volume:" && break
+# this feeds the output of $(command) as a FILE to the while loop. Note that <<-EOF heredocs can only be indented with TABS, not spaces
+done <<-EOF
+$(pactl list sinks)
+EOF
+case "$mute" in
+    "yes")
+	dunstify -a "changeVolume" -u low -r  "$msgId" "Muted" ;;
+    *)
+	dunstify -a "changeVolume" -u low -r "$msgId" "Volume changed $volume" ;;
+esac

@@ -1,0 +1,48 @@
+#!/bin/bash
+# a shit script i made :0
+# note you'll have to edit this manually if you want certain information to display
+# this script is designed to be as efficent as possible
+
+# colours
+
+blk="\e[7m"
+ncl="\e[m"
+col="\e[1;35m"
+
+# info
+read -r uptime _ < /proc/uptime
+
+up=${uptime%.*}
+days=$(( $up / 86400 ))
+hours=$(( ( $up % 86400 ) / 3600 ))
+min=$(( (( $up % 86400 ) % 3600 ) / 60 ))
+[ $days = 0 ] || d="${days}d "
+[ $hours = 0 ] || h="${hours}h "
+[ $min = 0 ] || m="${min}m "
+
+pkg=0
+for count in /var/lib/pacman/local/[a-z]*;do
+	pkg=$(( pkg+1 ))
+done
+sh=$SHELL
+up="$d$h$m"
+os=$(. /etc/{os-release,*-release,*_version} ; echo "$ID" || os="linux")
+id=$(xprop -root _NET_SUPPORTING_WM_CHECK)
+id=${id##* }
+
+if [ -x "$XDG_CURRENT_DESKTOP" ]; then
+	ui="de"
+	wm="$XDG_CURRENT_DESKTOP"
+	wm="${wm,,}"
+else
+	ui="wm"
+	wm=$(xprop -id "$id" _NET_WM_NAME)
+	wm="${wm//\"/}"
+fi
+
+clear
+printf '\t%b\n' "\v\v$blk os $ncl \t $col ${os} $ncl" 	\
+		"$blk ${ui} $ncl \t $col ${wm##* }$ncl"	\
+		"$blk sh $ncl \t $col ${sh##*/} $ncl"	\
+		"$blk pk $ncl \t $col $pkg $ncl"	\
+		"$blk up $ncl \t $col ${up} $ncl\v\v"

@@ -1,0 +1,66 @@
+# wm independent hotkeys
+super + F12
+	networkmenu.py
+# terminal emulator
+super +  shift + Return
+	jumpapp kitty --single-instance 
+super +Return
+	kitty --single-instance
+super + e
+	wmctrl -x -a emacs || emacsclient -c
+super + shift + e
+	emacsclient -c
+# program launcher
+super + d
+	rofi -show drun -theme ~/.config/rofi/themes/appsmenu.rasi
+super + r
+	rofi -show run -theme ~/.config/rofi/themes/run.rasi
+
+super + shift + d
+	jumpapp discord
+# Screenshot
+Print
+    shot -p
+alt + Print
+    shot -pt 5
+# Record
+super + Print
+	record
+#Clipboard selection
+alt + shift + c
+     shot -ac
+#Music player
+super + m
+	ncmpcppalbumart
+#Browser
+super + w
+	jumpapp $BROWSER
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+# exit menu
+super + x
+    exitmenu
+super + shift + x
+    lemonscreen
+
+# File manager
+super + shift + f
+	jumpapp thunar
+# lock
+# super + shift + x
+#     slock
+# Raise and lower the volume
+
+{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
+    vol {up,down,mute}
+
+{XF86AudioNext,XF86AudioPlay,XF86AudioPrev}
+    mpdmgr {next,toggle,prev}
+
+#I also map those keys again because my external keyboaqrd doesn't have those functions
+alt + {F12,F11,F10}
+    vol {up,down,mute}
+
+alt + {F3,F1,F2}
+    mpdmgr {next,toggle,prev}

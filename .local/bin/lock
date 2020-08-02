@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+#: yuune i3lock-color wrapper
+
+ wallpaper="$HOME/.config/wall.png"
+
+tmpwall="/tmp/$USER-lock.png"
+eval $(xdotool getdisplaygeometry --shell)
+genwp () {
+    # dynamic wallpaper reload
+    if [[ ! -f "/tmp/$USER-lock-wppath" ]]; then
+        echo "$wallpaper" > /tmp/$USER-lock-wppath
+    elif [[ "$wallpaper" != "$(cat /tmp/$USER-lock-wppath)" ]]; then
+        echo "$wallpaper" > /tmp/$USER-lock-wppath
+        rm $tmpwall 2&>/dev/null
+    fi
+
+    if [[ ! -f $tmpwall ]]; then
+        convert "$wallpaper" -resize ${WIDTH}x -gravity center -crop ${WIDTH}x${HEIGHT}+0+0 +repage \( \
+            -size 120x140 xc:none \
+            -draw "roundrectangle 0,0,120,140,20,20" \
+            -draw "rectangle 0,140 120,120" -normalize +level 0,50% \
+            \) -gravity south -compose over -composite $tmpwall
+    fi
+}
+
+runlock () {
+    i3lock -n --force-clock -i $tmpwall \
+        --indpos="$WIDTH/2:$HEIGHT-80" --timepos="$WIDTH/2:$HEIGHT/2" \
+        --insidevercolor=00000000 --insidewrongcolor=00000000 --insidecolor=00000000 \
+        --ringvercolor=b2ebf2aa --ringwrongcolor=e95678 --ringcolor=cbced0 \
+        --keyhlcolor=21bfc290 --bshlcolor=e9567890 --separatorcolor=00000000 \
+        --layoutcolor=00000000 \
+        --line-uses-ring \
+        --timestr="%H:%M" \
+        --timecolor=fdf0ed \
+        --time-font="Iosevka Nerd Font" \
+        --timesize=80 \
+        --datestr="%A, %b %d" \
+        --datecolor=fdf0ed \
+        --date-font="Ioseva Nerd Font" \
+        --datesize=16 \
+        --radius 30 --ring-width 5 \
+        --indicator \
+        --veriftext="" \
+        --wrongtext="" \
+        --noinputtext=""
+
+}
+
+genwp $1
+runlock

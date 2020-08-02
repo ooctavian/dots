@@ -1,0 +1,11 @@
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  cycle:              true;
+  hide-scrollbar:     true;
+  disable-history:    false;
+  modi:               "drun";
+  display-drun:       "Search";
+  columns: 3;
+  theme:		"/themes/run";
+}

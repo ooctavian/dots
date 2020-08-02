@@ -1,9 +1,3 @@
 #!/usr/bin/env sh
-
-# In LARBS, ~/.config/wall.png is the location of the system wallpaper.  This
-# script, if given an argument, moves it there.  This script without an
-# argument sets ~/.config/wall.png as the wallpaper, which is required on login
-# if you don't want a blakc screen.
-
 [ ! -z "$1" ] && cp "$1" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed."
 feh --bg-fill  ~/.config/wall.png

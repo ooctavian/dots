@@ -1,4 +1,0 @@
-#! /bin/sh
-imagepath="$HOME/Pictures/"
-category=$(ls $imagepath | dmenu -i  -p "Select category" -l 10) && wall=$(ls $imagepath/$category | dmenu -i  -p "Select wall" -l 10) &&
- [ ! -z "$imagepath$category/$wall" ] && cp  -r "$imagepath$category/$wall" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed." && setbg $HOME/.config/wall.png ;

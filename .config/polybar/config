@@ -1,0 +1,182 @@
+;;Fuhrer's Polybar Config
+[colors]
+background = #1c1e26
+foreground = #c7c9cb
+[bar/main]
+monitor = ${env:MONITOR:LVDS-1}
+;;monitor-fallback = ${env:MONITOR:LVDS1}
+width = 100%
+height = 22
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+override-redirect = false
+
+bottom = false
+padding-left = 1
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = FiraCode Nerd Font:style=Regular:pixelsize=8;1
+font-1 = FiraCode Nerd Font:style=Regular:pixelsize=7;2
+modules-left = date
+modules-center = bspwm
+modules-right = volume wireless-network memory cpu
+wm-restack = bspwm
+tray-position = right
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+[module/wireless-network]
+type = internal/network
+interface = wlp2s0
+interval = 10
+format-connected = %{F#e95678}Wifi%{F-} up
+;%{T2}%{T-}
+; Available tags:
+format-disconnected = %{F#e95678}Wifi%{F-} down
+;%{T2}%{T-}
+[module/bspwm]
+type = internal/bspwm
+
+enable-scroll = true
+ws-icon-0 = 1;%{F#e95678}
+ws-icon-1 = 2;%{F#21bfc2}
+ws-icon-2 = 3;%{F#09f7a0}
+ws-icon-3 = 4;%{F#fab795}
+ws-icon-4 = 5;%{F#25b2bc}
+ws-icon-5 = 6;%{F#b877db}
+ws-icon-6 = 7;%{F#e95678}
+ws-icon-7 = 8;%{F#27d797}
+ws-icon-8 = 9;%{F#b877db}
+ws-icon-9 = 10;%{F#09f7a0}
+ws-icon-default =%{F#b877db}
+format = "<label-state>"
+
+label-focused ="%icon%%{F-}"
+label-focused-padding = 2
+
+label-occupied ="%icon%%{F-}"
+label-occupied-padding = 2
+
+label-urgent ="%icon%%{F-}"
+labeel-foreground= ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = ""
+label-empty-padding = 2
+label-empty-foreground=#6a6a6a
+
+module-left-margin = 2
+module-right-margin = 2
+
+[module/workspaces]
+type = internal/xworkspaces
+
+enable-scroll = true
+icon-0 = 1;%{F#e95678} 
+icon-1 = 2;%{F#21bfc2}
+icon-2 = 3;%{F#09f7a0}
+icon-3 = 4;%{F#fab795}
+icon-4 = 5;%{F#25b2bc}
+icon-5 = 6;%{F#b877db}
+icon-6 = 7;%{F#e95678}
+icon-7 = 8;%{F#27d797}
+icon-8 = 9;%{F#b877db}
+icon-9 = 10;%{F#09f7a0}
+icon-default =%{F#b877db}
+format = "<label-state>"
+
+label-active ="%icon%  %{F-}"
+label-active-padding = 1
+
+label-occupied ="%icon%  %{F-}"
+label-occupied-padding = 1
+
+label-urgent ="%icon%  %{F-}%"
+label-urgent-foreground= #e95678
+label-urgent-padding = 1
+
+label-empty = "  "
+label-empty-padding = 1
+label-empty-foreground=#6a6a6a
+
+module-left-margin = 1
+module-right-margin = 1
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 10
+format = <label>
+label =%{F#09f7a0}Ram%{F-} %percentage_used%%
+
+module-left-margin = 1
+module-right-margin = 1
+[module/date]
+type = internal/date
+interval = 10
+
+
+time = "%{F#21bfc2}%A%{F-} %d %{F#09f7a0}%B%{F-} at %{F#e95678}%H:%M%{F-}"
+;format-prefix = " %{T2}%{T-}"
+format-prefix-foreground = ${colors.foreground}
+
+label = %date% %time%
+module-left-margin = 1
+[module/cpu]
+type = internal/cpu
+label = %{F#b877db}Cpu%{F-} %percentage%%
+; Seconds to sleep between updates
+; Default: 1
+interval = 4
+[module/volume]
+type = internal/pulseaudio
+
+format-volume = %{F#21bfc2}Vol%{F-} <label-volume>
+label-volume-foreground = ${colors.foreground}
+label-volume = %percentage%%
+format-muted-foreground = ${colors.foreground}
+label-muted =%{F#21bfc2}Vol%{F-} M
+
+ramp-volume-font=2
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+module-left-margin = 1
+module-right-margin = 1
+
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 99
+
+format-charging = Bat <label-charging>
+
+format-discharging = Bat <label-discharging>
+
+format-full-prefix = "Bat"
+format-full-prefix-foreground = ${colors.foreground}
+
+module-left-margin = 1
+module-right-margin = 1
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

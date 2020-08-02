@@ -1,0 +1,29 @@
+#! /bin/sh
+# Fuhrer's screenshot manager
+# Get path  and name of the file
+name=$(xdg-user-dir PICTURES) || name="~/Pictures"
+name="$name/Screenshot_$(date +'%Y-%m-%d_%H-%M')"
+# notification text
+notif="Screenshot taken"
+#command that will run
+com="maim $name -u "
+while getopts ":atcp" opt; do
+  case $opt in
+    a)
+        # flag for area 
+        com="$com -s"
+    ;;
+    c)
+        # flag for clipboard
+        notif="$notif to clipboard"
+        clip="yes"
+    ;;
+    p)
+        # flag for preview
+        prev="yes"
+    ;;
+  esac
+done
+$com && dunstify -i "$name" "$notif"
+[ "$clip" = "yes" ] && xclip -selection clipboard -t image/png $name && rm -r $name
+[ "$prev" = "yes" ] && viewnior "$name"

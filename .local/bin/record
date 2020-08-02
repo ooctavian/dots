@@ -1,0 +1,38 @@
+#! /bin/sh
+# Fuhrer's record manager
+# "Some" inspiration taken from https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenurecord
+# change your resolution if you have another screen resolution because I am dumb to implement auto  
+# This script works for me but it may not work for you 
+# Dependencies:
+#       ffmpeg - for recording 
+#       rofi/dmenu - for menu | you should change it manually 
+#       slop | for taking coordinates of area 
+if  [ -f /tmp/recordingpid ]  ; then
+     recpid="$(cat /tmp/recordingpid)" &&
+    kill -15 "$recpid" ;
+    rm -r /tmp/recordingpid ;
+    dunstify "Recording stopped" ;
+    kill -9 "$recpid" ;
+else
+    # Get path and name of the file
+    name=$(xdg-user-dir VIDEOS) || name="$HOME/Videos"
+    name="$name/Recording_$(date +'%Y-%m-%d_%H-%M').mp4"
+    var="$(printf "Full\nArea\nExit" | rofi -dmenu -p "Option" )"
+    case $var in
+        "Full")
+	 res=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
+	 ffmpeg -video_size "$res" -framerate 25 -f x11grab -i :0.0 "$name" &
+    	 echo $! > /tmp/recordingpid
+    	# echo $!
+            ;;
+        "Area")
+	    # grab resolution and x,y coordonates with slop and store them in variables
+	    slop=$(slop -f "ffmpeg -video_size %wx%h -framerate 25 -f x11grab -i :0.0+%x,%y "$name"") || exit 1
+	   $slop &
+    	 echo $! > /tmp/recordingpid
+            ;;
+        *)
+	    exit 0;
+            ;;
+    esac
+fi
