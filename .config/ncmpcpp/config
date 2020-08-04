@@ -24,9 +24,9 @@ execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
 
 #### Playlist formatting
 #song_list_format = "$6 {%a »$4 %t $/r                                                                                                                                       $R                             }|{%f$/r                                                                                                                                     }"
-
-song_list_format = "$6{%a $2 %t $/r$/u$R$b$1%l$/b  }|{%f$/r}"
-now_playing_prefix = "$b$6  "
+#  
+song_list_format = "$6{%a -$2 %t $/r$/u$R$b$0%l$/b  }|{%f$/r}"
+now_playing_prefix = "$b$6  "
 #now_playing_suffix = "$/b"
 /*now_playing_suffix = " >>>>"*/
 playlist_display_mode = "classic"
@@ -38,7 +38,7 @@ playlist_display_mode = "classic"
 progressbar_elapsed_color = "white"
 progressbar_color = "black"
 progressbar_look = "▃▃▃"
-#progressbar_look = "─"
+#progressbar_look = "──"
 #connected_message_on_startup = no
 
 song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(5f)[9]{lr}$/b"
@@ -47,17 +47,17 @@ song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(5f)[9]{lr}$/b"
 #### Colors
 header_window_color = "blue"
 main_window_color =  magenta
-alternative_ui_separator_color = black
+#alternative_ui_separator_color = 0
 
 #### General formatting
-titles_visibility = "no"
+titles_visibility = "yes"
 header_visibility = "no"
 statusbar_visibility = "no"
 playlist_show_remaining_time = yes
 volume_color = "blue:b"
 /*alternative_header_first_line_format = $(2_16)$b» {%f} «$/b$9*/
-alternative_header_first_line_format = $6$b» {%f} «$/b
-alternative_header_second_line_format = $4{%b}|{/%D/}
+alternative_header_first_line_format = $6$b {%a} $/b
+alternative_header_second_line_format =$2{%t}|{/%D/}
 user_interface = alternative
 current_item_prefix = $(16)$r
 current_item_suffix = $/r$(end)

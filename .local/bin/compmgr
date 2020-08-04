@@ -13,20 +13,20 @@ comphelp() {
     exit
 }
 
-
+command="xcompmgr -c -t-1 -l-3 -r4.2 -o1 -C"
 stopcomp() {
 	killall xcompmgr 
 }
 
-startcomp() {
-    xcompmgr -Cc -t-1 -l-3 -r4.2 -o1
+startcomp(){
+	$command
 }
 restart() {
-     stopcomp && startcomp & 
+     stopcomp && $command & 
 }
 togglecomp() {
     if [ -z "$(pgrep xcompmgr)"  ]; then
-	startcomp &
+	$command &
 	echo "Started compositor"
     else
 	stopcomp &

@@ -1,0 +1,3 @@
+#! /bin/sh
+wm="$(xprop -id $(xprop -root -notype | grep "_NET_SUPPORTING_WM_CHECK:" | cut -d '#' -f 2) | grep "_NET_WM_NAME" | cut -d '"' -f 2 >/dev/null)"
+echo $wm

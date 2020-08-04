@@ -6,7 +6,7 @@ case $var in
 	 bspc quit
 	;;
     "Lock")
-	lemonscreen
+	lock
 	;;
     "Reboot")
 	sudo reboot

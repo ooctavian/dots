@@ -3,9 +3,9 @@ super + F12
 	networkmenu.py
 # terminal emulator
 super +  shift + Return
-	jumpapp kitty --single-instance 
+	jumpapp st 
 super +Return
-	kitty --single-instance
+	st
 super + e
 	wmctrl -x -a emacs || emacsclient -c
 super + shift + e
@@ -32,6 +32,8 @@ alt + shift + c
 #Music player
 super + m
 	ncmpcppalbumart
+super + u
+	scratchy
 #Browser
 super + w
 	jumpapp $BROWSER
@@ -42,7 +44,7 @@ super + Escape
 super + x
     exitmenu
 super + shift + x
-    lemonscreen
+    lock
 
 # File manager
 super + shift + f

@@ -1,8 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 # neeasade
 # makes dual borders
 # depends on wmutils/opt
-
 # polyfill a script in my dots.
 if ! type bspwindows >/dev/null; then
     bspwindows() {
@@ -24,6 +23,7 @@ border_width_in_normal=$(( border_width_current/2 ))
 border_width_out_normal=5
 border_width_in_focused=$border_width_in_normal
 border_width_out_focused=$border_width_out_normal
+
 
 border_color_in_normal=b877db
 border_color_out_normal=1c1e26

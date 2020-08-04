@@ -1,9 +1,9 @@
-#!/bin/sh
-# toggle scratchy
-if ! xdotool search --onlyvisible --classname 'scratchy' windowunmap; then
-  if ! xdotool search --classname 'scratchy' windowmap; then
-    which byobu 2>/dev/null && screen='-e byobu' || screen='-pe tabbed &'
-    urxvt -title 'scratchy' -name 'scratchy' $screen
-  fi
-  # bspc window --swap biggest
+#! /bin/sh
+#scratch term
+id=$(xdotool search --class scratchy)
+if [ "$id" != "" ];then
+  bspc node "$id" --flag hidden -f
+else
+$TERMINAL  -c scratchy \
+	   -g 80x15 
 fi
