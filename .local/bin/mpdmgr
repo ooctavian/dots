@@ -4,20 +4,29 @@
 #      mpd - ofcourse
 #      mpc - to control music && get info
 #      ffmpeg - to get cover
-case $1 in
-    "next")
-	mpc next
-	;;
-    "prev")
-	mpc prev
-	;;
-    "toggle")
-	mpc toggle
-	;;
-esac
+showart(){
 id="1231231" # A random number that is the id that we will use to send notifications 
 music_dir="$HOME/Music/" # Change it to your music directory
 tmp_cover="/tmp/albumart.png"
 [ -f "$tmp_cover" ] && rm /tmp/albumart.png
 ffmpeg -i "$(mpc --format "$music_dir"/%file% current)" -an -vcodec copy "$tmp_cover" >/dev/null 2>&1 
 dunstify -r "$id" -i "$tmp_cover" "$(mpc current)" 
+}
+# I could've run this command everytime but I don't need it when I pause/play the song 
+case $1 in
+    "next")
+	mpc next &&
+	showart
+	;;
+    "prev")
+	mpc prev &&
+	showart 
+	;;
+    "toggle")
+	mpc toggle
+	;;
+     "")
+	showart
+	;;
+esac
+

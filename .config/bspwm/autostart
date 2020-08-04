@@ -10,11 +10,11 @@ xrdb ~/.Xresources ;
 setbg &
 start urxvtd 
 start dunst 
+start picom 
 xsetroot -cursor_name left_ptr &
 setxkbmap -option "caps:swapescape" &
 mpc load playlist 
 mpc shuffle
 2bspwm &
 startupnotif &
-compmgr -S &
 $HOME/.config/polybar/launch.sh;

@@ -28,7 +28,7 @@ runlock () {
         --indpos="$WIDTH/2:$HEIGHT-80" --timepos="$WIDTH/2:$HEIGHT/2" \
         --insidevercolor=00000000 --insidewrongcolor=00000000 --insidecolor=00000000 \
         --ringvercolor=b2ebf2aa --ringwrongcolor=e95678 --ringcolor=cbced0 \
-        --keyhlcolor=21bfc290 --bshlcolor=e9567890 --separatorcolor=00000000 \
+        --keyhlcolor=21bfc295 --bshlcolor=e9567895 --separatorcolor=00000000 \
         --layoutcolor=00000000 \
         --line-uses-ring \
         --timestr="%H:%M" \
@@ -47,5 +47,4 @@ runlock () {
 
 }
 
-genwp $1
-runlock
+genwp $1 && runlock

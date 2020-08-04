@@ -1,7 +1,9 @@
 #! /bin/sh
-$TERMINAL --single-instance \
-	   --class "MusicPlayer" \
-	   -o initial_window_width=524 \
-	   -o initial_window_height=235 \
-       	   -o remember_window_size=no \
+id=$(xdotool search --class MusicPlayer)
+if [ "$id" != "" ];then
+  bspc node "$id" --flag hidden -f
+else
+$TERMINAL  -c MusicPlayer \
+	   -g 80x15 \
 	   -e sh -c "$HOME/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug" 
+fi

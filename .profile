@@ -1,5 +1,5 @@
 export EDITOR="nvim"
-export TERMINAL="kitty"
+export TERMINAL="st"
 export BROWSER="firefox"
 export FILE="ranger"
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
