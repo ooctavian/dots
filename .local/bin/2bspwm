@@ -25,7 +25,7 @@ border_width_in_focused=$border_width_in_normal
 border_width_out_focused=$border_width_out_normal
 
 
-border_color_in_normal=b877db
+border_color_in_normal=EE64AC
 border_color_out_normal=1c1e26
 border_color_in_focused=e95678
 border_color_out_focused=1c1e26

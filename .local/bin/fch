@@ -5,7 +5,7 @@
 
 # colours
 
-blk="\e[7m"
+blk="\e[1m"
 ncl="\e[m"
 col="\e[1;35m"
 
@@ -21,7 +21,7 @@ min=$(( (( $up % 86400 ) % 3600 ) / 60 ))
 [ $min = 0 ] || m="${min}m "
 
 pkg=0
-for count in /var/lib/pacman/local/[a-z]*;do
+for count in /var/db/xbps/.*;do
 	pkg=$(( pkg+1 ))
 done
 sh=$SHELL
@@ -30,19 +30,14 @@ os=$(. /etc/{os-release,*-release,*_version} ; echo "$ID" || os="linux")
 id=$(xprop -root _NET_SUPPORTING_WM_CHECK)
 id=${id##* }
 
-if [ -x "$XDG_CURRENT_DESKTOP" ]; then
-	ui="de"
-	wm="$XDG_CURRENT_DESKTOP"
-	wm="${wm,,}"
-else
 	ui="wm"
 	wm=$(xprop -id "$id" _NET_WM_NAME)
 	wm="${wm//\"/}"
-fi
 
 clear
-printf '\t%b\n' "\v\v$blk os $ncl \t $col ${os} $ncl" 	\
-		"$blk ${ui} $ncl \t $col ${wm##* }$ncl"	\
-		"$blk sh $ncl \t $col ${sh##*/} $ncl"	\
-		"$blk pk $ncl \t $col $pkg $ncl"	\
-		"$blk up $ncl \t $col ${up} $ncl\v\v"
+printf '\t%b\n' "\v\v\e[0;31m$blk os $ncl$ncl \t ${os} " 	\
+		"\e[0;32m$blk ${ui} $ncl$ncl  \t ${wm##* }"	\
+		"\e[0;33m$blk sh $ncl$ncl\t ${sh##*/} "	\
+		"\e[0;34m$blk pk $ncl$ncl  \t $pkg "	\
+		"\e[0;35m$blk up $ncl$ncl  \t ${up} \v\v" 
+printf "%b\n\n" "\e[1;31m   $ncl\e[1;32m   $ncl\e[1;33m   $ncl\e[1;34m   $ncl\e[1;35m   $ncl\e[1;36m   $ncl\e[1;34m   $ncl\e[1;31m   $ncl"
