@@ -1,4 +1,6 @@
 #! /bin/sh 
+# Script to read colors from Xresources 
+# Currently not using because useless 
 while read -r color hex _ ; do 
     case $color in 
         *"foreground"*)

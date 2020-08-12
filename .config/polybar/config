@@ -4,7 +4,7 @@ background = #1c1e26
 foreground = #c7c9cb
 [bar/main]
 monitor = ${env:MONITOR:LVDS-1}
-;;monitor-fallback = ${env:MONITOR:LVDS1}
+monitor-fallback = ${env:MONITOR:LVDS1}
 width = 100%
 height = 22
 fixed-center = true

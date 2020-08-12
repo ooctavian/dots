@@ -27,16 +27,16 @@ runlock () {
     i3lock -n --force-clock -i $tmpwall \
         --indpos="$WIDTH/2:$HEIGHT-80" --timepos="$WIDTH/2:$HEIGHT/2" \
         --insidevercolor=00000000 --insidewrongcolor=00000000 --insidecolor=00000000 \
-        --ringvercolor=b2ebf2aa --ringwrongcolor=e95678 --ringcolor=cbced0 \
+        --ringvercolor=b2ebf2FF --ringwrongcolor=e95678FF --ringcolor=cbced0FF \
         --keyhlcolor=21bfc295 --bshlcolor=e9567895 --separatorcolor=00000000 \
         --layoutcolor=00000000 \
         --line-uses-ring \
         --timestr="%H:%M" \
-        --timecolor=fdf0ed \
+        --timecolor=fdf0edFF \
         --time-font="Iosevka Nerd Font" \
         --timesize=80 \
         --datestr="%A, %b %d" \
-        --datecolor=fdf0ed \
+        --datecolor=fdf0edFF \
         --date-font="Ioseva Nerd Font" \
         --datesize=16 \
         --radius 30 --ring-width 5 \

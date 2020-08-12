@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>~</title>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+
+	<body>
+		<div id="main_window">
+			<img id=leftImg src="assets/img/image.png" class="image">
+
+			<div id="content">
+				<h1 class="title">Buongiorno,motherfucker</h1>
+				<script id="date" type="text/javascript">
+					//Thanks to Teiem1 on Reddit for the suggestion :)
+					var d = new Intl.DateTimeFormat('en-US', {month: "long", day:"numeric", year: "numeric"}).format(new Date());
+					var h = new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: 'numeric', hour12: false}).format(new Date());
+					document.write(d + " | " + h);
+				</script>
+				<div id="web_search">
+					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+						<label for="q">></label>
+						<input autofocus
+			        	 		id="q"
+			         			name="q"
+			         			type="search"
+			         			placeholder="search with duckduckgo...">
+					</form>
+				</div>
+
+				<nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">Frequent</a>
+								<li><a href="https://github.com/">Github</a></li>
+								<li><a href="https://www.youtube.com/">Youtube</a></li>
+								<li><a href="https://awesomewm.org/doc/api/">AwesomeWM</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Reddit</a>
+								<li><a href="https://www.reddit.com/r/unixporn/">Unixporn</a></li>
+								<li><a href="https://www.reddit.com/r/startpages/">Startpages</a></li>
+								<li><a href="https://www.reddit.com/r/FirefoxCSS/">Firefox CSS</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Social</a>
+								<li><a href="https://discord.com/app">Discord</a></li>
+								<li><a href="https://web.telegram.org/">Telegram</a></li>
+								<li><a href="https://www.reddit.com/">Reddit</a></li>
+						</ul>
+						<!-- <ul> -->
+						<!-- 	<a class="subtitle">Studies</a> -->
+						<!-- 		<li><a href="https://elearning.ceiti.md/">Moodle</a></li> -->
+						<!-- 		<!-1- <li><a href="https://moodle.epfl.ch/"></a></li> -1-> -->
+						<!-- </ul> -->
+						<ul>
+							<a class="subtitle">Others</a>
+								<li><a href="https://en.cppreference.com/w/">cppreference</a></li>
+								<li><a href="http://terminal.sexy/">Terminal Sexy</a></li>
+								<li><a href="https://vimawesome.com/">VimAwesome</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</body>
+</html>

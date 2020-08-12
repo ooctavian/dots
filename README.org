@@ -1,0 +1,23 @@
+#+Title: My dotfiles 
+#+Author: VirginFuehrer
+#+html: <img src=".local/share/assets/scrots" alt="stuck-in-stack.thumbnail" align="right" width="400px">
+* What I use 
+- *Window Manager*: =bspwm=
+- *Hotkey daemon*: =sxhkd=
+- *Bar*: =polybar=
+- *Terminal*: =st=
+- *Application Launcher*: =rofi=
+- *File manager*: =Nemo= (gui) and =ranger= (console)
+- *Browser*: =firefox=
+- *Editor*: =Neovim= and =Emacs=
+- *Compositor*: Picom (Rest in piece xcompmgr)
+- *Fonts*: ={FiraCode,FantasqueSansMono,Iosevka} Nerd Fonts=
+- *Clipboard manager*: =xclip=
+- *Music setup*: =mpd=, =mpc= and =ncmpcpp=
+- *Shell*: =Bash= and =Dash= (for POSIX scripts)
+- *Lockscreen*: =i3lock-color=
+*Other utilites used in scripts*:
+- =ffmpeg= - for extracting album covers and soon for recording video
+- =Python3-gobject= - Needed for networkmangaer-dmenu
+- =imagemagick= - needed for i3lock script
+- =slop= - for selecting area in maim

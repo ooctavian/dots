@@ -4,8 +4,8 @@
 # SETTINGS
 music_library="$HOME/Music"
 fallback_image="$HOME/mpd/mpdicon.png"
-padding_top=3
-padding_bottom=1
+padding_top=1
+padding_bottom=2
 padding_right=1
 max_width=0
 reserved_playlist_cols=30

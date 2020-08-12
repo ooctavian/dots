@@ -22,7 +22,7 @@ super + shift + d
 Print
     shot -p
 alt + Print
-    shot -pt 5
+    shot -pt 10
 # Record
 super + Print
 	record
@@ -48,7 +48,7 @@ super + shift + x
 
 # File manager
 super + shift + f
-	jumpapp thunar
+	jumpapp nemo
 # lock
 # super + shift + x
 #     slock

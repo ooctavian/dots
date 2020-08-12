@@ -12,7 +12,7 @@ case $var in
 	sudo reboot
 	;;
     "Power off")
-	sudo shutdown now
+	sudo halt
 	;;
     *)
 	exit

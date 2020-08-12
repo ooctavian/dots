@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>~ sp</title>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<style type="text/css">
+			/*Change these variables to match with your setup. These colors work for
+			  the image I used and my overall desktop theme (see here:
+			  https://i.imgur.com/gxMdNKi.png).*/
+			:root {
+				--red: #BD9980;
+				--white: #DCDCCC;
+				--yellow: #f0dfaf;
+
+				--bg: #282828;
+				--fg: #3f3f3f;
+
+				--search-bg: rgba(255, 255, 255, 0);
+				}
+
+			body {
+				background-color: var(--bg);
+				font-family: 'Space Mono', monospace;
+				color: var(--yellow);
+			}
+
+			ul {
+				list-style-type: none;
+				text-align: left;
+				padding: 2px 15px;
+			}
+
+			p[class=credits] > a {
+				position: fixed;
+				bottom: 7px;
+				right: 10px;
+			}
+
+			/*Form based off of Vallode's work:
+			  https://codepen.io/Vallode/pen/abdYLOd*/
+			form {
+				margin: 1em 0;
+				position: relative;
+			}
+
+			form input[type="search"] {
+				background-color: var(--search-bg);
+				border: none;
+				box-sizing: border-box;
+				font-weight: bold;
+				font: inherit;
+				margin-left: 12px;
+				width: 95%;
+				color: var(--yellow);
+			}	
+
+			form label {
+				color: var(--yellow);
+				position: absolute;
+			}
+
+			form:focus-within input::placeholder {
+				opacity: 0;
+			}
+
+			#main_window {
+				background-color: var(--fg);
+				width: 910px;
+				padding-right: 40px;
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+
+			#content {
+				padding-top: 30px;
+				margin-left: 300px;
+			}
+
+			#links_container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			#links_container li, a {
+				color: var(--white);
+				text-decoration: none;
+			}
+
+			#links_container a:hover {
+				color: var(--red);
+				transition: all 0.4s;
+			}
+
+			.subtitle {
+				font-weight: bold;
+				color: var(--red);
+			}
+
+			.title {
+				font-weight: bold;
+				font-style: italic;
+			}
+
+			.image {
+				max-width: 250px;
+				float: left;
+			}
+
+			.bottom {
+				position: fixed;
+				bottom: 0;
+				font-size: 0.52em;
+			}
+
+			.bottom a {
+				text-decoration: none;
+				color: var(--yellow);
+			}
+
+			.bottom a:hover {
+				text-decoration: underline;
+			}
+
+			@media (max-width: 980px) {
+				img#leftImg {
+			    	height: 280px;
+			  	}
+
+			  	#main_window {
+					width: 833px;
+					padding-right: 0;
+				}
+
+				ul {
+					padding-top: 0px;
+					margin-top: -7px;
+				}
+
+				#content {
+					padding-top: 0px;
+					margin-left: 220px;
+				}
+			}
+
+			@media (max-width: 833px) {
+				img#leftImg {
+					display: none;
+				}
+
+				#main_window {
+					width: 650px;
+				}
+
+				#content {
+					margin-left: 20px;
+				}
+			}
+
+			@media (max-width: 650px) {
+				#main_window {
+					width: 100%;
+				}
+			}
+
+			@media (max-width: 450px) {
+				form input[type="search"] {
+					width: 90%;
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="main_window">
+			<img id=leftImg src="https://i.imgur.com/YFvTLmg.png" class="image">
+
+			<div id="content">
+				<h1 class="title">Welcome</h1>
+				<script id="date" type="text/javascript">
+					// Thanks to Teiem1 on Reddit for the suggestion :)
+					var d = new Intl.DateTimeFormat('en-US', {month: "long", day:"numeric", year: "numeric"}).format(new Date());
+					var h = new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: 'numeric', hour12: false}).format(new Date());
+					document.write(d + " | " + h);
+				</script>
+				<div id="web_search">
+					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+						<label for="q">></label>
+						<input autofocus
+			        	 		id="q"
+			         			name="q"
+			         			type="search"
+			         			placeholder="search with duckduckgo...">
+					</form>
+				</div>
+
+				<nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">Frequent</a>
+								<li><a href="https://genius.com/">Genius</a></li>
+								<li><a href="https://gitlab.com/">GitLab</a></li>
+								<li><a href="https://www.google.com/">Google</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Media</a>
+								<li><a href="https://www.netflix.com/browse">Netflix</a></li>
+								<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
+								<li><a href="https://www.youtube.com/">YouTube</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Social medias</a>
+								<li><a href="https://www.instagram.com/">Instagram</a></li>
+								<li><a href="https://www.reddit.com/">Reddit</a></li>
+								<li><a href="https://twitter.com/home">Twitter</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Studies</a>
+								<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
+								<li><a href="https://ewa.epfl.ch/">Mail</a></li>
+								<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Others</a>
+								<li><a href="https://www.digitec.ch/">Digitec</a></li>
+								<li><a href="http://192.168.1.130:8080">Komga</a></li>
+								<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<p class="credits">
+				<a href="https://www.deviantart.com/nuralifsidoel/art/Futaba-Rio-Seishun-Buta-Yarou-Vector-778405449">Art by NurAlifSidoel on DeviantArt</a>
+			</p>
+
+			<div class="contacts">
+				<p>
+					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | <a href="https://twitter.com/wolfiiy">Twitter</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

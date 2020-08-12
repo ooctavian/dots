@@ -1,8 +1,0 @@
-[Desktop Entry]
-Comment= Emacs client
-Terminal=false
-Name= Emacsclient
-Categories=Editor,IDE
-Exec= emacsclient -c 
-Type=Application
-Icon=emacs

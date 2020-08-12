@@ -1,6 +1,6 @@
 ncmpcpp_directory = ~/.ncmpcpp
 lyrics_directory = ~/.lyrics
-mpd_host = localhost
+mpd_host = 127.0.0.1
 mpd_port = 6600
 mpd_music_dir = ~/Music
 
@@ -25,7 +25,7 @@ execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
 #### Playlist formatting
 #song_list_format = "$6 {%a »$4 %t $/r                                                                                                                                       $R                             }|{%f$/r                                                                                                                                     }"
 #  
-song_list_format = "$6{%a -$2 %t $/r$/u$R$b$0%l$/b  }|{%f$/r}"
+song_list_format = "$6{%a -$2 %t $/r$/u$R$b$0$/b  }|{%f$/r}"
 now_playing_prefix = "$b$6  "
 #now_playing_suffix = "$/b"
 /*now_playing_suffix = " >>>>"*/
@@ -37,11 +37,9 @@ playlist_display_mode = "classic"
 #progressbar_look = "5"
 progressbar_elapsed_color = "white"
 progressbar_color = "black"
-progressbar_look = "▃▃▃"
-#progressbar_look = "──"
-#connected_message_on_startup = no
-
-song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(5f)[9]{lr}$/b"
+progressbar_look = "━━━"
+#connected_message_on_startup = no 
+song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(5f)[9]$/b"
 #song_columns_list_format = "(25)[6]{a} (25)[4]{tr} (5)[6]{lr:Length}"
 
 #### Colors
@@ -52,16 +50,16 @@ main_window_color =  magenta
 #### General formatting
 titles_visibility = "yes"
 header_visibility = "no"
-statusbar_visibility = "no"
+statusbar_visibility = "yes"
 playlist_show_remaining_time = yes
 volume_color = "blue:b"
-/*alternative_header_first_line_format = $(2_16)$b» {%f} «$/b$9*/
-alternative_header_first_line_format = $6$b {%a} $/b
+/*alternative_header_first_line_format =$(2_16)$b» {%f} «$/b$9*/
+alternative_header_first_line_format =$6$b {%a} $/b
 alternative_header_second_line_format =$2{%t}|{/%D/}
-user_interface = alternative
+user_interface = classic
 current_item_prefix = $(16)$r
 current_item_suffix = $/r$(end)
-
+song_status_format = "{$b$2 $8%a $5 $8%t $5 $6%b}|{$b$2 $8%f}"
 
 #### Misc stuff
 discard_colors_if_item_is_selected = "yes"

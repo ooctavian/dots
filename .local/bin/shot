@@ -1,12 +1,25 @@
 #! /bin/sh
 # Fuhrer's screenshot manager
+# What does this script do 
+	#Make a screenshot ( either fullscreen or area (if -a is specified)) (of course)
+	#Send a notification 
+	#Copy to clipboard (if -c is specified)
+	#Open screenshot in a image viewer
+# Dependeciens
+	# maim 
+	# slop
+	# dunst
+	# xclip
 # Get path  and name of the file
-name=$(xdg-user-dir PICTURES) || name="~/Pictures"
-name="$name/Screenshot_$(date +'%Y-%m-%d_%H-%M')"
+name="$HOME/Pictures"
+name="$name/Screenshot_$(date +'%Y-%m-%d_%H-%M').png"
+
 # notification text
 notif="Screenshot taken"
+
 #command that will run
-com="maim $name -u "
+com="maim  -u "
+
 while getopts ":atcp" opt; do
   case $opt in
     a)
@@ -14,16 +27,24 @@ while getopts ":atcp" opt; do
         com="$com -s"
     ;;
     c)
-        # flag for clipboard
+	#Update notification text
         notif="$notif to clipboard"
+	#Enable option
         clip="yes"
     ;;
     p)
         # flag for preview
         prev="yes"
     ;;
+   t)
+        # flag for preview
+        time="yes"
+    ;;
+
   esac
 done
+[ "$time" = "yes" ] && com="$com -d 5"
+com="$com $name"
 $com && dunstify -i "$name" "$notif"
 [ "$clip" = "yes" ] && xclip -selection clipboard -t image/png $name && rm -r $name
 [ "$prev" = "yes" ] && viewnior "$name"
