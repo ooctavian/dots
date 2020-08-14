@@ -1,11 +1,10 @@
-#+Title: My dotfiles 
+#+Title: What I use: 
 #+Author: VirginFuehrer
 #+html: <img src=".local/share/assets/scrots" alt="stuck-in-stack.thumbnail" align="right" width="400px">
-* What I use 
 - *Window Manager*: =bspwm=
 - *Hotkey daemon*: =sxhkd=
 - *Bar*: =polybar=
-- *Terminal*: =st=
+- *Terminal*: =st= build [[https://github.com/virginfuhrer/compiledshit/tree/master/st][here]]
 - *Application Launcher*: =rofi=
 - *File manager*: =Nemo= (gui) and =ranger= (console)
 - *Browser*: =firefox=
@@ -16,8 +15,18 @@
 - *Music setup*: =mpd=, =mpc= and =ncmpcpp=
 - *Shell*: =Bash= and =Dash= (for POSIX scripts)
 - *Lockscreen*: =i3lock-color=
-*Other utilites used in scripts*:
+*Utilites used in scripts*:
 - =ffmpeg= - for extracting album covers and soon for recording video
 - =Python3-gobject= - Needed for networkmangaer-dmenu
 - =imagemagick= - needed for i3lock script
 - =slop= - for selecting area in maim
+- =xdotool= - for scratchpad scripts and jumpapp script
+- =wmctrl= - for jumpapp script 
+*Other*:
+*Wallpaper*: [[https://unsplash.com/photos/_wqj9tC0WSE][Original]] and the edit by me is in =~/.config/wall.png=
+*GTK theme*: [[https://github.com/jaxwilko/gtk-theme-framework][material-gtk-framework]]  theme is avalabile in =~/.local/share/themes/=
+*Icon theme*: Oomox generated =papirus-icon-theme=
+*Startpage*: made by  [[https://www.reddit.com/r/startpages/comments/i3t68d/simple_minimal_startpage_i_made_to_match_my/][Wolfiy]]
+*Firefox CSS*: [[https://github.com/JavaCafe01/not-firefox-review][this one]]
+*Original i3lock script*: [[https://github.com/okitavera/dotfiles/blob/master/bin/lock][here]]
+
