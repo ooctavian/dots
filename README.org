@@ -23,7 +23,9 @@
 - =xdotool= - for scratchpad scripts and jumpapp script
 - =wmctrl= - for jumpapp script 
 *Other*:
+
 *Wallpaper*: [[https://unsplash.com/photos/_wqj9tC0WSE][Original]] and the edit by me is in =~/.config/wall.png=
+
 *GTK theme*: [[https://github.com/jaxwilko/gtk-theme-framework][material-gtk-framework]]  theme is avalabile in =~/.local/share/themes/=
 *Icon theme*: Oomox generated =papirus-icon-theme=
 *Startpage*: made by  [[https://www.reddit.com/r/startpages/comments/i3t68d/simple_minimal_startpage_i_made_to_match_my/][Wolfiy]]
