@@ -25,7 +25,7 @@
 - =ueberzug= - for ncmpcpp album art script and ranger previews
 *Other*:
 - *Wallpaper*: [[https://unsplash.com/photos/_wqj9tC0WSE][Original]] and the edit by me is in =~/.config/wall.png=
-- *GTK theme*: [[https://github.com/jaxwilko/gtk-theme-framework][material-gtk-framework]]  theme is avalabile in *=~/.local/share/themes/=*
+- *GTK theme*: [[https://github.com/jaxwilko/gtk-theme-framework][material-gtk-framework]]  theme is avalabile in =~/.local/share/themes/=
 - *Icon theme*: Oomox generated =papirus-icon-theme=
 - *Startpage*: made by  [[https://www.reddit.com/r/startpages/comments/i3t68d/simple_minimal_startpage_i_made_to_match_my/][Wolfiy]]
 - *Firefox CSS*: [[https://github.com/JavaCafe01/not-firefox-review][this one]]
