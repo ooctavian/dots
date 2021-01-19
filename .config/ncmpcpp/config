@@ -1,117 +1,35 @@
-ncmpcpp_directory = ~/.ncmpcpp
-lyrics_directory = ~/.lyrics
-mpd_host = 127.0.0.1
-mpd_port = 6600
+# Files
 mpd_music_dir = ~/Music
+lyrics_directory  = ~/.config/ncmpcpp/lyrics
+ncmpcpp_directory  = ~/.config/ncmpcpp
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
 
-## - 0 - default window color (discards all other colors)
-## - 1 - black
-## - 2 - red
-## - 3 - green
-## - 4 - yellow
-## - 5 - blue
-## - 6 - magenta
-## - 7 - cyan
-## - 8 - white
-## - 9 - end of current color
-## If you want to use 256 colors and/or background colors in formats
-## with the syntax $(COLOR), e.g. to set the artist tag to one of the
-## non-standard colors and make it have yellow background, you need to write
-## $(197_yellow)%a$(end).
+visualizer_color = cyan, green, yellow, magenta, red
+playlist_display_mode = columns
+progressbar_look = "▂▂▂"
+header_visibility = no
+statusbar_visibility = yes
+titles_visibility = no
+colors_enabled = yes
+main_window_color = 16
+progressbar_color = 8
+progressbar_elapsed_color = 7
+seek_time = 5
+volume_change_step = 5
+message_delay_time = 1
 
-#### Cover art
-execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
+current_item_prefix = "$(14)"
+current_item_suffix = "$/r$(end)"
 
-#### Playlist formatting
-#song_list_format = "$6 {%a »$4 %t $/r                                                                                                                                       $R                             }|{%f$/r                                                                                                                                     }"
-#  
-song_list_format = "$6{%a -$2 %t $/r$/u$R$b$0$/b  }|{%f$/r}"
-now_playing_prefix = "$b$6  "
-#now_playing_suffix = "$/b"
-/*now_playing_suffix = " >>>>"*/
-playlist_display_mode = "classic"
+now_playing_prefix = "$(7)"
+now_playing_suffix = "$9"
+#now_playing_suffix = "$(17) *    $9"
 
-
-#### Progressbar
-#### can consider »─▬▐▌░▒▓█━⠤ ⠤ ▪▃
-#progressbar_look = "5"
-progressbar_elapsed_color = "white"
-progressbar_color = "black"
-progressbar_look = "━━━"
-#connected_message_on_startup = no 
-song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(5f)[9]$/b"
-#song_columns_list_format = "(25)[6]{a} (25)[4]{tr} (5)[6]{lr:Length}"
-
-#### Colors
-header_window_color = "blue"
-main_window_color =  magenta
-#alternative_ui_separator_color = 0
-
-#### General formatting
-titles_visibility = "yes"
-header_visibility = "no"
-statusbar_visibility = "yes"
-playlist_show_remaining_time = yes
-volume_color = "blue:b"
-/*alternative_header_first_line_format =$(2_16)$b» {%f} «$/b$9*/
-alternative_header_first_line_format =$6$b {%a} $/b
-alternative_header_second_line_format =$2{%t}|{/%D/}
-user_interface = classic
-current_item_prefix = $(16)$r
-current_item_suffix = $/r$(end)
-song_status_format = "{$b$2 $8%a $5 $8%t $5 $6%b}|{$b$2 $8%f}"
-
-#### Misc stuff
-discard_colors_if_item_is_selected = "yes"
-autocenter_mode = "yes"
-centered_cursor = "yes"
-lastfm_preferred_language = "ja"
-mouse_support = "yes"
-colors_enabled = "yes"
-mpd_crossfade_time = "0"
-follow_now_playing_lyrics = "yes"
-store_lyrics_in_song_dir = "yes"
-song_window_title_format = ncmpcpp
-ask_before_clearing_playlists = "no"
-volume_change_step = "1"
-
-#### Mappings
-def_key "h"
-    previous_column
-def_key "j"
-    scroll_down
-def_key "k"
-    scroll_up
-def_key "l"
-    next_column
-def_key "ctrl-u"
-    page_up
-def_key "ctrl-d"
-    page_down
-def_key "."
-    show_lyrics
-def_key "n"
-    next_found_item
-def_key "N"
-    previous_found_item
-def_key "J"
-    move_sort_order_down
-def_key "K"
-    move_sort_order_up
-def_key "d"
-    delete_playlist_items
-def_key "d"
-    delete_browser_items
-
-#### Visualizer stuff
-visualizer_type = wave_filled
-# visualizer_look = ■■
-visualizer_fifo_path = "/tmp/mpd.fifo"
-#visualizer_output_name = "my_fifo"
-visualizer_in_stereo = "no"
-visualizer_sync_interval = "30"
-visualizer_color = blue, cyan, green, yellow, magenta, red
-
-active_window_border = blue
-
-browser_display_mode = columns
+song_status_format = $/b{%a - %t}|{%f}
+song_list_format = "%a  -  %t$R$(end) "
+song_library_format = $/b{{%a - %t} (%b)}|{%f}
+#song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(5f)[9]$/b"
+song_columns_list_format = "[]{a}(90)[]{t}"

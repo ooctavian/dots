@@ -1,0 +1,2 @@
+#! /usr/bin/env sh
+nixGL $HOME/.nix-profile/bin/viber
