@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+
+# TODO: Arguments parsing is done manually
+# TODO: Script accepts extra arguments
+
+function _print_usage() {
+	echo "Usage:"
+	echo -e "\t${0} enable|disable|status [acpi_call|ideapad_laptop]"
+}
+
+function _acpi_call() {
+	# TODO: Make sure acpi_call module is loaded
+	# TODO: Handle values different than 3 and 5
+	_command="${1}"
+	if [ "${_command}" == "enable" ]
+	then
+		sudo bash -c "echo '\_SB.PCI0.LPCB.EC0.VPC0.SBMC 3' > /proc/acpi/call"
+	elif [ "${_command}" == "disable" ]
+	then
+		sudo bash -c "echo '\_SB.PCI0.LPCB.EC0.VPC0.SBMC 5' > /proc/acpi/call"
+	elif [ "${_command}" == "status" ]
+	then
+		# TODO: Implement status command
+		echo "status command is not currently implemented for module acpi_call."
+		return 1
+	else
+		return 1
+	fi
+}
+
+function _ideapad_laptop() {
+	# TODO: Make sure ideapad_laptop module is loaded
+	# TODO: Make sure VPC2004:00 exists
+	_command="${1}"
+	if [ "${_command}" == "enable" ]
+	then
+		# TODO: Don't enable conservation mode if it's already enabled
+		sudo bash -c "echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode"
+	elif [ "${_command}" == "disable" ]
+	then
+		# TODO: Don't disable conservation mode if it's already disabled
+		sudo bash -c "echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode"
+	elif [ "${_command}" == "status" ]
+	then
+		_status_value="$( cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode )"
+		if [ "${_status_value}" == "1" ]
+		then
+			echo "Battery conservation mode is currently enabled."
+		elif [ "${_status_value}" == "0" ]
+		then
+			echo "Battery conservation mode is currently disabled."
+		else
+			echo "Error reading battery conservation mode status."
+		fi
+	else
+		return 1
+	fi
+}
+
+if [ "${1}" == "enable" ]
+then
+	_command="enable"
+elif [ "${1}" == "disable" ]
+then
+	_command="disable"
+elif [ "${1}" == "status" ]
+then
+	_command="status"
+else
+	_print_usage
+	exit 1
+fi
+
+if [ "${2}" == "acpi_call" ]
+then
+	_module="acpi_call"
+elif [ "${2}" == "ideapad_laptop" ] ||
+	[ -z "${2}" ]
+then
+	_module="ideapad_laptop"
+else
+	_print_usage
+	exit 1
+fi
+
+if [ "${_module}" == "acpi_call" ]
+then
+	_acpi_call "${_command}"
+elif [ "${_module}" == "ideapad_laptop" ]
+then
+	_ideapad_laptop "${_command}"
+fi

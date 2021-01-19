@@ -1,0 +1,25 @@
+
+xmonad.hs:269:1: warning: [-Wtabs]
+    Tab character found here, and in one further location.
+    Please use spaces instead.
+    |
+269 |         $ gaps [(U,outerGaps), (R,outerGaps),(L,outerGaps),(D,outerGaps)]
+    | ^^^^^^^^
+clang-7: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+
+In file included from /tmp/ghc11888_0/ghc_4.c:1:0: error: 
+
+In file included from /usr/lib/ghc-8.10.3/include/Rts.h:192:0: error:
+    
+
+In file included from /usr/lib/ghc-8.10.3/include/rts/OSThreads.h:27:0: error:
+    
+
+/usr/include/pthread.h:734:12: error:
+     warning: declaration of built-in function '__sigsetjmp' requires inclusion of the header <setjmp.h> [-Wbuiltin-requires-header]
+    |
+734 | extern int __sigsetjmp (struct __jmp_buf_tag *__env, int __savemask) __THROWNL;
+    |            ^
+extern int __sigsetjmp (struct __jmp_buf_tag *__env, int __savemask) __THROWNL;
+           ^
+1 warning generated.

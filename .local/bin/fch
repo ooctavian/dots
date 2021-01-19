@@ -21,7 +21,7 @@ min=$(( (( $up % 86400 ) % 3600 ) / 60 ))
 [ $min = 0 ] || m="${min}m "
 
 pkg=0
-for count in /var/db/xbps/.*;do
+for count in /var/lib/pacman/local/*;do
 	pkg=$(( pkg+1 ))
 done
 sh=$SHELL

@@ -6,8 +6,8 @@
 	#Copy to clipboard (if -c is specified)
 	#Open screenshot in a image viewer
 # Dependeciens
-	# maim 
-	# slop
+	# shotgun
+	# boox
 	# dunst
 	# xclip
 # Get path  and name of the file
@@ -18,13 +18,14 @@ name="$name/Screenshot_$(date +'%Y-%m-%d_%H-%M').png"
 notif="Screenshot taken"
 
 #command that will run
-com="maim  -u "
+com="shotgun "
 
 while getopts ":atcp" opt; do
   case $opt in
     a)
         # flag for area 
-        com="$com -s"
+	area=$(boox)
+        com="$com -g $area"
     ;;
     c)
 	#Update notification text
@@ -46,5 +47,5 @@ done
 [ "$time" = "yes" ] && com="$com -d 5"
 com="$com $name"
 $com && dunstify -i "$name" "$notif"
-[ "$clip" = "yes" ] && xclip -selection clipboard -t image/png $name && rm -r $name
+[ "$clip" = "yes" ] && xclip -selection clipboard -t image/png $name && rm -r $name 
 [ "$prev" = "yes" ] && viewnior "$name"

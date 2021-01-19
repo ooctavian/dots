@@ -2,7 +2,7 @@
 
 # Show the terminal colourscheme as blocks
 
-f=3 b=4
+f=4 b=4
 for j in f b; do
   for i in {0..7}; do
     printf -v $j$i %b "\e[${!j}${i}m"
@@ -10,7 +10,7 @@ for j in f b; do
 done
 d=$'\e[1m'
 t=$'\e[0m'
-v=$'\e[7m'
+v=$'\e[1m'
 
 cat << EOF
  

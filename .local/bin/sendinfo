@@ -1,0 +1,8 @@
+#! /usr/bin/sh 
+time=$(date +%H:%M)
+date=$(date +%d.%m.%Y)
+battery=$(cat /sys/class/power_supply/BAT?/capacity)
+body="TIME: $time
+      DATE: $date
+      BATT: $battery%"
+dunstify "$body"
