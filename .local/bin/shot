@@ -1,16 +1,4 @@
 #! /bin/sh
-# Fuhrer's screenshot manager
-# What does this script do 
-	#Make a screenshot ( either fullscreen or area (if -a is specified)) (of course)
-	#Send a notification 
-	#Copy to clipboard (if -c is specified)
-	#Open screenshot in a image viewer
-# Dependeciens
-	# shotgun
-	# boox
-	# dunst
-	# xclip
-# Get path  and name of the file
 name="$HOME/Pictures"
 name="$name/Screenshot_$(date +'%Y-%m-%d_%H-%M').png"
 

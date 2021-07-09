@@ -4,7 +4,6 @@
 # script rewrittn for posix from arch wiki #xcompmgr
 
 comphelp() {
-    printf "%s\n" "Fuhrer's xcompmgr manager"
     printf "%s\n" "Composition Manager:"
     printf "%s\n" "toggle: COMP (no arguments)"
     printf "%s\n" "(re)start: COMP -S"

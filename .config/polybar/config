@@ -1,4 +1,3 @@
-;;Fuhrer's Polybar Config
 [colors]
 background = #1c1e26
 foreground = #c7c9cb

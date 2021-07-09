@@ -1,5 +1,4 @@
 #!/bin/sh
-#Fuhrer's mpd manager
 # Dependencies
 #      mpd - ofcourse
 #      mpc - to control music && get info
