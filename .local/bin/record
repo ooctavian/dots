@@ -1,5 +1,4 @@
 #! /bin/sh
-# Fuhrer's record manager
 # "Some" inspiration taken from https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenurecord
 # change your resolution if you have another screen resolution because I am dumb to implement auto  
 # This script works for me but it may not work for you 
