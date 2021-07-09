@@ -4,7 +4,7 @@
 - *Window Manager*: =bspwm=
 - *Hotkey daemon*: =sxhkd=
 - *Bar*: =polybar=
-- *Terminal*: =st= build [[https://github.com/virginfuhrer/compiledshit/tree/master/st][here]]
+- *Terminal*: =st= 
 - *Application Launcher*: =rofi=
 - *File manager*: =Nemo= (gui) and =ranger= (console)
 - *Browser*: =firefox=
