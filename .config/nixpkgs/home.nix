@@ -75,11 +75,7 @@ home.packages = with pkgs;[
     LOCALE_ARCHIVE_2_27 = "${pkgs.glibcLocales}/lib/locale/locale-archive";
     BROWSER = "firefox";
   };
- programs.git = {
- enable = true;
- userName = "ooctavian";
- userEmail = "octaviancir@gmail.com";
- };
+
  home.file.".profile".text = ''
     # -*- mode: sh -*-
   . "$HOME/.nix-profile/etc/profile.d/nix.sh"
