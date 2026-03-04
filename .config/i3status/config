@@ -1,0 +1,51 @@
+general {
+    output_format = "none"
+    colors = false
+    interval = 5
+}
+order += "load"
+order += "cpu_temperature 0"
+order += "wireless wlp0s20f3"
+order += "volume master"
+order += "battery 0"
+order += "time"
+
+load {
+    format = "█LOAD█Load: %5min"
+}
+
+cpu_temperature 0 {
+    format = "█CPUTEMP█CPU Temp: %degrees °C"
+    path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+wireless wlp0s20f3 {
+    format_up = "█WIFI█WiFi: %essid"
+    format_down = "█WIFI█WiFi: Disconnected"
+}
+
+volume master {
+    format = "█VOLUME█Volume: %volume"
+    format_muted = "█VOLUME█Volume: Muted"
+    device = "pulse"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+battery 0 {
+    last_full_capacity = true
+    format = "█BATTERY█%status: %percentage"
+    format_down = "█BATTERY█No Battery"
+    status_chr = "CHR"
+    status_bat = "BAT"
+    status_unk = "UNK"
+    status_full = "FULL"
+    path = "/sys/class/power_supply/BAT%d/uevent"
+    low_threshold = 10
+    integer_battery_capacity = true
+}
+
+time {
+    format = "█TIME█Time: %b %d at %H:%M"
+}
+

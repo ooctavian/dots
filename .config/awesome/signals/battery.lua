@@ -1,0 +1,5 @@
+local awful = require('awful')
+local naughty = require('naughty')
+awful.widget.watch('sh -c "cat /sys/class/power_supply/BAT?/capacity"', 30, function(_,stdout)
+                     awesome.emit_signal('battery::percentage', tonumber(stdout))
+end)

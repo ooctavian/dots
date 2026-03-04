@@ -1,0 +1,299 @@
+-- local function createPreview(c)
+-- 	local cairo = require('lgi').cairo
+-- 	local content = gears.surface(c.content)
+-- 	local cr = cairo.Context(content)
+-- 	local x, y, w, h = cr:clip_extents()
+-- 	local img = cairo.ImageSurface.create(cairo.Format.ARGB32, w - x, h - y)
+-- 	cr = cairo.Context(img)
+-- 	cr:set_source_surface(content, 0, 0)
+-- 	cr.operator = cairo.Operator.SOURCE
+-- 	cr:paint()
+-- 	return img
+-- end
+		-- local ll = awful.widget.layoutlist {
+		-- 	base_layout = wibox.widget {
+		-- 		spacing         = dpi(24),
+		-- 		forced_num_cols = dpi(3),
+		-- 		layout          = wibox.layout.grid.vertical,
+		-- 	},
+		-- 	widget_template = {
+		-- 		{
+		-- 			{
+		-- 				id            = 'icon_role',
+		-- 				forced_height = dpi(68),
+		-- 				forced_width  = dpi(68),
+		-- 				widget        = wibox.widget.imagebox,
+		-- 			},
+		-- 			margins = dpi(4),
+		-- 			widget  = wibox.container.margin,
+		-- 		},
+		-- 		id              = 'background_role',
+		-- 		margins         = dpi(24),
+		-- 		shape           = gears.shape.rounded_rect,
+		-- 		widget          = wibox.container.background,
+		-- 	},
+		-- }
+
+		-- local layout_popup = awful.popup {
+		-- 	widget = wibox.widget {
+		-- 		ll,
+		-- 		margins = dpi(24),
+		-- 		widget  = wibox.container.margin,
+		-- 	},
+		-- 	border_color = beautiful.border_color,
+		-- 	border_width = beautiful.border_width,
+		-- 	placement    = awful.placement.centered,
+		-- 	screen       = s,
+		-- 	ontop        = true,
+		-- 	visible      = false
+		-- }
+
+
+		-- -- Make sure you remove the default Mod4+Space and Mod4+Shift+Space
+		-- -- keybindings before adding this.
+		-- s.layout_grabber = awful.keygrabber {
+		-- 	start_callback = function() layout_popup.visible = true  end,
+		-- 	stop_callback  = function() layout_popup.visible = false end,
+		-- 	stop_event = 'release',
+		-- 	stop_key = {'Escape', 'Super_L', 'Super_R'},
+		-- 	keybindings = {
+		-- 		{{ modkey          } , ' ' , function()
+		-- 				awful.layout.inc( 1)
+		-- 		end},
+		-- 		{{ modkey, 'Shift' } , ' ' , function()
+		-- 				awful.layout.inc( -1)
+		-- 		end},
+		-- 	}
+		-- }
+		-- -- }}
+
+
+		-- local taglist = awful.widget.taglist {
+		-- 	screen  = s,
+		-- 	filter  = awful.widget.taglist.filter.all,
+		-- 	layout   = {
+		-- 		spacing = dpi(12),
+		-- 		layout  = wibox.layout.fixed.horizontal
+		-- 	},
+		-- 	style = {
+		-- 		bg_focus = beautiful.taglist_popup_focused,
+		-- 		-- bg_empty = beautiful.taglist_popup_empty,
+		-- 		bg_occupied = beautiful.taglist_popup_occupied,
+		-- 	},
+		-- 	widget_template = {
+		-- 		{
+		-- 			{
+		-- 				id     = 'index_role',
+		-- 				widget = wibox.widget.textbox,
+		-- 			},
+		-- 			id = 'background_role',
+		-- 			forced_width = dpi(20),
+		-- 			forced_height = dpi(20),
+		-- 			widget = wibox.container.background,
+		-- 		},
+		-- 		margins = dpi(2),
+		-- 		color  = beautiful.taglist_popup_border,
+		-- 		widget = wibox.container.margin,
+		-- 	},
+		-- 	buttons = taglist_buttons
+		-- }
+
+		-- s.taglist_popup = awful.popup {
+		-- 	widget = wibox.widget {
+		-- 		taglist,
+		-- 		margins = dpi(24),
+		-- 		widget  = wibox.container.margin,
+		-- 	},
+		-- 	border_color = beautiful.taglist_popup_widget_border,
+		-- 	border_width = dpi(4),
+		-- 	screen       = s,
+		-- 	placement    = awful.placement.centered,
+		-- 	ontop        = true,
+		-- 	visible      = false
+		-- }
+
+		-- s.taglist_grabber = awful.keygrabber {
+		-- 	start_callback = function() s.taglist_popup.visible = true  end,
+		-- 	stop_callback  = function() s.taglist_popup.visible = false end,
+		-- 	stop_event = 'release',
+		-- 	stop_key = {'Escape', 'Super_L', 'Super_R'},
+		-- 	keypressed_callback = function(_,_,key,_)
+		-- 		if key == 'Left' then
+		-- 			awful.tag.viewprev()
+		-- 			return
+		-- 		end
+		-- 		if key == 'Right' then
+		-- 			awful.tag.viewnext()
+		-- 			return
+		-- 		end
+
+		-- 		key = tonumber(key, 10)
+		-- 		if key then
+		-- 			local tag = s.tags[key]
+		-- 			if tag then
+		-- 				tag:view_only()
+		-- 			end
+		-- 		end
+		-- 	end,
+		-- }
+		-- local previews_horizontal = awful.widget.tasklist {
+		-- 	screen   = s,
+		-- 	filter   = awful.widget.tasklist.filter.currenttags,
+		-- 	buttons  = tasklist_buttons,
+		-- 	style    = {
+		-- 		shape = gears.shape.rectangle,
+		-- 	},
+		-- 	layout   = {
+		-- 		spacing = 5,
+		-- 		layout = wibox.layout.fixed.horizontal
+		-- 	},
+		-- 	widget_template = {
+		-- 		{
+		-- 			{
+		-- 				{
+		-- 					id = 'preview',
+		-- 					resize = true,
+		-- 					widget = wibox.widget.imagebox
+		-- 				},
+		-- 				margins = dpi(4),
+		-- 				widget  = wibox.container.margin,
+		-- 			},
+		-- 			halign   = 'center',
+		-- 			valign   = 'center',
+		-- 			widget  = wibox.container.place,
+		-- 		},
+		-- 		id              = 'background_role',
+		-- 		forced_width    = dpi(200),
+		-- 		forced_height   = dpi(150),
+		-- 		widget          = wibox.container.background,
+		-- 		create_callback = function(self, c, index, objects) --luacheck: no unused
+		-- 			self:get_children_by_id('preview')[1].image = createPreview(c)
+		-- 		end,
+		-- 		update_callback = function(self, c, index, objects) --luacheck: no unused
+		-- 			self:get_children_by_id('preview')[1].image = createPreview(c)
+		-- 		end,
+		-- 	},
+		-- }
+
+		-- local previews_vertical = awful.widget.tasklist {
+		-- 	screen   = s,
+		-- 	filter   = awful.widget.tasklist.filter.currenttags,
+		-- 	buttons  = tasklist_buttons,
+		-- 	style    = {
+		-- 		shape = gears.shape.rectangle,
+		-- 	},
+		-- 	layout   = {
+		-- 		spacing = dpi(5),
+		-- 		layout = wibox.layout.fixed.vertical
+		-- 	},
+		-- 	widget_template = {
+		-- 		{
+		-- 			{
+		-- 				{
+		-- 					id = 'preview',
+		-- 					resize = true,
+		-- 					widget = wibox.widget.imagebox
+		-- 				},
+		-- 				margins = dpi(4),
+		-- 				widget  = wibox.container.margin,
+		-- 			},
+		-- 			halign   = 'center',
+		-- 			valign   = 'center',
+		-- 			widget  = wibox.container.place,
+		-- 		},
+		-- 		id              = 'background_role',
+		-- 		forced_width    = dpi(200),
+		-- 		forced_height   = dpi(150),
+		-- 		widget          = wibox.container.background,
+		-- 		create_callback = function(self, c, index, objects) --luacheck: no unused
+		-- 			self:get_children_by_id('preview')[1].image = createPreview(c)
+		-- 		end,
+		-- 		update_callback = function(self, c, index, objects) --luacheck: no unused
+		-- 			self:get_children_by_id('preview')[1].image = createPreview(c)
+		-- 		end,
+		-- 	},
+		-- }
+		-- local alttab_vertical = wibox {
+		-- 	ontop = true,
+		-- 	screen = s,
+		-- 	height = s.geometry.height,
+		-- 	width = s.geometry.width * 0.15,
+		-- 	placement = awful.placement.left,
+		-- 	bg = beautiful.bg_normal,
+		-- 	visible = false,
+		-- }
+
+		-- alttab_vertical:setup {
+		-- 	layout = wibox.layout.fixed.vertical,
+		-- 	previews_vertical,
+		-- 	nil,
+		-- 	nil,
+		-- }
+
+		-- local task_popup = awful.popup {
+		-- 	widget = {
+		-- 		{
+		-- 			previews_horizontal,
+		-- 			widget = wibox.container.place
+		-- 		},
+		-- 		awful.widget.tasklist {
+		-- 			screen  = s,
+		-- 			filter  = awful.widget.tasklist.filter.focused,
+		-- 			buttons = tasklist_buttons,
+		-- 			style = {
+		-- 				align = 'center',
+		-- 				bg_focus = beautiful.bg_normal,
+		-- 			},
+		-- 			layout   = {
+		-- 				layout  = wibox.layout.flex.horizontal
+		-- 			},
+		-- 			widget_template = {
+		-- 				{
+		-- 					{
+		-- 						id     = 'text_role',
+		-- 						widget = wibox.widget.textbox,
+		-- 					},
+		-- 					left  = dpi(5),
+		-- 					right = dpi(5),
+		-- 					widget = wibox.container.margin,
+		-- 				},
+		-- 				id     = 'background_role',
+		-- 				width = dpi(200),
+		-- 				widget = wibox.container.background,
+		-- 			}
+		-- 		},
+
+		-- 		layout  = wibox.layout.fixed.vertical
+		-- 	},
+		-- 	border_color = beautiful.innerBorderFocus,
+		-- 	border_width = beautiful.innerBorder,
+		-- 	ontop        = true,
+		-- 	placement    = awful.placement.centered,
+		-- 	visible      = false,
+		-- 	screen       = s,
+		-- 	shape        = gears.shape.rectangle
+		-- }
+
+		-- s.alttab_grabber = awful.keygrabber {
+		-- 	start_callback = function()
+		-- 		alttab_vertical.visible = true
+		-- 		previews_vertical._do_tasklist_update()
+		-- 	end,
+		-- 	stop_callback  = function() alttab_vertical.visible = false end,
+		-- 	stop_event = 'release',
+		-- 	stop_key = 'Mod1',
+		-- 	keybindings = {
+		-- 		{{ 'Mod1'          } , 'Tab' , function()
+		-- 				awful.client.focus.byidx(1)
+		-- 				if client.focus then
+		-- 					client.focus:raise()
+		-- 				end
+		-- 		end},
+		-- 		{{ 'Mod1', 'Shift' } , 'Tab' , function()
+		-- 				awful.client.focus.byidx(-1)
+		-- 				if client.focus then
+		-- 					client.focus:raise()
+		-- 				end
+		-- 		end},
+		-- 	}
+		-- }
