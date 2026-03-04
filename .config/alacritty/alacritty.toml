@@ -1,0 +1,269 @@
+# # IBM Carbon Dark
+# [colors.primary]
+# background = "#161616"
+# foreground = "#f2f4f8"
+# dim_foreground = "#b6b8bb"
+# bright_foreground = "#f9fbff"
+#
+# [colors.cursor]
+# text = "#f2f4f8"
+# cursor = "#b6b8bb"
+#
+# [colors.vi_mode_cursor]
+# text = "#f2f4f8"
+# cursor = "#33b1ff"
+#
+# [colors.search.matches]
+# foreground = "#f2f4f8"
+# background = "#525253"
+#
+# [colors.search.focused_match]
+# foreground = "#f2f4f8"
+# background = "#3ddbd9"
+#
+# [colors.footer_bar]
+# foreground = "#f2f4f8"
+# background = "#353535"
+#
+# [colors.hints.start]
+# foreground = "#f2f4f8"
+# background = "#3ddbd9"
+#
+# [colors.hints.end]
+# foreground = "#f2f4f8"
+# background = "#353535"
+#
+# [colors.selection]
+# text = "#f2f4f8"
+# background = "#2a2a2a"
+#
+# [colors.normal]
+# black = "#282828"
+# red = "#ee5396"
+# green = "#25be6a"
+# yellow = "#08bdba"
+# blue = "#78a9ff"
+# magenta = "#be95ff"
+# cyan = "#33b1ff"
+# white = "#dfdfe0"
+#
+# [colors.bright]
+# black = "#484848"
+# red = "#f16da6"
+# green = "#46c880"
+# yellow = "#2dc7c4"
+# blue = "#8cb6ff"
+# magenta = "#c8a5ff"
+# cyan = "#52bdff"
+# white = "#e4e4e5"
+#
+# [colors.dim]
+# black = "#222222"
+# red = "#ca4780"
+# green = "#1fa25a"
+# yellow = "#07a19e"
+# blue = "#6690d9"
+# magenta = "#a27fd9"
+# cyan = "#2b96d9"
+# white = "#bebebe"
+#
+# [[colors.indexed_colors]]
+# index = 16
+# color = "#3ddbd9"
+#
+# [[colors.indexed_colors]]
+# index = 17
+# color = "#ff7eb6"
+#
+# Uncomment one of the sections below to switch themes
+# Just comment out the current colors section above and uncomment your preferred theme
+
+# # Gruvbox Material Hard Dark
+# [colors.primary]
+# background = "0x1d2021"
+# foreground = "0xd4be98"
+# 
+# [colors.normal]
+# black = "0x32302f"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+# 
+# [colors.bright]
+# black = "0x32302f"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+
+# Gruvbox Material Medium Dark
+[colors.primary]
+background = "0x282828"
+foreground = "0xd4be98"
+
+[colors.normal]
+black = "0x3c3836"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
+
+[colors.bright]
+black = "0x3c3836"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
+#
+# # Gruvbox Material Soft Dark
+# [colors.primary]
+# background = "0x32302f"
+# foreground = "0xd4be98"
+# 
+# [colors.normal]
+# black = "0x45403d"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+# 
+# [colors.bright]
+# black = "0x45403d"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+
+# # Gruvbox Material Hard Light
+# [colors.primary]
+# background = "0xf9f5d7"
+# foreground = "0x654735"
+# 
+# [colors.normal]
+# black = "0x654735"
+# red = "0xc14a4a"
+# green = "0x6c782e"
+# yellow = "0xb47109"
+# blue = "0x45707a"
+# magenta = "0x945e80"
+# cyan = "0x4c7a5d"
+# white = "0xf2e5bc"
+# 
+# [colors.bright]
+# black = "0x654735"
+# red = "0xc14a4a"
+# green = "0x6c782e"
+# yellow = "0xb47109"
+# blue = "0x45707a"
+# magenta = "0x945e80"
+# cyan = "0x4c7a5d"
+# white = "0xf2e5bc"
+
+# # # Gruvbox Material Medium Light
+# # [colors.primary]
+# # background = "0xfbf1c7"
+# # foreground = "0x654735"
+# # 
+# # [colors.normal]
+# # black = "0x654735"
+# # red = "0xc14a4a"
+# # green = "0x6c782e"
+# # yellow = "0xb47109"
+# # blue = "0x45707a"
+# # magenta = "0x945e80"
+# # cyan = "0x4c7a5d"
+# # white = "0xeee0b7"
+# # 
+# # [colors.bright]
+# # black = "0x654735"
+# # red = "0xc14a4a"
+# # green = "0x6c782e"
+# # yellow = "0xb47109"
+# # blue = "0x45707a"
+# # magenta = "0x945e80"
+# # cyan = "0x4c7a5d"
+# # white = "0xeee0b7"
+#
+# # Gruvbox Material Soft Light
+# [colors.primary]
+# background = "0xf2e5bc"
+# foreground = "0x654735"
+# 
+# [colors.normal]
+# black = "0x654735"
+# red = "0xc14a4a"
+# green = "0x6c782e"
+# yellow = "0xb47109"
+# blue = "0x45707a"
+# magenta = "0x945e80"
+# cyan = "0x4c7a5d"
+# white = "0xe6d5ae"
+# 
+# [colors.bright]
+# black = "0x654735"
+# red = "0xc14a4a"
+# green = "0x6c782e"
+# yellow = "0xb47109"
+# blue = "0x45707a"
+# magenta = "0x945e80"
+# cyan = "0x4c7a5d"
+# white = "0xe6d5ae"
+
+[cursor.style]
+blinking = "On"
+shape = "block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 11
+
+[font.normal]
+family = "Adwaita Mono"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "Up"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "Down"
+mods = "Control"
+
+[window]
+dynamic_padding = true
+dynamic_title = true
+# [window.padding]
+# x = 10
+# y = 15
+[keyboard]
+# bindings = [
+#   { key = "C",       mods = "Control|Shift", action = "Copy"  },
+#   { key = "V",       mods = "Control|Shift", action = "Paste" },
+#   { key = "N",       mods = "Control|Shift", action = "SpawnNewInstance" },
+#   { key = "Equals",  mods = "Control|Shift", action = "IncreaseFontSize" },
+#   { key = "Minus",   mods = "Control",       action = "DecreaseFontSize" },
+#   { key = "Key0",    mods = "Control",       action = "ResetFontSize"    },
+#   { key = "Enter",   mods = "Shift",         chars = "\n" },
+# ]

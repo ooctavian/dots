@@ -1,0 +1,8 @@
+profile {
+	output eDP-1 enable mode 1920x1080 position 0,0
+}
+
+profile {
+	output eDP-1 enable mode 1980x1080@60 position 376,1440
+	output DP-1 mode 2560x1440 position 0,0
+}

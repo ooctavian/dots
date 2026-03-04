@@ -1,0 +1,233 @@
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term alacritty
+set $system_theme 'Materia-dark'
+set $system_icons 'Adwaita'
+set $system_dpi_scaling_factor 1
+set $cursor_size 12
+set $cursor_theme "ArcDusk-cursors"
+set $titlebar_text_size 11
+set $titlebar_font monospace
+set $menu rofi -show drun
+set $wallpapers_path $HOME/.local/share/wallpapers
+
+exec autorandr --change
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
+exec_always xrdb -merge ~/.Xresources
+exec_always xsetroot -cursor_name left_ptr
+exec_always hsetroot -cover ~/.config/i3/wall.jpg
+
+exec --no-startup-id xautolock -time 10 -locker "dm-tool lock"
+exec --no-startup-id xset s 600 dpms 0 0 900
+exec --no-startup-id picom
+
+# Terminal
+bindsym $mod+Return exec $term
+
+# Kill window
+bindsym $mod+q kill
+
+# Launcher
+bindsym $mod+d exec $menu
+
+# Reload / Restart / Exit
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e mode "$mode_system"
+
+# Move focus (vim-style + arrow keys)
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move windows
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+floating_modifier $mod
+
+# --- Workspaces ---
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# --- Layouts ---
+bindsym $mod+b split h
+bindsym $mod+v split v
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+
+# Move workspace to monitor
+bindsym $mod+Ctrl+Shift+Left  move workspace to output left
+bindsym $mod+Ctrl+Shift+Right move workspace to output right
+bindsym $mod+Ctrl+Shift+Up move workspace to output up
+bindsym $mod+Ctrl+Shift+Down move workspace to output down
+
+bindsym $mod+Ctrl+Shift+h  move workspace to output left
+bindsym $mod+Ctrl+Shift+l move workspace to output right
+bindsym $mod+Ctrl+Shift+k move workspace to output up
+bindsym $mod+Ctrl+Shift+j move workspace to output down
+
+# Rofi window switcher
+bindsym Mod1+Tab exec --no-startup-id rofi -modi window -show window -timeout-delay 5 -timeout-action "kb-accept-entry"
+
+# Scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+u [instance="popup_term"] scratchpad show
+
+# --- Resize mode ---
+mode "resize" {
+    bindsym $left resize shrink width 10 px
+    bindsym $down resize grow height 10 px
+    bindsym $up resize shrink height 10 px
+    bindsym $right resize grow width 10 px
+
+    bindsym Left resize shrink width 10 px
+    bindsym Down resize grow height 10 px
+    bindsym Up resize shrink height 10 px
+    bindsym Right resize grow width 10 px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# --- Audio controls ---
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# --- Brightness ---
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# --- Screenshots ---
+bindsym Print exec env LC_ALL=en_US.UTF-8 flameshot gui
+bindsym $mod+Shift+p exec maim -s --format=ppm | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | xclip -selection clipboard
+bindsym $mod+Shift+s sticky toggle
+
+# --- Bar ---
+bar {
+    # position top
+    position bottom
+    status_command ~/.local/bin/i3status-wrapper.sh
+    font pango:Adwaita Mono 10
+    workspace_min_width 60
+    padding 0px
+    tray_padding 0
+
+    colors {
+        background #000000
+        # separator  #000000
+        statusline #FFFFFF
+        separator  #c1c1c1
+
+        focused_workspace  #303030 #303030 #FFFFFF
+        active_workspace   #212121 #212121 #FFFFFF
+        inactive_workspace #212121 #212121 #C1C1C1
+        urgent_workspace   #212121 #424242 #FFFFFF
+        binding_mode       #212121 #424242 #FFFFFF
+        }
+}
+
+client.focused          #303030 #303030 #FFFFFF #303030 #303030
+client.focused_inactive #212121 #212121 #FFFFFF #484E50 #5F676A
+client.unfocused        #212121 #212121 #C1C1C1 #212121 #212121
+client.urgent           #212121 #424242 #C1C1C1 #424242 #424242
+client.placeholder      #212121 #212121 #C1C1C1 #212121 #212121
+
+client.background       #FFFFFF
+
+exec_always --no-startup-id setxkbmap -layout "ro,ru" -option "grp:shift_caps_toggle,ctrl:nocaps"
+
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec dm-tool lock, mode "default"
+    bindsym s exec systemctl suspend, mode "default"
+    bindsym h exec systemctl hibernate, mode "default"
+    bindsym r exec systemctl reboot, mode "default"
+    bindsym e exec i3 exit, mode "default"
+    bindsym Shift+s exec systemctl poweroff, mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+assign [class="jetbrains-pycharm"] $ws1
+assign [class="Chromium"] $ws2
+assign [class="Docker Desktop"] $ws4
+
+for_window [class="flameshot"] floating enable, border pixel 0, move position 0 px 0 px
+for_window [instance="popup_term"] floating enable, move scratchpad, sticky enable
+for_window [title="Picture-in-picture"] floating enable, sticky enable, move position 1200 px 800 px
+for_window [class=".*"] border pixel 0
+
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id chromium-browser
+exec --no-startup-id dunst
+exec --no-startup-id alacritty --class=popup_term -e tmux new -As scratchpad
+
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme $system_theme
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface icon-theme $system_icons
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface text-scaling-factor $system_dpi_scaling_factor
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme $cursor_theme
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface cursor-size $cursor_size
+
+font pango:$titlebar_font $titlebar_text_size
+default_border none
+hide_edge_borders smart
+title_align center
+
