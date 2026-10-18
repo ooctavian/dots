@@ -23,7 +23,7 @@
             "percent": 1,
             "swallows": [
                {
-               // "class": "^Emacs$",
+               "class": "^Emacs$"
                // "instance": "^emacs$",
                // "machine": "^mitdev$",
                // "title": "^config\\ \\–\\ Doom\\ Emacs$"
@@ -49,7 +49,7 @@
     "percent": 0.329706717123936,
     "swallows": [
        {
-       // "class": "^Alacritty$",
+       "class": "^Alacritty$"
        // "instance": "^Alacritty$",
        // "machine": "^mitdev$",
        // "title": "^\\~$"
@@ -57,84 +57,3 @@
     ],
     "type": "con"
 }
-
-{
-    // floating_con with 1 children
-    "border": "none",
-    "floating": "auto_off",
-    "layout": "splith",
-    "marks": [],
-    "percent": null,
-    "rect": {
-       "height": 351,
-       "width": 622,
-       "x": 1278,
-       "y": 658
-    },
-    "type": "floating_con",
-    "nodes": [
-        {
-            "border": "pixel",
-            "current_border_width": 0,
-            "floating": "user_on",
-            "geometry": {
-               "height": 351,
-               "width": 622,
-               "x": 1278,
-               "y": 709
-            },
-            "marks": [],
-            "name": "Picture-in-picture",
-            "percent": 1,
-            "swallows": [
-               {
-               // "machine": "^mitdev$",
-               // "title": "^Picture\\-in\\-picture$"
-               }
-            ],
-            "type": "con"
-        }
-    ]
-}
-
-{
-    // floating_con with 1 children
-    "border": "none",
-    "floating": "auto_off",
-    "layout": "splith",
-    "marks": [],
-    "percent": null,
-    "rect": {
-       "height": 600,
-       "width": 800,
-       "x": 560,
-       "y": 251
-    },
-    "type": "floating_con",
-    "nodes": [
-        {
-            "border": "pixel",
-            "current_border_width": 0,
-            "floating": "user_on",
-            "geometry": {
-               "height": 600,
-               "width": 800,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "Alacritty",
-            "percent": 1,
-            "swallows": [
-               {
-               // "class": "^popup_term$",
-               // "instance": "^popup_term$",
-               // "machine": "^mitdev$",
-               // "title": "^Alacritty$"
-               }
-            ],
-            "type": "con"
-        }
-    ]
-}
-

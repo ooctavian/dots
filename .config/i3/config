@@ -5,23 +5,24 @@ set $up k
 set $right l
 set $term alacritty
 set $system_theme 'Materia-dark'
-set $system_icons 'Adwaita'
+set $system_icons 'Papirus-Dark'
 set $system_dpi_scaling_factor 1
 set $cursor_size 12
 set $cursor_theme "ArcDusk-cursors"
 set $titlebar_text_size 11
 set $titlebar_font monospace
 set $menu rofi -show drun
-set $wallpapers_path $HOME/.local/share/wallpapers
+set $locker i3lock -e -f -k -t -c 000000 -i $HOME/.config/i3/lock.png
 
-exec autorandr --change
+exec --no-startup-id autorandr --change
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
-exec_always xrdb -merge ~/.Xresources
-exec_always xsetroot -cursor_name left_ptr
-exec_always hsetroot -cover ~/.config/i3/wall.jpg
+exec_always --no-startup-id xrdb -merge ~/.Xresources
+exec_always --no-startup-id xsetroot -cursor_name left_ptr
+exec_always --no-startup-id hsetroot -cover ~/.config/i3/wall.jpg
 
-exec --no-startup-id xautolock -time 10 -locker "dm-tool lock"
 exec --no-startup-id xset s 600 dpms 0 0 900
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $locker -n
+exec --no-startup-id /usr/libexec/xfce-polkit
 exec --no-startup-id picom
 
 # Terminal
@@ -124,7 +125,8 @@ bindsym Mod1+Tab exec --no-startup-id rofi -modi window -show window -timeout-de
 # Scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
-bindsym $mod+u [instance="popup_term"] scratchpad show
+bindsym $mod+u exec --no-startup-id "i3-msg -q '[instance=popup_term] scratchpad show, resize set 60 ppt 60 ppt, move position center' || alacritty --class=popup_term -T scratchpad-new -e tmux new -As scratchpad"
+bindsym $mod+p exec --no-startup-id "i3-msg -q '[class=pavucontrol] scratchpad show, resize set 33 ppt 33 ppt, move position center' || pavucontrol"
 
 # --- Resize mode ---
 mode "resize" {
@@ -144,10 +146,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # --- Audio controls ---
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -USR1 -x i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && pkill -USR1 -x i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+ && pkill -USR1 -x i3status
+
+bindsym XF86AudioMicMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+bindsym $mod+n exec --no-startup-id dunstctl history-pop
+bindsym $mod+Shift+n exec --no-startup-id dunstctl close-all
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # --- Brightness ---
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
@@ -155,7 +166,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # --- Screenshots ---
 bindsym Print exec env LC_ALL=en_US.UTF-8 flameshot gui
-bindsym $mod+Shift+p exec maim -s --format=ppm | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | xclip -selection clipboard
+bindsym $mod+Shift+p exec maim -s --format=ppm | magick - -depth 8 -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | xclip -selection clipboard
 bindsym $mod+Shift+s sticky toggle
 
 # --- Bar ---
@@ -194,12 +205,12 @@ exec_always --no-startup-id setxkbmap -layout "ro,ru" -option "grp:shift_caps_to
 
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec dm-tool lock, mode "default"
-    bindsym s exec systemctl suspend, mode "default"
-    bindsym h exec systemctl hibernate, mode "default"
-    bindsym r exec systemctl reboot, mode "default"
+    bindsym l exec $locker, mode "default"
+    bindsym s exec loginctl suspend, mode "default"
+    bindsym h exec loginctl hibernate, mode "default"
+    bindsym r exec loginctl reboot, mode "default"
     bindsym e exec i3 exit, mode "default"
-    bindsym Shift+s exec systemctl poweroff, mode "default"
+    bindsym Shift+s exec loginctl poweroff, mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -210,13 +221,15 @@ assign [class="Chromium"] $ws2
 assign [class="Docker Desktop"] $ws4
 
 for_window [class="flameshot"] floating enable, border pixel 0, move position 0 px 0 px
-for_window [instance="popup_term"] floating enable, move scratchpad, sticky enable
-for_window [title="Picture-in-picture"] floating enable, sticky enable, move position 1200 px 800 px
-for_window [class=".*"] border pixel 0
+for_window [instance="popup_term" title="^(?!scratchpad-new$)" tiling] floating enable, move scratchpad, sticky enable
+for_window [class="^pavucontrol$" tiling] floating enable, move scratchpad, sticky enable, scratchpad show, resize set 33 ppt 33 ppt, move position center
+for_window [instance="popup_term" title="^scratchpad-new$" tiling] floating enable, move scratchpad, sticky enable, scratchpad show, resize set 60 ppt 60 ppt, move position center
+for_window [title="Picture-in-picture"] floating enable, sticky enable, resize set 25 ppt 25 ppt, move position center, move right 35 ppt, move down 35 ppt
 
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id chromium-browser
+exec --no-startup-id sh -c 'i3-msg "workspace 1; append_layout ~/.config/i3/workspace_1.json" && { emacs & alacritty & }'
 exec --no-startup-id dunst
 exec --no-startup-id alacritty --class=popup_term -e tmux new -As scratchpad
 
@@ -225,9 +238,9 @@ exec_always --no-startup-id gsettings set org.gnome.desktop.interface icon-theme
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface text-scaling-factor $system_dpi_scaling_factor
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme $cursor_theme
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface cursor-size $cursor_size
+exec_always --no-startup-id xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -n -t bool -s false
 
 font pango:$titlebar_font $titlebar_text_size
 default_border none
-hide_edge_borders smart
+default_floating_border none
 title_align center
-
