@@ -3,21 +3,21 @@ general {
     colors = false
     interval = 5
 }
-order += "load"
-order += "cpu_temperature 0"
+# order += "load"
+# order += "cpu_temperature 0"
 order += "wireless wlp0s20f3"
 order += "volume master"
 order += "battery 0"
 order += "time"
 
-load {
-    format = "█LOAD█Load: %5min"
-}
+# load {
+#     format = "█LOAD█Load: %5min"
+# }
 
-cpu_temperature 0 {
-    format = "█CPUTEMP█CPU Temp: %degrees °C"
-    path = "/sys/class/thermal/thermal_zone0/temp"
-}
+# cpu_temperature 0 {
+#     format = "█CPUTEMP█CPU Temp: %degrees °C"
+#     path = "/sys/class/thermal/thermal_zone0/temp"
+# }
 
 wireless wlp0s20f3 {
     format_up = "█WIFI█WiFi: %essid"
@@ -48,4 +48,3 @@ battery 0 {
 time {
     format = "█TIME█Time: %b %d at %H:%M"
 }
-
