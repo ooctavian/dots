@@ -34,7 +34,7 @@
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-flatwhite)
 ;; (setq doom-theme 'doom-tomorrow-night)
-;; (setq doom-theme 'doom-opera)
+(setq doom-theme 'doom-opera)
 ;; (setq doom-theme 'modus-operandi-deuteranopia)
 ;; (setq doom-theme 'doom-monokai-ristretto)
 ;; (setq doom-gruvbox-material-background  "medium"
@@ -43,7 +43,7 @@
 ;; (setq doom-gruvbox-material-light-background  "medium"
 ;;       doom-gruvbox-material-light-palette     "original")
 
-(setq doom-theme 'doom-gruvbox)
+;; (setq doom-theme 'doom-gruvbox)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -110,3 +110,73 @@
 ;; Optionally hook this into Projectile switching or Python mode
 (add-hook 'projectile-after-switch-project-hook #'my-projectile-venv-and-env-activate)
 ;; (add-hook 'python-mode-hook #'my-projectile-venv-and-env-activate)
+
+;; `SPC c j' (consult-eglot-symbols) starts with a `#' because consult's default
+;; async pipeline uses the "perl" split style (#query#filter). Use the "comma"
+;; style instead: nothing is inserted into an empty prompt, but `Query,filter'
+;; still splits, which matters because basedpyright matches the whole query as a
+;; fuzzy subsequence against the symbol name only -- a space in it returns zero
+;; results. Narrowing (`< c' Class, `< f' Function, `< ?' for the list) is
+;; independent of the input and works either way.
+(defun +consult-async-wrap-no-split (async)
+  "Like `consult--async-wrap', but without the `#' input splitter."
+  (consult--async-pipeline
+   (consult--async-split 'comma)
+   async
+   (consult--async-indicator)
+   (consult--async-refresh)))
+
+(after! consult
+  (consult-customize
+   consult-eglot-symbols
+   :async-wrap #'+consult-async-wrap-no-split))
+
+;; Eglot never sends basedpyright any configuration, so it runs on its own
+;; `recommended' default, its loudest preset short of `all'. Note eglot matches a
+;; server's requested section against the *top-level* keys of this plist by exact
+;; string, so the key must literally be `basedpyright.analysis', not a nested
+;; `:analysis'. Projects that ship their own [tool.basedpyright] win over this:
+;; basedpyright skips client config overrides when a config file exists and the
+;; request came from a language server.
+(defun +python--interpreter ()
+  "Return the project's Python interpreter.
+Eglot calls its workspace-configuration function with `default-directory'
+bound to the server's project root, so `.venv' resolves against it."
+  (cl-loop for path in (list (and (bound-and-true-p pyvenv-virtual-env)
+                                  (expand-file-name "bin/python" pyvenv-virtual-env))
+                             (expand-file-name ".venv/bin/python" default-directory))
+           when (and path (file-executable-p path))
+           return path
+           finally return (executable-find "python3")))
+
+(defun +python-eglot-workspace-configuration (_server)
+  "Workspace configuration sent to basedpyright."
+  ;; No :diagnosticMode "workspace" -- unlike typeCheckingMode it applies even
+  ;; when the project has a config file, and on a repo of a few thousand files it
+  ;; makes basedpyright type-check everything up front and stop answering
+  ;; requests until it is done.
+  (list :python (list :pythonPath (+python--interpreter))
+        :basedpyright.analysis (list :typeCheckingMode "standard")))
+
+(after! eglot
+  (setq-default eglot-workspace-configuration
+                #'+python-eglot-workspace-configuration))
+
+;; consult-eglot fires a fresh `workspace/symbol' per keystroke through
+;; `jsonrpc-async-request' with no :timeout, so it inherits
+;; `jsonrpc-default-request-timeout' (10s) and its :timeout-fn prints "error:
+;; request timed out". It never cancels the previous request either, so a
+;; 12-character query queues a dozen of them at a single-threaded server. On the
+;; basedpyright side each one walks every user source file and parses it on
+;; demand, so the cost is O(project) per request -- ~3400 files on broniturov.
+;; Give the request room, and type a little longer before firing one. Both must
+;; be dynamically bound around the command: consult-eglot builds its async
+;; pipeline (and reads the debounce) when it runs, and jsonrpc reads the timeout
+;; when it arms the timer.
+(defadvice! +consult-eglot-patient-a (fn &rest args)
+  "Run FN with timeouts sized for a large workspace."
+  :around #'consult-eglot-symbols
+  (let ((jsonrpc-default-request-timeout 60)
+        (consult-async-input-debounce 0.4)
+        (consult-async-input-throttle 0.5))
+    (apply fn args)))
