@@ -1,11 +1,77 @@
-configuration {
-  show-icons:         true;
-  icon-theme:         "Papirus";
-  cycle:              true;
-  hide-scrollbar:     true;
-  disable-history:    false;
-  modi:               "drun";
-  display-drun:       "Search";
-  columns: 3;
-  theme:		"/themes/run";
+entry {
+    placeholder: "";
+    text-color: #c1c1c1;
+    padding: 8px 0 8px 8px;
 }
+
+configuration {
+    font: "BlexMono Nerd Font 12";
+    lines: 10;
+    fixed-num-lines: true;
+    padding: 10px;
+    icon-theme: "Yaru-purple-dark";
+}
+
+inputbar {
+    children: [ entry ];
+    orientation: horizontal;
+    spacing: 8px;
+}
+
+* {
+    separatorcolor: transparent;
+    selected-normal-background: rgba(138,180,248, 5%); /* #8ab4f8 @ 5% */
+    normal-background: rgba(249,249,249, 0%);          /* #f9f9f9 @ 0% */
+    alternate-normal-background: rgba(249,249,249, 0%);/* #f9f9f9 @ 0% */
+    text-color: #c1c1c1;
+    urgent-foreground: #c1c1c1;
+    active-foreground: #c1c1c1;
+    selected-urgent-background: rgba(138,180,248, 5%);
+    selected-urgent-foreground: #c1c1c1;
+    normal-foreground: #c1c1c1;
+    alternate-urgent-foreground: #c1c1c1;
+    alternate-urgent-background: rgba(249,249,249, 0%);
+}
+
+mainbox {
+    border: 2px;
+    border-color: rgba(66,66,66, 20%); /* #424242 @ 20% */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+window {
+    border-radius: 11px;
+    border: 1px solid;
+    border-color: #000000;
+    background-color: rgba(33,33,33,95%); /* #212121 @ 85% */
+    padding: 0px;
+    width: 30%;
+}
+
+listview {
+    lines: 10;
+}
+
+element {
+    padding: 10px 10px;
+    height: 50px;
+    border-radius: 5px;
+    children: [ element-text, element-icon ];
+}
+
+element-text {
+    text-color: #c1c1c1; /* matches entry placeholder */
+}
+
+#scrollbar {
+    handle-color: #565656;
+    handle-width: 4px ;
+    padding: 0;
+}
+
+textbox {
+    padding: 30px;
+    text-color: #c1c1c1;
+}
+
