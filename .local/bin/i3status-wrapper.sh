@@ -21,9 +21,15 @@ i3status | while IFS= read -r line; do
     # Skip empty lines
     [ -z "$line" ] && continue
 
+    recpid="${XDG_RUNTIME_DIR:-/tmp}/recordingpid"
+    if [ -f "$recpid" ] && kill -0 "$(cat "$recpid")" 2>/dev/null; then
+        line="█REC█REC | $line"
+    fi
+
     # Parse each module (format: █MODULE█text)
     output="["
     index=0
+    cidx=0
     colors=("#212121" "#303030")
     prev_color=""
 
@@ -43,7 +49,12 @@ i3status | while IFS= read -r line; do
             icon=$(get_icon "$module")
 
             # Alternate background colors
-            bg_color="${colors[$((index % 2))]}"
+            if [ "$module" = REC ]; then
+                bg_color="#a01818"
+            else
+                bg_color="${colors[$((cidx % 2))]}"
+                ((cidx++))
+            fi
 
             # Add separator if not first block
             if [ $index -gt 0 ]; then

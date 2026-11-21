@@ -1,0 +1,67 @@
+set $term foot
+set $cursor_size 24
+set $locker gtklock -d
+set $exit swaymsg exit
+set $restart reload
+set $msg swaymsg
+set $app app_id
+set $popup app_id
+set $scratch_term foot --app-id=popup_term tmux new -As scratchpad
+set $scratch_term_new foot --app-id=popup_term --title=scratchpad-new tmux new -As scratchpad
+
+exec dbus-update-activation-environment WAYLAND_DISPLAY DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
+
+include ~/.config/wm/common.conf
+
+exec --no-startup-id  $HOME/.cargo/bin/wl-distore
+
+output * bg ~/.config/wm/wall.jpg fill
+
+input type:keyboard {
+    xkb_layout "ro,ru"
+    xkb_options "grp:shift_caps_toggle,ctrl:nocaps,custom:henk_switch"
+}
+
+input type:touchpad {
+    tap enabled
+    tap_button_map lrm
+    dwt enabled
+    natural_scroll enabled
+    pointer_accel 0.35
+}
+
+seat seat0 xcursor_theme $cursor_theme $cursor_size
+
+exec swayidle -w \
+    timeout 600 '$locker' \
+    timeout 900 '~/.local/bin/power suspend' \
+    before-sleep '$locker'
+
+# --- Screenshots ---
+bindsym Print exec flameshot gui
+bindsym Shift+Print exec grim ~/Pictures/screenshot-$(date +%F-%H%M%S).png
+
+# --- Bar ---
+bar {
+    position bottom
+    status_command ~/.local/bin/i3status-wrapper.sh
+    font pango:Adwaita Mono, Symbols Nerd Font 10
+    workspace_min_width 60
+    tray_padding 0
+    icon_theme Papirus-Dark
+
+    colors {
+        background #000000
+        statusline #FFFFFF
+        separator  #c1c1c1
+
+        focused_workspace  #303030 #303030 #FFFFFF
+        active_workspace   #212121 #212121 #FFFFFF
+        inactive_workspace #212121 #212121 #C1C1C1
+        urgent_workspace   #212121 #424242 #FFFFFF
+        binding_mode       #212121 #424242 #FFFFFF
+    }
+}
+
+exec nm-applet --indicator
+exec udiskie --automount --notify --tray --appindicator

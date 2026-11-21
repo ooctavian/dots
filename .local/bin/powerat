@@ -1,0 +1,83 @@
+#!/bin/sh
+
+state="${XDG_RUNTIME_DIR:-/tmp}/powerat"
+
+usage() {
+	echo "usage: powerat suspend|poweroff|reboot <30m|2h|90s|23:30>" >&2
+	echo "       powerat [cancel]" >&2
+	exit 1
+}
+
+running() {
+	[ -f "$state" ] && kill -0 "$(cut -d' ' -f1 "$state")" 2>/dev/null
+}
+
+cancel() {
+	running && kill -- "-$(cut -d' ' -f1 "$state")"
+	rm -f "$state"
+}
+
+number() {
+	case $1 in '' | *[!0-9]*) usage ;; esac
+}
+
+case $1 in
+"")
+	if running; then
+		read -r _ action at <"$state"
+		echo "$action at $(date -d "@$at" +%H:%M)"
+	else
+		echo "nothing scheduled"
+	fi
+	exit 0
+	;;
+cancel)
+	cancel
+	echo "cancelled"
+	exit 0
+	;;
+suspend | poweroff | reboot) action=$1 ;;
+*) usage ;;
+esac
+
+now=$(date +%s)
+case $2 in
+*:*)
+	at=$(date -d "$2" +%s 2>/dev/null) || usage
+	[ "$at" -le "$now" ] && at=$(date -d "tomorrow $2" +%s)
+	;;
+*s)
+	number "${2%s}"
+	at=$((now + ${2%s}))
+	;;
+*m)
+	number "${2%m}"
+	at=$((now + ${2%m} * 60))
+	;;
+*h)
+	number "${2%h}"
+	at=$((now + ${2%h} * 3600))
+	;;
+*)
+	number "$2"
+	at=$((now + $2 * 60))
+	;;
+esac
+
+cancel
+delay=$((at - now))
+
+setsid sh -c '
+    if [ "$1" -gt 60 ]; then
+        sleep $(($1 - 60))
+        notify-send -u critical "powerat" "$2 in 1 minute (powerat cancel to stop)"
+        sleep 60
+    else
+        sleep "$1"
+    fi
+    rm -f "$3"
+    "$HOME/.local/bin/power" "$2"
+' powerat "$delay" "$action" "$state" >/dev/null 2>&1 &
+echo "$! $action $at" >"$state"
+
+echo "$action at $(date -d "@$at" +%H:%M)"

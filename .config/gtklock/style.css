@@ -1,0 +1,34 @@
+* {
+    box-shadow: none;
+}
+
+window {
+    background-image: url("/home/octavian/.config/wm/wall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#info-box {
+    margin-top: 4em;
+}
+
+#date-label {
+    color: #f2e5bc;
+    font-weight: bold;
+}
+
+#clock-label {
+    font-family: "Libre Baskerville";
+    font-size: 112pt;
+    font-weight: 700;
+    color: #f2e5bc;
+}
+
+#body-grid {
+    margin-bottom: 11em;
+}
+
+#error-label {
+    color: #e95678;
+}

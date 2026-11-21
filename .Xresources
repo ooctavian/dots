@@ -41,7 +41,7 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.perl-lib: ~/.config/urxvt/
 
-URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.font: xft:BlexMono Nerd Font Mono:size=10
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
 URxvt.keysym.Control-Up: \033[1;5A
@@ -54,3 +54,5 @@ URxvt.perl-ext-common:  default
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
+
+Xft.dpi: 96

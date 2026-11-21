@@ -1,0 +1,38 @@
+#!/bin/sh
+CURVE="52:20 56:26 60:32 64:40 68:50 72:62 76:76 80:90 84:100"
+HYST=3
+INTERVAL=5
+
+zone=$(grep -l '^x86_pkg_temp$' /sys/class/thermal/thermal_zone*/type | head -1)
+zone=${zone%/type}/temp
+fan=$(grep -l '^TFN1$' /sys/class/thermal/cooling_device*/type | head -1)
+fan=${fan%/type}/cur_state
+
+speed_for() {
+    s=0
+    for p in $CURVE; do
+        [ "$1" -ge "${p%:*}" ] && s=${p#*:}
+    done
+    echo "$s"
+}
+
+apply() {
+    if [ "$1" -eq 0 ]; then
+        /usr/local/bin/panafanpwr reset >/dev/null
+    else
+        /usr/local/bin/panafanpwr fan-speed "$1" >/dev/null
+    fi
+}
+
+cur=0
+while :; do
+    t=$(( $(cat "$zone") / 1000 ))
+    want=$(speed_for "$t")
+    if [ "$want" -lt "$cur" ] && [ "$(speed_for $((t + HYST)))" -ge "$cur" ]; then
+        want=$cur
+    fi
+    if [ "$want" -ne "$cur" ] || [ "$(cat "$fan")" -ne $((want / 2)) ]; then
+        apply "$want" && cur=$want && echo "fancurve: ${t}°C -> ${want}%"
+    fi
+    sleep "$INTERVAL"
+done

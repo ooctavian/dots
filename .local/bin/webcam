@@ -1,5 +1,5 @@
 #!/bin/sh
 
-sudo chown root:video /dev/video0
-sudo chmod g+rwx /dev/video0
-mpv av://v4l2:/dev/video0
+exec mpv --profile=low-latency --untimed \
+    --demuxer-lavf-o=input_format=mjpeg,video_size=1920x1080,framerate=30 \
+    av://v4l2:/dev/video0

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+PATH="$HOME/.local/bin:$PATH"
+
+menu() {
+    rofi -dmenu -i -p "$1" -mesg "$2"
+}
+
+current=$(powerat)
+
+action=$(printf '%s\n' suspend poweroff reboot cancel | menu "powerat" "now: $current") || exit 0
+
+if [ "$action" = cancel ]; then
+    powerat cancel >/dev/null
+    notify-send "powerat" "cancelled"
+    exit 0
+fi
+
+when=$(printf '%s\n' 15m 30m 45m 1h 2h 3h | menu "$action in / at" "type a time too: 23:30, 90m") || exit 0
+
+if msg=$(powerat "$action" "$when" 2>&1); then
+    notify-send "powerat" "$msg"
+else
+    notify-send -u critical "powerat" "invalid time: $when"
+fi

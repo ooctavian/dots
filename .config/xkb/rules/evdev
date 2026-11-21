@@ -1,0 +1,4 @@
+! include %S/evdev
+
+! option = symbols
+  custom:henk_switch = +custom(henk_switch)

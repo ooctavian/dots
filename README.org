@@ -1,30 +1,25 @@
 #+Title: What I use: 
 #+html: <img src=".local/share/assets/scrots" alt="stuck-in-stack.thumbnail" align="right" width="400px">
-- *Window Manager*: =bspwm=
-- *Hotkey daemon*: =sxhkd=
-- *Bar*: =polybar=
-- *Terminal*: =st= 
+- *Window Manager*: =i3/sway=
+- *Bar*: =i3bar/swaybar or Waybar=
+- *Terminal*: =alacritty/foot= 
 - *Application Launcher*: =rofi=
-- *File manager*: =Nemo= (gui) and =ranger= (console)
+- *File manager*: =nautilus= 
 - *Browser*: =firefox=
-- *Editor*: =Neovim= and =Emacs=
-- *Compositor*: Picom (Rest in piece xcompmgr)
-- *Fonts*: ={FiraCode,FantasqueSansMono,Iosevka} Nerd Fonts=
-- *Clipboard manager*: =xclip=
-- *Music setup*: =mpd=, =mpc= and =ncmpcpp=
-- *Shell*: =Bash= and =Dash= (for POSIX scripts)
-- *Lockscreen*: =i3lock-color=
+- *Editor*: =Emacs= and =Neovim=
+- *Compositor*: Picom(for i3)
+- *Fonts*: =Adwaita Mono=, =Symbols Nerd Font= and =BlexMono Nerd Font=
+- *GTK theme*: =Materia-dark=
+- *Icon theme*: =Papirus-Dark=
+- *Clipboard manager*: =cliphist= (sway) / =clipmenu= (i3)
+- *Shell*: =Fish= 
+- *Lockscreen*: =i3lock-color(i3)/gtklock(sway)=
+- *Video player*: =mpv=
 *Utilites used in scripts*:
-- =ffmpeg= - for extracting album covers and soon for recording video
-- =Python3-gobject= - Needed for networkmangaer-dmenu
-- =imagemagick= - needed for i3lock script
-- =slop= - for selecting area in maim
-- =xdotool= - for scratchpad scripts and jumpapp script
-- =wmctrl= - for jumpapp script 
-- =ueberzug= - for ncmpcpp album art script and ranger previews
-*Other*:
-- *Wallpaper*: [[https://unsplash.com/photos/_wqj9tC0WSE][Original]] and the edit by me is in =~/.config/wall.png=
-- *GTK theme*: [[https://github.com/jaxwilko/gtk-theme-framework][material-gtk-framework]]  theme is avalabile in =~/.local/share/themes/=
-- *Icon theme*: Oomox generated =papirus-icon-theme=
-- *Startpage*: made by  [[https://www.reddit.com/r/startpages/comments/i3t68d/simple_minimal_startpage_i_made_to_match_my/][Wolfiy]]
-- *Original i3lock wrapper script*: [[https://github.com/okitavera/dotfiles/blob/master/bin/lock][here]]
+- =wf-recorder= / =ffmpeg= - recording
+- =slurp= / =slop= - selection
+- =grim= / =maim= - screenshots
+- =imagemagick= - images
+- =cliphist= + =wl-clipboard= / =clipmenu= - clipboard
+- =jq= - JSON
+- =libnotify= - notifications

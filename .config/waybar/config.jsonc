@@ -1,0 +1,51 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 24,
+    "spacing": 0,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-right": ["network", "pulseaudio", "sway/language", "custom/battery", "clock", "tray"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "format": "{name}"
+    },
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "network": {
+        "interface": "wlp0s20f3",
+        "interval": 5,
+        "format-wifi": "  WiFi: {essid} ",
+        "format-ethernet": "  WiFi: Disconnected ",
+        "format-linked": "  WiFi: Disconnected ",
+        "format-disconnected": "  WiFi: Disconnected ",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "  Volume: {volume}% ",
+        "format-muted": "  Volume: Muted ",
+        "tooltip": false
+    },
+    "sway/language": {
+        "format": "  Layout: {short} ",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+        "tooltip": false
+    },
+    "custom/battery": {
+        "exec": "~/.config/waybar/battery.sh",
+        "interval": 5,
+        "tooltip": false
+    },
+    "clock": {
+        "interval": 5,
+        "format": "  Time: {:%b %d at %H:%M}  ",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 22,
+        "spacing": 1
+    }
+}

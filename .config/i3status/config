@@ -7,7 +7,7 @@ general {
 # order += "cpu_temperature 0"
 order += "wireless wlp0s20f3"
 order += "volume master"
-order += "battery 0"
+order += "battery 1"
 order += "time"
 
 # load {
@@ -32,7 +32,7 @@ volume master {
     mixer_idx = 0
 }
 
-battery 0 {
+battery 1 {
     last_full_capacity = true
     format = "█BATTERY█%status: %percentage"
     format_down = "█BATTERY█No Battery"

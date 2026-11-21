@@ -1,0 +1,22 @@
+#!/bin/sh
+
+case "$1" in
+    daemon)
+        if [ -n "$WAYLAND_DISPLAY" ]; then
+            exec wl-paste --watch cliphist store
+        else
+            exec clipmenud
+        fi
+        ;;
+    menu)
+        if [ -n "$WAYLAND_DISPLAY" ]; then
+            cliphist list | rofi -dmenu -p clip | cliphist decode | wl-copy
+        else
+            CM_LAUNCHER=rofi exec clipmenu -p clip
+        fi
+        ;;
+    *)
+        echo "usage: ${0##*/} daemon|menu" >&2
+        exit 2
+        ;;
+esac

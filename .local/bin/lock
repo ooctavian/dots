@@ -1,50 +1,59 @@
 #!/usr/bin/env bash
 #: yuune i3lock-color wrapper
 
- wallpaper="$HOME/.config/wall.png"
+wallpaper="$HOME/.config/wm/wall.jpg"
 
-tmpwall="/tmp/$USER-lock.png"
-eval $(xdotool getdisplaygeometry --shell)
-genwp () {
-    # dynamic wallpaper reload
-    if [[ ! -f "/tmp/$USER-lock-wppath" ]]; then
-        echo "$wallpaper" > /tmp/$USER-lock-wppath
-    elif [[ "$wallpaper" != "$(cat /tmp/$USER-lock-wppath)" ]]; then
-        echo "$wallpaper" > /tmp/$USER-lock-wppath
-        rm $tmpwall 2&>/dev/null
-    fi
+cache="${XDG_CACHE_HOME:-$HOME/.cache}/lock"
+mkdir -p "$cache"
+tmpwall="$cache/lock.png"
+wppath="$cache/lock-wppath"
 
-    if [[ ! -f $tmpwall ]]; then
-        convert "$wallpaper" -resize ${WIDTH}x -gravity center -crop ${WIDTH}x${HEIGHT}+0+0 +repage \( \
-            -size 120x140 xc:none \
-            -draw "roundrectangle 0,0,120,140,20,20" \
-            -draw "rectangle 0,140 120,120" -normalize +level 0,50% \
-            \) -gravity south -compose over -composite $tmpwall
-    fi
+read -r WIDTH HEIGHT < <(xrandr --current | awk '/ connected primary/ { split($4, g, /[x+]/); print g[1], g[2]; exit }')
+: "${WIDTH:=1920}" "${HEIGHT:=1080}"
+
+genwp() {
+	local key="$wallpaper $(stat -c %Y "$wallpaper") ${WIDTH}x${HEIGHT}"
+	if [[ ! -f "$wppath" || "$key" != "$(cat "$wppath")" ]]; then
+		rm -f "$tmpwall"
+	fi
+
+	if [[ ! -f $tmpwall ]]; then
+		magick "$wallpaper" -resize "${WIDTH}x${HEIGHT}^" -gravity center -extent "${WIDTH}x${HEIGHT}" +repage \( \
+			-size 120x140 xc:none \
+			-draw "roundrectangle 0,0,120,140,20,20" \
+			-draw "rectangle 0,140 120,120" -normalize +level 0,50% \
+			\) -gravity south -compose over -composite \
+			-define png:compression-level=1 "png:$tmpwall.tmp" &&
+			mv "$tmpwall.tmp" "$tmpwall" && echo "$key" >"$wppath"
+	fi
 }
 
-runlock () {
-    i3lock -n --force-clock -i $tmpwall \
-        --indpos="$WIDTH/2:$HEIGHT-80" --timepos="$WIDTH/2:$HEIGHT/2" \
-        --insidevercolor=00000000 --insidewrongcolor=00000000 --insidecolor=00000000 \
-        --ringvercolor=b2ebf2FF --ringwrongcolor=e95678FF --ringcolor=cbced0FF \
-        --keyhlcolor=21bfc295 --bshlcolor=e9567895 --separatorcolor=00000000 \
-        --layoutcolor=00000000 \
-        --line-uses-ring \
-        --timestr="%H:%M" \
-        --timecolor=fdf0edFF \
-        --time-font="Iosevka Nerd Font" \
-        --timesize=80 \
-        --datestr="%A, %b %d" \
-        --datecolor=fdf0edFF \
-        --date-font="Ioseva Nerd Font" \
-        --datesize=16 \
-        --radius 30 --ring-width 5 \
-        --indicator \
-        --veriftext="" \
-        --wrongtext="" \
-        --noinputtext=""
+if [[ $1 == --prepare ]]; then
+	genwp
+	exit
+fi
 
+runlock() {
+	i3lock -e -f --clock -i "$tmpwall" \
+		--ind-pos="w/2:h-80" --time-pos="w/2:h/2" \
+		--insidever-color=00000000 --insidewrong-color=00000000 --inside-color=00000000 \
+		--ringver-color=b2ebf2FF --ringwrong-color=e95678FF --ring-color=cbced0FF \
+		--keyhl-color=21bfc295 --bshl-color=e9567895 --separator-color=00000000 \
+		--layout-color=00000000 \
+		--line-uses-ring \
+		--time-str="%H:%M" \
+		--time-color=fdf0edFF \
+		--time-font="BlexMono Nerd Font" \
+		--time-size=80 \
+		--date-str="%A, %b %d" \
+		--date-color=fdf0edFF \
+		--date-font="BlexMono Nerd Font" \
+		--date-size=16 \
+		--radius 30 --ring-width 5 \
+		--indicator \
+		--verif-text="" \
+		--wrong-text="" \
+		--noinput-text=""
 }
 
-genwp $1 && runlock
+genwp && runlock

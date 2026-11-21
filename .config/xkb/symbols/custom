@@ -1,0 +1,4 @@
+partial modifier_keys
+xkb_symbols "henk_switch" {
+  key <HENK> {[  ISO_Level3_Shift  ], type[group1]="ONE_LEVEL" };
+};

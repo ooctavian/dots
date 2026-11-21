@@ -1,0 +1,14 @@
+#!/bin/sh
+case "$1" in
+suspend | hibernate | hybrid-sleep | reboot | poweroff) ;;
+*)
+	echo "usage: ${0##*/} suspend|hibernate|hybrid-sleep|reboot|poweroff" >&2
+	exit 2
+	;;
+esac
+
+if [ -d /run/systemd/system ]; then
+	exec systemctl "$1"
+else
+	exec loginctl "$1"
+fi

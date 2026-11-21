@@ -1,37 +1,52 @@
-#! /bin/sh
-# "Some" inspiration taken from https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenurecord
-# change your resolution if you have another screen resolution because I am dumb to implement auto  
-# This script works for me but it may not work for you 
-# Dependencies:
-#       ffmpeg - for recording 
-#       rofi/dmenu - for menu | you should change it manually 
-#       slop | for taking coordinates of area 
-if  [ -f /tmp/recordingpid ]  ; then
-     recpid="$(cat /tmp/recordingpid)" &&
-    kill -15 "$recpid" ;
-    rm -r /tmp/recordingpid ;
-    dunstify "Recording stopped" ;
-    kill -9 "$recpid" ;
-else
-    # Get path and name of the file
-    name=$(xdg-user-dir VIDEOS) || name="$HOME/Videos"
-    name="$name/Recording_$(date +'%Y-%m-%d_%H-%M').mp4"
-    var="$(printf "Full\nArea\nExit" | rofi -dmenu -p "Option" )"
-    case $var in
-        "Full")
-	 res=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
-	 ffmpeg -video_size "$res" -framerate 25 -f x11grab -i :0.0 "$name" &
-    	 echo $! > /tmp/recordingpid
-    	# echo $!
-            ;;
-        "Area")
-	    # grab resolution and x,y coordonates with slop and store them in variables
-	    slop=$(slop -f "ffmpeg -video_size %wx%h -framerate 25 -f x11grab -i :0.0+%x,%y "$name"") || exit 1
-	   $slop &
-    	 echo $! > /tmp/recordingpid
-            ;;
-        *)
-	    exit 0;
-            ;;
-    esac
+#!/bin/sh
+
+pidfile="${XDG_RUNTIME_DIR:-/tmp}/recordingpid"
+
+if [ -f "$pidfile" ]; then
+    pid=$(cat "$pidfile")
+    rm -f "$pidfile"
+    kill -INT "$pid" 2>/dev/null
+    while kill -0 "$pid" 2>/dev/null; do sleep 0.2; done
+    pkill -USR1 -x i3status
+    notify-send "record" "Recording stopped"
+    exit 0
 fi
+
+dir=$(xdg-user-dir VIDEOS 2>/dev/null) || dir="$HOME/Videos"
+[ -n "$dir" ] && [ "$dir" != "$HOME" ] || dir="$HOME/Videos"
+mkdir -p "$dir"
+name="$dir/Recording_$(date +'%Y-%m-%d_%H-%M-%S').mp4"
+
+choice=$(printf 'Full\nArea\nExit\n' | rofi -dmenu -p record) || exit 0
+
+if [ -n "$WAYLAND_DISPLAY" ]; then
+    case $choice in
+        Full)
+            output=$(swaymsg -t get_outputs 2>/dev/null | jq -r '.[] | select(.focused) | .name')
+            set -- ${output:+-o "$output"}
+            ;;
+        Area)
+            geometry=$(slurp) || exit 1
+            set -- -g "$geometry"
+            ;;
+        *) exit 0 ;;
+    esac
+    wf-recorder "$@" -c h264_vaapi -d /dev/dri/renderD128 -f "$name" >/dev/null 2>&1 &
+else
+    case $choice in
+        Full)
+            res=$(xdpyinfo | sed -n 's/.*dimensions: *\([0-9]*x[0-9]*\).*/\1/p')
+            set -- -video_size "$res" -i "$DISPLAY"
+            ;;
+        Area)
+            area=$(slop -f '%wx%h %x,%y') || exit 1
+            set -- -video_size "${area% *}" -i "$DISPLAY+${area#* }"
+            ;;
+        *) exit 0 ;;
+    esac
+    ffmpeg -loglevel error -framerate 30 -f x11grab "$@" "$name" &
+fi
+
+echo $! > "$pidfile"
+pkill -USR1 -x i3status
+notify-send "record" "Recording to ${name##*/}"

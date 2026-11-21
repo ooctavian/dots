@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if [ -n "$WAYLAND_DISPLAY" ]; then
+    region=$(slurp -p) || exit 1
+    color=$(grim -g "$region" -t ppm - | magick - -depth 8 -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4)
+else
+    color=$(maim -s --format=ppm | magick - -depth 8 -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4)
+fi
+
+[ -n "$color" ] || exit 1
+
+if [ -n "$WAYLAND_DISPLAY" ]; then
+    printf '%s' "$color" | wl-copy
+else
+    printf '%s' "$color" | xclip -selection clipboard
+fi

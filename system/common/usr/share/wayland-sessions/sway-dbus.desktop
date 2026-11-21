@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Sway (D-Bus)
+Comment=Sway with a D-Bus session
+Exec=dbus-run-session sway
+Type=Application
+DesktopNames=sway
